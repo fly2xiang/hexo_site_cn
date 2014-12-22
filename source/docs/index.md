@@ -10,35 +10,35 @@ Hexo 是一个快速，简单，强大的博客框架。 它使用 [Markdown](ht
 
 准备好 Hexo 只需要花费几分钟时间。如果你在安装过程中遇到问题并且在这个文档中不能找到解决方法, 请 [提交问题](https://github.com/hexojs/hexo/issues) ，我会试着解决你的问题。
 
-### Requirements
+### 准备
 
-Installing Hexo is quite easy. However, there are some things required before you get started:
+安装 Hexo 非常简单。在开始安装之前需要先安装以下组件：
 
 - [Node.js](http://nodejs.org/)
 - [Git](http://git-scm.com/)
 
-If your computer already has the requirements above, congratulations! Just install Hexo with npm.
+如果你的电脑已经安装了它们，恭喜！你只需要使用 npm 安装 Hexo 即可。
 
 ``` bash
 $ npm install -g hexo
 ```
 
-If not, please follow the following instructions to install all the requirements.
+如果还没有安装需要的组件，请先安装它们。
 
-{% note warn For Mac users %}
-You may encounter some problems when compiling. Please install Xcode from App Store first. After Xcode is installed, open Xcode and go to **Preferences -> Download -> Command Line Tools -> Install** to install command line tools.
+{% note warn Mac 用户请注意 %}
+你也许在编译过程中会遇到错误。请先从 App Store 安装 Xcode。在 Xcode 安装之后，打开 Xcode 并导航到 **Preferences -> Download -> Command Line Tools -> Install** 安装命令行工具。
 {% endnote %}
 
-### Install Git
+### 安装 Git
 
-- Windows: Download & install [msysgit](http://code.google.com/p/msysgit/).
-- Mac: Install it with [Homebrew](http://mxcl.github.com/homebrew/), [MacPorts](http://www.macports.org/) or [installer](http://code.google.com/p/git-osx-installer/).
+- Windows: 下载并安装 [msysgit](http://code.google.com/p/msysgit/).
+- Mac: 安装 [Homebrew](http://mxcl.github.com/homebrew/), [MacPorts](http://www.macports.org/) or [installer](http://code.google.com/p/git-osx-installer/).
 - Linux (Ubuntu, Debian): `sudo apt-get install git-core`
 - Linux (Fedora, Red Hat, CentOS): `sudo yum install git-core`
 
-### Install Node.js
+### 安装 Node.js
 
-The best way to install Node.js is installing with [nvm](https://github.com/creationix/nvm).
+安装 Node.js 最好的方式是通过 [nvm](https://github.com/creationix/nvm) 安装。
 
 cURL:
 
@@ -52,17 +52,17 @@ Wget:
 $ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
 ```
 
-Once installed, restart the terminal and run the following command to install Node.js.
+安装后，重启终端并且运行下面的命令安装 Node.js。
 
 ``` bash
 $ nvm install 0.10
 ```
 
-Or you can download the [installer](http://nodejs.org/) and install it.
+或者你可以直接下载 [安装包](http://nodejs.org/) 安装它.
 
-### Install Hexo
+### 安装 Hexo
 
-Once all the requirements are installed, you can install Hexo with npm.
+以上组件安装好后，你可以通过 npm 安装 Hexo。
 
 ``` bash
 $ npm install -g hexo

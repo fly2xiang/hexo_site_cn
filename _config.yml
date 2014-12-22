@@ -12,8 +12,8 @@ language:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.liuzhixiang.com/hexo/
-root: /
+url: http://www.liuzhixiang.com/hexo_site_cn/
+root: /hexo_site_cn
 permalink: news/:year/:month/:day/:title/
 tag_dir: tags
 archive_dir: news
