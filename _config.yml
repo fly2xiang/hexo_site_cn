@@ -75,7 +75,7 @@ per_page: 0
 pagination_dir: page
 
 # Disqus
-disqus_shortname: hexojs
+disqus_shortname: #hexojs
 
 # Extensions
 ## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
