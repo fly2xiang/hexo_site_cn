@@ -88,4 +88,5 @@ exclude_generator:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: github
-  repo: https://github.com/hexojs/hexojs.github.io.git
+  repo: git@github.com:fly2xiang/hexo_site_cn.git
+  branch: gh-pages
