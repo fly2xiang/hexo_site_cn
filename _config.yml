@@ -3,16 +3,16 @@
 ## Source: https://github.com/tommy351/hexo/
 
 # Site
-title: Hexo
-subtitle: Hexo is a fast, simple & powerful blog framework powered by Node.js.
-description: Hexo is a fast, simple & powerful blog framework powered by Node.js.
-author: SkyArrow
-email: tommy351@gmail.com
+title: Hexo中文网
+subtitle: Hexo是一个基于Node.js的快速，简单，强大的博客框架。
+description: Hexo是一个基于Node.js的快速，简单，强大的博客框架。
+author: fly2xiang
+email: fly2xiang@gmail.com
 language:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://hexo.io
+url: http://www.liuzhixiang.com/hexo/
 root: /
 permalink: news/:year/:month/:day/:title/
 tag_dir: tags

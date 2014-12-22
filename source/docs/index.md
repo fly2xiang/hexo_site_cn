@@ -1,14 +1,14 @@
-title: Documentation
+title: 文档
 ---
-Welcome to the Hexo's documentation. This documentation will help you get started fast. If you get any problems when using Hexo, you can find the answer in [troubleshooting](troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues) or [Google Group](https://groups.google.com/group/hexo).
+欢迎阅读 Hexo 的文档。本文档将帮助您快速上手。如果您在使用 Hexo 时出现任何问题，你可以在 [Q&A](troubleshooting.html) 寻找答案，或者你可以在我的 [GitHub上](https://github.com/hexojs/hexo/issues) 或 [谷歌小组](https://groups.google.com/group/hexo) 中询问我。
 
-## What's Hexo?
+## 什么是 Hexo?
 
-Hexo is a fast, simple and powerful blog framework. It parses your posts with [Markdown](http://daringfireball.net/projects/markdown/) (or other render engines) and generates static files with a beautiful theme in seconds.
+Hexo 是一个快速，简单，强大的博客框架。 它使用 [Markdown](http://daringfireball.net/projects/markdown/)  (或者其他的渲染引擎)转换你的文章并结合一个漂亮的主题生成静态文件，而这一切都在数秒之内完成。
 
-## Installation
+## 安装
 
-It only takes few minutes for you to get Hexo ready. If you encounter any problems on installation and you can't find the solution here, please [submit an issue](https://github.com/hexojs/hexo/issues) and I'll try to solve your problems.
+准备好 Hexo 只需要花费几分钟时间。如果你在安装过程中遇到问题并且在这个文档中不能找到解决方法, 请 [提交问题](https://github.com/hexojs/hexo/issues) ，我会试着解决你的问题。
 
 ### Requirements
 
