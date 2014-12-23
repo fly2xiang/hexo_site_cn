@@ -33,8 +33,9 @@ doc_sidebar:
     常见问题: troubleshooting.html
     建议: contributing.html
 
+duoshuo_shortname: liuzhixiang ## e.g. wuchong   your duoshuo short name.
 google_analytics: UA-4910098-10
 fb_admins: 100000247608790
 swiftype_key: DDvzs7LQ9kdKssQNQLcv
-twitter: hexojs
-github: hexojs/hexo
+twitter: fly2xiang
+github: fly2xiang/hexo_site_cn
