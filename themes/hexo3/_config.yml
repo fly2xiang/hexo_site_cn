@@ -6,32 +6,32 @@ menu:
   主题: https://github.com/tommy351/hexo/wiki/Themes
 
 doc_sidebar:
-  Getting Started:
-    Overview: index.html
-    Setup: setup.html
-    Configuration: configuration.html
-    Commands: commands.html
-    Migration: migration.html
-  Basic Usage:
-    Writing: writing.html
-    Drafts: drafts.html
-    Generating: generating.html
-    Tag Plugins: tag-plugins.html
-    Server: server.html
-    Deployment: deployment.html
-  Customization:
-    Permalinks: permalinks.html
-    Themes: themes.html
-    Variables: variables.html
-    Pagination: pagination.html
-    Helpers: helpers.html
-    Plugins: plugins.html
-  Advanced:
-    Models: models.html
-    Events: events.html
-  Miscellaneous:
-    Troubleshooting: troubleshooting.html
-    Contributing: contributing.html
+  快速开始:
+    概述: index.html
+    开始: setup.html
+    配置: configuration.html
+    命令: commands.html
+    迁移: migration.html
+  基本用法:
+    撰写: writing.html
+    草稿: drafts.html
+    生成: generating.html
+    标签插件: tag-plugins.html
+    服务器: server.html
+    发布: deployment.html
+  自定义:
+    链接格式: permalinks.html
+    主题: themes.html
+    变量: variables.html
+    分页: pagination.html
+    帮助: helpers.html
+    插件: plugins.html
+  高级:
+    模型: models.html
+    事件: events.html
+  杂项:
+    常见问题: troubleshooting.html
+    建议: contributing.html
 
 google_analytics: UA-4910098-10
 fb_admins: 100000247608790
