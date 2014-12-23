@@ -1,110 +1,110 @@
-title: Configuration
+title: 配置
 ---
-You can modify most options in `_config.yml`.
+你可以在 `_config.yml` 进行大部分的配置。
 
-## Configuration
+## 配置
 
-### Site
+### Site 站点
 
-Setting | Description
+配置项 | 描述
 --- | ---
-`title` | The title of your website
-`subtitle` | The subtitle of your website
-`description` | The description of your website
-`author` | Your name
-`email` | Your email address
-`language` | The language used in your website. Use [IETF format](http://www.w3.org/International/articles/language-tags/). (e.g. Traditional Chinese: `zh-TW`)
+`title` | 网站的标题
+`subtitle` | 网站的副标题
+`description` | 网站的描述
+`author` | 你的名字
+`email` | 你的邮箱地址
+`language` | 你的网站使用的语言。使用 [IETF 格式](http://www.w3.org/International/articles/language-tags/). (例如: 简体中文: `zh-CN`)
 
 ### URL
 
-Setting | Description | Default
+配置项 | 描述 | 默认值
 --- | --- | ---
-`url` | The URL of your website |
-`root` | The root directory of your website |
-`permalink` | The [permalink](permalinks.html) format of articles | :year/:month/:day/:title/
-`tag_dir` | Tag directory | tags
-`archive_dir` | Archive directory | archives
-`category_dir` | Category directory | categories
-`code_dir` | Include code directory | downloads/code
+`url` | 你网站的网址 |
+`root` | Hexo 相对于你网站的根目录 |
+`permalink` | 文章的 [permalink](permalinks.html) 格式 | :year/:month/:day/:title/
+`tag_dir` | 标签文件夹 | tags
+`archive_dir` | 文章文件夹 | archives
+`category_dir` | 分类文件夹 | categories
+`code_dir` | 包含代码文件夹 | downloads/code
 
-{% note info Website in subdirectory %}
-If your website is put in a subdirectory such as `http://yoursite.com/blog`, set `url` to `http://yoursite.com/blog` and set `root` to `/blog/`.
+{% note info 将网站放在子目录中 %}
+如果你将网站放置在一个子目录中，类似于 `http://yoursite.com/blog` ，请将 `url` 设置为 `http://yoursite.com/blog` ，将 `root` 设置为 `/blog/`。
 {% endnote %}
 
-### Writing
+### Writing 撰写
 
-Setting | Description | Default
+设置项 | 描述 | 默认值
 --- | --- | ---
-`new_post_name` | The filename of the new post | :title.md
-`default_layout` | Default layout | post
-`auto_spacing` | Add a space between eastern and western characters | false
-`titlecase` | Transform title into proper title case | false
-`external_link` | Open external links in new tab | true
-`filename_case` | Transform filename into (1) lower case or (2) upper case | 0
-`render_drafts` | Serve drafts as normal posts in server | false
-`post_asset_folder` | Enables [Asset Folder](writing.html#Asset_Folder) | false
-`relative_link` | Make links relative to root folder | false
-`highlight` | Code block settings |
+`new_post_name` | 新文章的命名格式 | :title.md
+`default_layout` | 默认的布局 | post
+`auto_spacing` | 在东方字符和西方字符之间加入空格 | false
+`titlecase` | 将标题转换为合适的 | false
+`external_link` | 在新标签页打开外部链接 | true
+`filename_case` | 将文件名转换为小写或大写，1.小写，2.大写，0.不转换 | 0
+`render_drafts` | 渲染草稿 | false
+`post_asset_folder` | 开启 [Asset 文件夹](writing.html#Asset_Folder) | false
+`relative_link` | 使用相对路径 | false
+`highlight` | 代码块设置 |
 
-### Category & Tag
+### Category & Tag 分类和标签
 
-Setting | Description | Default
+配置项 | 描述 | 默认值
 --- | --- | ---
-`default_category` | Default category | uncategorized
-`category_map` | Category slugs |
-`tag_map` | Tag slugs |
+`default_category` | 默认分类 | uncategorized
+`category_map` | 分类云 |
+`tag_map` | 标签云 |
 
-### Archives
+### Archives 文章
 
-Setting | Description | Default
+配置项 | 描述 | 默认值
 --- | --- | ---
-`archive` | 2: Enable pagination, 1: Disable pagination, 0: Fully disable | 2
-`category` | 2: Enable pagination, 1: Disable pagination, 0: Fully disable | 2
-`tag` | 2: Enable pagination, 1: Disable pagination, 0: Fully disable | 2
+`archive` | 2: 开启分页, 1: 禁用分页, 0: 全局禁用 | 2
+`category` | 2: 开启分页, 1: 禁用分页, 0: 全局禁用 | 2
+`tag` | 2: 开启分页, 1: 禁用分页, 0: 全局禁用 | 2
 
-### Server
+### Server 服务器
 
-Setting | Description | Default
+配置项 | 描述 | 默认值
 --- | --- | ---
-`port` | Server port | 4000
-`logger` | Display request info on the console. Always enabled in debug mode. | false
-`logger_format` | Logger format |
-`server_ip` | Customize server IP | 0.0.0.0
+`port` | 服务端口 | 4000
+`logger` | 在控制台显示请求日志，在调试模式下默认启用 | false
+`logger_format` | 日志格式 |
+`server_ip` | 自定义服务器IP | 0.0.0.0
 
-### Date / Time format
+### Date / Time format 日期时间格式
 
-Hexo uses [Moment.js](http://momentjs.com/) to parse and display date.
+Hexo 使用 [Moment.js](http://momentjs.com/) 来转换和显示日期和时间。
 
-Setting | Description | Default
+配置项 | 描述 | 默认值
 --- | --- | ---
-`date_format` | Date format | MMM D YYYY
-`time_format` | Time format | H:mm:ss
+`date_format` | 日期格式 | MMM D YYYY
+`time_format` | 时间格式 | H:mm:ss
 
-### Pagination
+### Pagination 分页
 
-Setting | Description | Default
+配置项 | 描述 | 默认值
 --- | --- | ---
-`per_page` | The amount of the posts displayed in a single page (0 = Disable pagination) | 10
+`per_page` | 每页显示的文章数 (0 = 禁用分页) | 10
 `pagination_dir` | Pagination directory | page
 
-### Comment
+### Comment 评论
 
-Setting | Description
+配置项 | 描述
 --- | ---
 `disqus_shortname` | [Disqus](http://disqus.com/) shortname
 
-### Extensions
+### Extensions 扩展
 
-Setting | Description
+配置项 | 描述
 --- | ---
-`theme` | Current theme
-`exclude_generator` | Disabled generators (archive, category, home, page, post, tag)
+`theme` | 当前使用的主题
+`exclude_generator` | 不生成的 (archive, category, home, page, post, tag)
 
-{% note warn YAML format %}
-Don't use tabs in configuration files, use spaces instead. Also, add a space after colons. Configuration file parsing errors may cause Hexo to not run properly.
+{% note warn YAML 格式 %}
+在配置文件中不可使用制表符，只能使用空格缩进。在冒号后要加上一个空格。配置文件不能正确解析可能导致 Hexo 不能运行。
 {% endnote %}
 
-## Default Configuration
+## Default Configuration 默认配置
 
 ``` yaml _config.yml
 title: Hexo

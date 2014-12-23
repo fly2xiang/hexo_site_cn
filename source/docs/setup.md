@@ -1,6 +1,6 @@
-title: Setup
+title: 开始
 ---
-Once Hexo is installed, run the following command and Hexo will build all the files you need in the target folder.
+安装好 Hexo 后，运行下面的命令，Hexo 会在目标文件夹下建立所有的文件。
 
 ``` bash
 $ hexo init <folder>
@@ -8,7 +8,7 @@ $ cd <folder>
 $ npm install
 ```
 
-After build, here's what the project folder looks like:
+建立文件之后，文件夹结构看起来是这样的：
 
 ``` plain
 .
@@ -24,11 +24,12 @@ After build, here's what the project folder looks like:
 
 ### _config.yml
 
-Site [configuration](configuration.html) file. You can configure most options here.
+查看 [配置](configuration.html) 说明，那你可以在这里配置一些选项。
 
 ### package.json
 
-Application data. [EJS](http://embeddedjs.com/), [Stylus](http://learnboost.github.io/stylus/) and [Markdown](http://daringfireball.net/projects/markdown/) renderers are installed by default, you can uninstall them later.
+应用程序数据，如果你了解 Node.js 你应当知道它的作用。[EJS](http://embeddedjs.com/), [Stylus](http://learnboost.github.io/stylus/) 和 [Markdown](http://daringfireball.net/projects/markdown/) 
+Application data. [EJS](http://embeddedjs.com/), [Stylus](http://learnboost.github.io/stylus/) and [Markdown](http://daringfireball.net/projects/markdown/) 默认会被安装，稍后你可以卸载他们。
 
 ``` json package.json
 {
@@ -45,16 +46,16 @@ Application data. [EJS](http://embeddedjs.com/), [Stylus](http://learnboost.gith
 
 ### scaffolds
 
-[Scaffold](writing.html) folder. When you create a new post, Hexo will build the file based on the scaffold.
+[scaffolds](writing.html) 文件夹. 当你新建一篇文章时， Hexo 会在 scaffolds 的基础上创建这篇文章。
 
 ### scripts
 
-[Script](plugins.html) folder. Scripts are the easiest way to extend Hexo. JavaScript files in this folder will be executed automatically.
+[scripts](plugins.html) 文件夹. 这些脚本是扩展 Hexo 最简单的方式。这个文件夹下的 Javascript 文件会被自动执行。
 
 ### source
 
-Source folder is where you can put your content. Files or folders whose names are prefixed with `_` (underscore) and hidden files will be ignored except `_posts` folder. Markdown and HTML files will be processed and put into `public` folder, while other files will simply be copied.
+你可以将你写的内容放在 Source 文件夹里。除了 `_posts` 其他以 `_` （下划线）开头命名的文件或文件夹和隐藏文件会被忽略。Markdown 和 HTML 文件会被处理并放到 `public` 文件夹，其他文件会被复制过去。
 
 ### themes
 
-[Theme](themes.html) folder. Hexo will generate files based on the theme.
+[Theme](themes.html) 文件夹。 Hexo 会基于主题创建静态文件。
