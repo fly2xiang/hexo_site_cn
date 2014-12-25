@@ -1,12 +1,12 @@
-title: Tag Plugins
+title: 标签插件
 ---
-Tag plugins are different from tags in posts. They're ported from Octopress and can help you insert specific contents in posts quickly.
+标签插件与文章中的标签是不同的。他们是从 Octopress 移植过来可以帮助你在文章中插入具体的内容。
 
-## Block Quote
+## 区块引用
 
-Inserts quotes with author, source and title in posts.
+插入引用到文章中，连同作者、来源以及标题。
 
-**Alias:** quote
+**别名:** quote
 
 {% raw %}
 <figure class="highlight"><pre>{% blockquote [author[, source]] [link] [source_link_title] %}
@@ -15,9 +15,9 @@ content
 </pre></figure>
 {% endraw %}
 
-### Example
+### 例子
 
-**No arguments given. Only output plain blockquote**
+**没有参数，输出块引用**
 
 {% raw %}
 <figure class="highlight"><pre>{% blockquote %}
@@ -30,7 +30,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.
 {% endblockquote %}
 
-**Quote from a book**
+**引用一本书中的段落**
 
 {% raw %}
 <figure class="highlight"><pre>{% blockquote David Levithan, Wide Awake %}
@@ -43,7 +43,7 @@ Do not just seek happiness for yourself. Seek happiness for all. Through kindnes
 Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.
 {% endblockquote %}
 
-**Quote from Twitter**
+**引用 Twitter 内容**
 
 {% raw %}
 <figure class="highlight"><pre>{% blockquote @DevDocs https://twitter.com/devdocs/status/356095192085962752 %}
@@ -56,7 +56,7 @@ NEW: DevDocs now comes with syntax highlighting. http://devdocs.io
 NEW: DevDocs now comes with syntax highlighting. http://devdocs.io
 {% endblockquote %}
 
-**Quote from an article on the web**
+**引用网上的一篇文章**
 
 {% raw %}
 <figure class="highlight"><pre>{% blockquote Seth Godin http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html Welcome to Island Marketing %}
@@ -69,11 +69,11 @@ Every interaction is both precious and an opportunity to delight.
 Every interaction is both precious and an opportunity to delight.
 {% endblockquote %}
 
-## Code Block
+## 代码块
 
-Inserts code snippets in posts.
+在文章中插入代码块
 
-**Alias:** code
+**别名:** code
 
 {% raw %}
 <figure class="highlight"><pre>{% codeblock [title] [lang:language] [url] [link text] %}
@@ -82,9 +82,9 @@ code snippet
 </pre></figure>
 {% endraw %}
 
-### Example
+### 例子
 
-**A normal code block**
+**一般的代码块**
 
 {% raw %}
 <figure class="highlight"><pre>{% codeblock %}
@@ -97,7 +97,7 @@ alert('Hello World!');
 alert('Hello World!');
 {% endcodeblock %}
 
-**Specify language**
+**指定语言的代码块**
 
 {% raw %}
 <figure class="highlight"><pre>{% codeblock lang:objc %}
@@ -110,7 +110,7 @@ alert('Hello World!');
 [rectangle setX: 10 y: 10 width: 20 height: 20];
 {% endcodeblock %}
 
-**Add caption to code block**
+**带标题的代码块**
 
 {% raw %}
 <figure class="highlight"><pre>{% codeblock Array.map %}
@@ -123,7 +123,7 @@ array.map(callback[, thisArg])
 array.map(callback[, thisArg])
 {% endcodeblock %}
 
-**Add caption with an optional URL**
+**带 URL 的代码块**
 
 {% raw %}
 <figure class="highlight"><pre>{% codeblock _.compact http://underscorejs.org/#compact Underscore.js %}
@@ -138,9 +138,9 @@ _.compact([0, 1, false, 2, '', 3]);
 => [1, 2, 3]
 {% endcodeblock %}
 
-## Backtick Code Block
+## 反引号代码块
 
-This plugin is same as code block, but in backtick style.
+这个插件是一个类似的代码块，只是使用单引号样式。
 
 {% code %}
 ``` [language] [title] [url] [link text]
@@ -150,7 +150,7 @@ code snippet
 
 ## Pull Quote
 
-This plugin helps you insert a pull quote in posts.
+这个插件帮助你在文章中插入一个 pull quote。
 
 {% raw %}
 <figure class="highlight"><pre>{% pullquote [class] %}
@@ -161,7 +161,7 @@ content
 
 ## jsFiddle
 
-Embeds jsFiddle snippets in posts.
+在文章中嵌入一段 jsFiddle 片段。
 
 {% raw %}
 <figure class="highlight"><pre>{% jsfiddle shorttag [tabs] [skin] [width] [height] %}
@@ -170,7 +170,7 @@ Embeds jsFiddle snippets in posts.
 
 ## Gist
 
-Embeds Gist snippets in posts.
+在文章中嵌入一段 Gist 片段。
 
 {% raw %}
 <figure class="highlight"><pre>{% gist gist_id [filename] %}
@@ -179,34 +179,34 @@ Embeds Gist snippets in posts.
 
 ## iframe
 
-Embeds an iframe in posts.
+在文章中嵌入 iframe 片段。
 
 {% raw %}
 <figure class="highlight"><pre>{% iframe url [width] [height] %}
 </pre></figure>
 {% endraw %}
 
-## Image
+## 图片
 
-Inserts an image in posts with specified size.
+在文章中插入指定大小的图片。
 
 {% raw %}
 <figure class="highlight"><pre>{% img [class names] /path/to/image [width] [height] [title text [alt text]] %}
 </pre></figure>
 {% endraw %}
 
-## Link
+## 链接
 
-Inserts a link with `target="_blank"` attribute.
+插入一个包含 `target="_blank"` 属性的链接。
 
 {% raw %}
 <figure class="highlight"><pre>{% link text url [external] [title] %}
 </pre></figure>
 {% endraw %}
 
-## Include Code
+## 包含代码
 
-Inserts code snippets in `source` folder.
+插入 `source` 文件夹中的代码片段。
 
 {% raw %}
 <figure class="highlight"><pre>{% include_code [title] [lang:language] path/to/file %}
@@ -215,7 +215,7 @@ Inserts code snippets in `source` folder.
 
 ## Youtube
 
-Inserts a Youtube video in posts.
+在文章中插入一个 Youtube 视频。
 
 {% raw %}
 <figure class="highlight"><pre>{% youtube video_id %}
@@ -224,16 +224,16 @@ Inserts a Youtube video in posts.
 
 ## Vimeo
 
-Inserts a Vimeo video in posts.
+在文章中插入一个 Vimeo 视频。
 
 {% raw %}
 <figure class="highlight"><pre>{% vimeo video_id %}
 </pre></figure>
 {% endraw %}
 
-## Raw
+## 原始内容
 
-If there're some contents can't be processed in posts, you can wrapped it with `rawblock` tag.
+如果你不想让一些内容被处理，你可以用 `rawblock` 标签包裹。
 
 {% raw %}
 <figure class="highlight"><pre>{% rawblock %}

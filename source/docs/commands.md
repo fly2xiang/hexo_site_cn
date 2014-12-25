@@ -1,4 +1,4 @@
-title: Commands
+title: 命令
 ---
 ## init
 
@@ -6,7 +6,7 @@ title: Commands
 $ hexo init [folder]
 ```
 
-Initializes a website. If `folder` isn't defined, Hexo will set up the website in the current directory.
+初始化一个网站。如果不提供 `folder` 参数，Hexo 会在当前目录下初始化一个网站。
 
 ## new
 
@@ -14,9 +14,9 @@ Initializes a website. If `folder` isn't defined, Hexo will set up the website i
 $ hexo new [layout] <title>
 ```
 
-Creates a new article. If `layout` isn't defined, it'll equal the `default_layout` setting in [_config.yml](configuration.html). If the title is more than one word, wrap it with quotation marks.
+新建一篇文章，如果不提供 `layout` 参数，会使用 [_config.yml](configuration.html) 中配置的 `default_layout` 。如果标题中包含空格，需要使用双引号。
 
-**Alias:** n
+**别名:** n
 
 ## generate
 
@@ -24,14 +24,14 @@ Creates a new article. If `layout` isn't defined, it'll equal the `default_layou
 $ hexo generate
 ```
 
-Generates static files.
+生成静态文件。
 
-**Alias**: g
+**别名**: g
 
-Option | Description
+参数 | 描述
 --- | ---
-`-d`, `--deploy` | Deploy after generate done
-`-w`, `--watch` | Watch file changes
+`-d`, `--deploy` | 生成后部署
+`-w`, `--watch` | 监控文件修改
 
 ## publish
 
@@ -39,9 +39,9 @@ Option | Description
 $ hexo publish [layout] <filename>
 ```
 
-Publishes a draft.
+发布一个草稿。
 
-**Alias**: p
+**别名**: p
 
 ## server
 
@@ -49,16 +49,16 @@ Publishes a draft.
 $ hexo server
 ```
 
-Starts server.
+启动服务器。
 
-**Alias:** s
+**别名:** s
 
-Option | Description
+参数 | 描述
 --- | ---
-`-p`, `--port` | Override default port
-`-s`, `--static` | Only serve static files
-`-l`, `--log` | Enable logger. Override logger format.
-`-d`, `--drafts` | Serve drafts as normal posts.
+`-p`, `--port` | 覆盖默认端口
+`-s`, `--static` | 只使用静态文件
+`-l`, `--log` | 开启日志，覆盖默认的日志格式
+`-d`, `--drafts` | 将草稿显示为文章
 
 ## deploy
 
@@ -66,15 +66,15 @@ Option | Description
 $ hexo deploy
 ```
 
-Deploys your website.
+部署网站。
 
-**Alias:** d
+**别名:** d
 
-Option | Description
+参数 | 描述
 --- | ---
-`--setup` | Setup without deployment
-`-g`, `--generate` | Generate before deployment
-`-m`, `--message` | Customize commit message
+`--setup` | 配置而不部署
+`-g`, `--generate` | 部署前生成
+`-m`, `--message` | 自定义提交信息
 
 ## render
 
@@ -82,11 +82,11 @@ Option | Description
 $ hexo render <file1> [file2] ...
 ```
 
-Renders files.
+渲染文件
 
-Option | Description
+参数 | 描述
 --- | ---
-`-o`, `--output` | Output destination
+`-o`, `--output` | 输出目录
 
 ## migrate
 
@@ -94,7 +94,7 @@ Option | Description
 $ hexo migrate <type>
 ```
 
-[Migrates](migration.html) content from other blog systems.
+从其他博客系统 [合并](migration.html) 内容。
 
 ## clean
 
@@ -102,7 +102,7 @@ $ hexo migrate <type>
 $ hexo clean
 ```
 
-Cleans the cache file (`db.json`) and generated files (`public`).
+清理缓存文件 (`db.json`) 和生成的文件 (`public`) 。
 
 ## list
 
@@ -110,7 +110,7 @@ Cleans the cache file (`db.json`) and generated files (`public`).
 $ hexo list <type>
 ```
 
-Lists all routes.
+列出所有的路由
 
 ## version
 
@@ -118,38 +118,38 @@ Lists all routes.
 $ hexo version
 ```
 
-Displays version information.
+显示版本信息
 
-## Options
+## 参数
 
-### Safe mode
+### 安全模式
 
 ``` bash
 $ hexo --safe
 ```
 
-Plugins and scripts won't be loaded in safe mode. You can try this when you encounter some problems after installing a new plugin.
+在安全模式下插件和脚本不会被加载。当你在新安装了一个插件后出现问题时，你可以使用这个参数。
 
-### Debug mode
+### 调试模式
 
 ``` bash
 $ hexo --debug
 ```
 
-Displays verbose messages in terminal and saves log in `debug.log`. When you get some problems, try to run Hexo again in debug mode and please [submit any errors to GitHub](https://github.com/hexojs/hexo/issues/new).
+在终端中显示详细的信息并保存到 `debug.log` 文件。当你遇到问题时，你可以尝试在调试模式下运行 Hexo 并 [将问题提交到 Github ](https://github.com/hexojs/hexo/issues/new)。
 
-### Silent mode
+### 安静模式
 
 ``` bash
 $ hexo --silent
 ```
 
-Hides output to the console.
+在终端中隐藏输出。
 
-### Customize config file path
+### 自定义配置文件路径
 
 ``` bash
 $ hexo --config custom.yml
 ```
 
-Customize config file path instead of `_config.yml`.
+使用自定义的配置文件路径替代 `_config.yml`。

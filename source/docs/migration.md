@@ -1,14 +1,14 @@
-title: Migration
+title: 迁移
 ---
 ## RSS
 
-First, install `hexo-migrator-rss` plugin.
+首先，安装 `hexo-migrator-rss` 插件。
 
 ``` bash
 $ npm install hexo-migrator-rss --save
 ```
 
-Once the plugin is installed, run the following command to migrate all posts from RSS. `source` can be the file path or URL.
+插件安装之后，运行下面的命令将所有的文章从 RSS 迁移。 `source` 参数是文件路径或者 URL 地址。
 
 ``` bash
 $ hexo migrate rss <source>
@@ -16,7 +16,7 @@ $ hexo migrate rss <source>
 
 ## Jekyll
 
-Move all files in `_posts` folder to `source/_posts` folder and modify `new_post_name` setting in `_config.yml`.
+将所有文件从 `_posts` 文件夹移动到 `source/_posts` 文件夹并修改 `_config.yml` 文件中的 `new_post_name` 配置。
 
 ``` yaml
 new_post_name: :year-:month-:day-:title.md
@@ -24,7 +24,7 @@ new_post_name: :year-:month-:day-:title.md
 
 ## Octopress
 
-Move all files in `source/_posts` folder of Octopress to `source/_posts` of Hexo and modify `new_post_name` setting in `_config.yml`.
+将 Octopress  `source/_posts` 文件夹下的所有文件移动到 Hexo 的 `source/_posts` 文件夹并修改 `_config.yml` 文件中的 `new_post_name` 配置。
 
 ``` yaml
 new_post_name: :year-:month-:day-:title.md
@@ -32,13 +32,13 @@ new_post_name: :year-:month-:day-:title.md
 
 ## WordPress
 
-First, install `hexo-migrator-wordpress` plugin.
+首先安装 `hexo-migrator-wordpress` 插件。
 
 ``` bash
 $ npm install hexo-migrator-wordpress --save
 ```
 
-Once the plugin is installed, run the following command to migrate all posts from RSS. `source` can be the file path or URL.
+插件安装之后，运行下面的命令将所有的文章从 RSS 迁移。 `source` 参数是文件路径或者 URL 地址。
 
 ``` bash
 $ hexo migrate wordpress <source>
