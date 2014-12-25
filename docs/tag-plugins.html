@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Tag Plugins | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
+  <title>标签插件 | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://www.liuzhixiang.com/hexo_site_cn/docs/tag-plugins.html">
   <link rel="apple-touch-icon" sizes="57x57" href="/hexo_site_cn/apple-touch-icon-57x57.png">
@@ -25,21 +25,42 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/hexo_site_cn/atom.xml" title="Hexo中文网" type="application/atom+xml">
-  <meta name="description" content="Tag plugins are different from tags in posts. They’re ported from Octopress and can help you insert specific contents in posts quickly.
-Block Quote
-Inserts quotes with author, source and title in post">
+  <meta name="description" content="标签插件与文章中的标签是不同的。他们是从 Octopress 移植过来可以帮助你在文章中插入具体的内容。
+区块引用
+插入引用到文章中，连同作者、来源以及标题。
+别名: quote
+{% blockquote [author[, source]] [link] [source_link_title] %}content{% endblockquote %}
+
+
+例子
+没有参数，输出块引用
+{% bl">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Tag Plugins">
+<meta property="og:title" content="标签插件">
 <meta property="og:url" content="http://www.liuzhixiang.com/hexo_site_cn/hexo_site_cn/docs/tag-plugins.html">
 <meta property="og:site_name" content="Hexo中文网">
-<meta property="og:description" content="Tag plugins are different from tags in posts. They’re ported from Octopress and can help you insert specific contents in posts quickly.
-Block Quote
-Inserts quotes with author, source and title in post">
+<meta property="og:description" content="标签插件与文章中的标签是不同的。他们是从 Octopress 移植过来可以帮助你在文章中插入具体的内容。
+区块引用
+插入引用到文章中，连同作者、来源以及标题。
+别名: quote
+{% blockquote [author[, source]] [link] [source_link_title] %}content{% endblockquote %}
+
+
+例子
+没有参数，输出块引用
+{% bl">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tag Plugins">
-<meta name="twitter:description" content="Tag plugins are different from tags in posts. They’re ported from Octopress and can help you insert specific contents in posts quickly.
-Block Quote
-Inserts quotes with author, source and title in post">
+<meta name="twitter:title" content="标签插件">
+<meta name="twitter:description" content="标签插件与文章中的标签是不同的。他们是从 Octopress 移植过来可以帮助你在文章中插入具体的内容。
+区块引用
+插入引用到文章中，连同作者、来源以及标题。
+别名: quote
+{% blockquote [author[, source]] [link] [source_link_title] %}content{% endblockquote %}
+
+
+例子
+没有参数，输出块引用
+{% bl">
 <meta name="twitter:site" content="@fly2xiang">
 <meta property="fb:admins" content="100000247608790">
 
@@ -98,7 +119,7 @@ Inserts quotes with author, source and title in post">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Tag Plugins</h1>
+        <h1 id="page-title" itemprop="name">标签插件</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/tag-plugins.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -108,18 +129,18 @@ Inserts quotes with author, source and title in post">
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Block_Quote"><span class="toc-number">1.</span> <span class="toc-text">Block Quote</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.1.</span> <span class="toc-text">Example</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code_Block"><span class="toc-number">2.</span> <span class="toc-text">Code Block</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-1"><span class="toc-number">2.1.</span> <span class="toc-text">Example</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Backtick_Code_Block"><span class="toc-number">3.</span> <span class="toc-text">Backtick Code Block</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pull_Quote"><span class="toc-number">4.</span> <span class="toc-text">Pull Quote</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jsFiddle"><span class="toc-number">5.</span> <span class="toc-text">jsFiddle</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Gist"><span class="toc-number">6.</span> <span class="toc-text">Gist</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#iframe"><span class="toc-number">7.</span> <span class="toc-text">iframe</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Image"><span class="toc-number">8.</span> <span class="toc-text">Image</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Link"><span class="toc-number">9.</span> <span class="toc-text">Link</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Include_Code"><span class="toc-number">10.</span> <span class="toc-text">Include Code</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Youtube"><span class="toc-number">11.</span> <span class="toc-text">Youtube</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vimeo"><span class="toc-number">12.</span> <span class="toc-text">Vimeo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Raw"><span class="toc-number">13.</span> <span class="toc-text">Raw</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#区块引用"><span class="toc-number">1.</span> <span class="toc-text">区块引用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#例子"><span class="toc-number">1.1.</span> <span class="toc-text">例子</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码块"><span class="toc-number">2.</span> <span class="toc-text">代码块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#例子-1"><span class="toc-number">2.1.</span> <span class="toc-text">例子</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#反引号代码块"><span class="toc-number">3.</span> <span class="toc-text">反引号代码块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pull_Quote"><span class="toc-number">4.</span> <span class="toc-text">Pull Quote</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jsFiddle"><span class="toc-number">5.</span> <span class="toc-text">jsFiddle</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Gist"><span class="toc-number">6.</span> <span class="toc-text">Gist</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#iframe"><span class="toc-number">7.</span> <span class="toc-text">iframe</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图片"><span class="toc-number">8.</span> <span class="toc-text">图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#链接"><span class="toc-number">9.</span> <span class="toc-text">链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#包含代码"><span class="toc-number">10.</span> <span class="toc-text">包含代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Youtube"><span class="toc-number">11.</span> <span class="toc-text">Youtube</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vimeo"><span class="toc-number">12.</span> <span class="toc-text">Vimeo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#原始内容"><span class="toc-number">13.</span> <span class="toc-text">原始内容</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <p>Tag plugins are different from tags in posts. They’re ported from Octopress and can help you insert specific contents in posts quickly.</p>
-<h2 id="Block_Quote">Block Quote</h2>
-<p>Inserts quotes with author, source and title in posts.</p>
-<p><strong>Alias:</strong> quote</p>
+        <p>标签插件与文章中的标签是不同的。他们是从 Octopress 移植过来可以帮助你在文章中插入具体的内容。</p>
+<h2 id="区块引用">区块引用</h2>
+<p>插入引用到文章中，连同作者、来源以及标题。</p>
+<p><strong>别名:</strong> quote</p>
 <figure class="highlight"><pre>{% blockquote [author[, source]] [link] [source_link_title] %}<br>content<br>{% endblockquote %}<br></pre></figure>
 
 
-<h3 id="Example">Example</h3>
-<p><strong>No arguments given. Only output plain blockquote</strong></p>
+<h3 id="例子">例子</h3>
+<p><strong>没有参数，输出块引用</strong></p>
 <figure class="highlight"><pre>{% blockquote %}<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.<br>{% endblockquote %}<br></pre></figure>
 
 
@@ -129,7 +150,7 @@ Inserts quotes with author, source and title in post">
 </blockquote>
 
 
-<p><strong>Quote from a book</strong></p>
+<p><strong>引用一本书中的段落</strong></p>
 <figure class="highlight"><pre>{% blockquote David Levithan, Wide Awake %}<br>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.<br>{% endblockquote %}<br></pre></figure>
 
 
@@ -139,7 +160,7 @@ Inserts quotes with author, source and title in post">
 <footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
 
 
-<p><strong>Quote from Twitter</strong></p>
+<p><strong>引用 Twitter 内容</strong></p>
 <figure class="highlight"><pre>{% blockquote @DevDocs <a href="https://twitter.com/devdocs/status/356095192085962752" target="_blank" rel="external">https://twitter.com/devdocs/status/356095192085962752</a> %}<br>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io" target="_blank" rel="external">http://devdocs.io</a><br>{% endblockquote %}<br></pre></figure>
 
 
@@ -149,7 +170,7 @@ Inserts quotes with author, source and title in post">
 <footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752" target="_blank" rel="external">twitter.com/devdocs/status/&hellip;</a></cite></footer></blockquote>
 
 
-<p><strong>Quote from an article on the web</strong></p>
+<p><strong>引用网上的一篇文章</strong></p>
 <figure class="highlight"><pre>{% blockquote Seth Godin <a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="external">http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html</a> Welcome to Island Marketing %}<br>Every interaction is both precious and an opportunity to delight.<br>{% endblockquote %}<br></pre></figure>
 
 
@@ -159,100 +180,100 @@ Inserts quotes with author, source and title in post">
 <footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="external">Welcome to Island Marketing</a></cite></footer></blockquote>
 
 
-<h2 id="Code_Block">Code Block</h2>
-<p>Inserts code snippets in posts.</p>
-<p><strong>Alias:</strong> code</p>
+<h2 id="代码块">代码块</h2>
+<p>在文章中插入代码块</p>
+<p><strong>别名:</strong> code</p>
 <figure class="highlight"><pre>{% codeblock [title] [lang:language] [url] [link text] %}<br>code snippet<br>{% endcodeblock %}<br></pre></figure>
 
 
-<h3 id="Example-1">Example</h3>
-<p><strong>A normal code block</strong></p>
+<h3 id="例子-1">例子</h3>
+<p><strong>一般的代码块</strong></p>
 <figure class="highlight"><pre>{% codeblock %}<br>alert(‘Hello World!’);<br>{% endcodeblock %}<br></pre></figure>
 
 
 <figure class="highlight"><pre><div class="line">alert(<span class="string">'Hello World!'</span>);</div></pre></figure>
 
-<p><strong>Specify language</strong></p>
+<p><strong>指定语言的代码块</strong></p>
 <figure class="highlight"><pre>{% codeblock lang:objc %}<br>[rectangle setX: 10 y: 10 width: 20 height: 20];<br>{% endcodeblock %}<br></pre></figure>
 
 
 <figure class="highlight objc"><pre><div class="line">[rectangle setX: <span class="number">10</span> y: <span class="number">10</span> width: <span class="number">20</span> height: <span class="number">20</span>];</div></pre></figure>
 
-<p><strong>Add caption to code block</strong></p>
+<p><strong>带标题的代码块</strong></p>
 <figure class="highlight"><pre>{% codeblock Array.map %}<br>array.map(callback[, thisArg])<br>{% endcodeblock %}<br></pre></figure>
 
 
 <figure class="highlight"><figcaption><span>Array.map</span></figcaption><pre><div class="line"><span class="keyword">array</span>.<span class="keyword">map</span>(callback[, thisArg])</div></pre></figure>
 
-<p><strong>Add caption with an optional URL</strong></p>
+<p><strong>带 URL 的代码块</strong></p>
 <figure class="highlight"><pre>{% codeblock <em>.compact <a href="http://underscorejs.org/#compact" target="_blank" rel="external">http://underscorejs.org/#compact</a> Underscore.js %}
 </em>.compact([0, 1, false, 2, ‘’, 3]);<br>=&gt; [1, 2, 3]<br>{% endcodeblock %}<br></pre></figure>
 
 
 <figure class="highlight"><figcaption><span>_.compact</span><a href="http://underscorejs.org/#compact" target="_blank" rel="external">Underscore.js</a></figcaption><pre><div class="line"><span class="number">_</span>.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="keyword">false</span>, <span class="number">2</span>, <span class="string">''</span>, <span class="number">3</span>]);</div><div class="line"><span class="output"><span class="status">=&gt;</span> [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span></div></pre></figure>
 
-<h2 id="Backtick_Code_Block">Backtick Code Block</h2>
-<p>This plugin is same as code block, but in backtick style.</p>
+<h2 id="反引号代码块">反引号代码块</h2>
+<p>这个插件是一个类似的代码块，只是使用单引号样式。</p>
 <figure class="highlight"><pre><div class="line">``` <span class="attr_selector">[language]</span> <span class="attr_selector">[title]</span> <span class="attr_selector">[url]</span> <span class="attr_selector">[link text]</span></div><div class="line"><span class="tag">code</span> <span class="tag">snippet</span></div><div class="line">```</div></pre></figure>
 
 <h2 id="Pull_Quote">Pull Quote</h2>
-<p>This plugin helps you insert a pull quote in posts.</p>
+<p>这个插件帮助你在文章中插入一个 pull quote。</p>
 <figure class="highlight"><pre>{% pullquote [class] %}<br>content<br>{% endpullquote %}<br></pre></figure>
 
 
 <h2 id="jsFiddle">jsFiddle</h2>
-<p>Embeds jsFiddle snippets in posts.</p>
+<p>在文章中嵌入一段 jsFiddle 片段。</p>
 <figure class="highlight"><pre>{% jsfiddle shorttag [tabs] [skin] [width] [height] %}<br></pre></figure>
 
 
 <h2 id="Gist">Gist</h2>
-<p>Embeds Gist snippets in posts.</p>
+<p>在文章中嵌入一段 Gist 片段。</p>
 <figure class="highlight"><pre>{% gist gist_id [filename] %}<br></pre></figure>
 
 
 <h2 id="iframe">iframe</h2>
-<p>Embeds an iframe in posts.</p>
+<p>在文章中嵌入 iframe 片段。</p>
 <figure class="highlight"><pre>{% iframe url [width] [height] %}<br></pre></figure>
 
 
-<h2 id="Image">Image</h2>
-<p>Inserts an image in posts with specified size.</p>
+<h2 id="图片">图片</h2>
+<p>在文章中插入指定大小的图片。</p>
 <figure class="highlight"><pre>{% img [class names] /path/to/image [width] [height] [title text [alt text]] %}<br></pre></figure>
 
 
-<h2 id="Link">Link</h2>
-<p>Inserts a link with <code>target=&quot;_blank&quot;</code> attribute.</p>
+<h2 id="链接">链接</h2>
+<p>插入一个包含 <code>target=&quot;_blank&quot;</code> 属性的链接。</p>
 <figure class="highlight"><pre>{% link text url [external] [title] %}<br></pre></figure>
 
 
-<h2 id="Include_Code">Include Code</h2>
-<p>Inserts code snippets in <code>source</code> folder.</p>
+<h2 id="包含代码">包含代码</h2>
+<p>插入 <code>source</code> 文件夹中的代码片段。</p>
 <figure class="highlight"><pre>{% include_code [title] [lang:language] path/to/file %}<br></pre></figure>
 
 
 <h2 id="Youtube">Youtube</h2>
-<p>Inserts a Youtube video in posts.</p>
+<p>在文章中插入一个 Youtube 视频。</p>
 <figure class="highlight"><pre>{% youtube video_id %}<br></pre></figure>
 
 
 <h2 id="Vimeo">Vimeo</h2>
-<p>Inserts a Vimeo video in posts.</p>
+<p>在文章中插入一个 Vimeo 视频。</p>
 <figure class="highlight"><pre>{% vimeo video_id %}<br></pre></figure>
 
 
-<h2 id="Raw">Raw</h2>
-<p>If there’re some contents can’t be processed in posts, you can wrapped it with <code>rawblock</code> tag.</p>
+<h2 id="原始内容">原始内容</h2>
+<p>如果你不想让一些内容被处理，你可以用 <code>rawblock</code> 标签包裹。</p>
 <figure class="highlight"><pre>{% rawblock %}<br>content<br>{% endrawblock /%}<br></pre></figure>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-12-22T09:12:17.000Z" itemprop="dateModified">Last updated: Dec 22 2014</time>
+        <time id="page-footer-updated" datetime="2014-12-25T08:11:48.000Z" itemprop="dateModified">Last updated: Dec 25 2014</time>
         <a href="generating.html" id="page-footer-prev" title="生成">Prev</a><a href="server.html" id="page-footer-next" title="服务器">Next</a>
       </footer>
       
 <section id="comments">
 <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="docs/tag-plugins.html" data-title="Tag Plugins" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/tag-plugins.html"></div>
+    <div class="ds-thread" data-thread-key="docs/tag-plugins.html" data-title="标签插件" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/tag-plugins.html"></div>
 <!-- 多说评论框 end -->
 </section>
 

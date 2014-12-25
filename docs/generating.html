@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Generating | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
+  <title>生成 | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://www.liuzhixiang.com/hexo_site_cn/docs/generating.html">
   <link rel="apple-touch-icon" sizes="57x57" href="/hexo_site_cn/apple-touch-icon-57x57.png">
@@ -25,36 +25,60 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/hexo_site_cn/atom.xml" title="Hexo中文网" type="application/atom+xml">
-  <meta name="description" content="Generate static files with Hexo is quite easy and fast.
+  <meta name="description" content="使用 Hexo 生成静态文件是相当简单与快速的。
 $ hexo generate
 
-Watch for File Changes
-Hexo can watch for file changes and regenerate files immediately.
+监控文件修改
+Hexo 可以监控文件修改并马上重新生成。
 $ hexo generate --watch
 
-Restart Hexo">
+在更改配置文件后重启 Hexo
+
+Hexo 不能监控配置文件的更改。你必须重启 Hexo 来保证新的配置有效果。
+
+
+
+生成后发布
+想要在生成后发布，你可以运行下面命令中的任何一个，效果都是相同的。
+$ he">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Generating">
+<meta property="og:title" content="生成">
 <meta property="og:url" content="http://www.liuzhixiang.com/hexo_site_cn/hexo_site_cn/docs/generating.html">
 <meta property="og:site_name" content="Hexo中文网">
-<meta property="og:description" content="Generate static files with Hexo is quite easy and fast.
+<meta property="og:description" content="使用 Hexo 生成静态文件是相当简单与快速的。
 $ hexo generate
 
-Watch for File Changes
-Hexo can watch for file changes and regenerate files immediately.
+监控文件修改
+Hexo 可以监控文件修改并马上重新生成。
 $ hexo generate --watch
 
-Restart Hexo">
+在更改配置文件后重启 Hexo
+
+Hexo 不能监控配置文件的更改。你必须重启 Hexo 来保证新的配置有效果。
+
+
+
+生成后发布
+想要在生成后发布，你可以运行下面命令中的任何一个，效果都是相同的。
+$ he">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Generating">
-<meta name="twitter:description" content="Generate static files with Hexo is quite easy and fast.
+<meta name="twitter:title" content="生成">
+<meta name="twitter:description" content="使用 Hexo 生成静态文件是相当简单与快速的。
 $ hexo generate
 
-Watch for File Changes
-Hexo can watch for file changes and regenerate files immediately.
+监控文件修改
+Hexo 可以监控文件修改并马上重新生成。
 $ hexo generate --watch
 
-Restart Hexo">
+在更改配置文件后重启 Hexo
+
+Hexo 不能监控配置文件的更改。你必须重启 Hexo 来保证新的配置有效果。
+
+
+
+生成后发布
+想要在生成后发布，你可以运行下面命令中的任何一个，效果都是相同的。
+$ he">
 <meta name="twitter:site" content="@fly2xiang">
 <meta property="fb:admins" content="100000247608790">
 
@@ -113,7 +137,7 @@ Restart Hexo">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Generating</h1>
+        <h1 id="page-title" itemprop="name">生成</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/generating.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -123,36 +147,36 @@ Restart Hexo">
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Watch_for_File_Changes"><span class="toc-number">1.</span> <span class="toc-text">Watch for File Changes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_After_Generating"><span class="toc-number">2.</span> <span class="toc-text">Deploy After Generating</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#监控文件修改"><span class="toc-number">1.</span> <span class="toc-text">监控文件修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生成后发布"><span class="toc-number">2.</span> <span class="toc-text">生成后发布</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <p>Generate static files with Hexo is quite easy and fast.</p>
+        <p>使用 Hexo 生成静态文件是相当简单与快速的。</p>
 <figure class="highlight bash"><pre><div class="line">$ hexo generate</div></pre></figure>
 
-<h3 id="Watch_for_File_Changes">Watch for File Changes</h3>
-<p>Hexo can watch for file changes and regenerate files immediately.</p>
+<h3 id="监控文件修改">监控文件修改</h3>
+<p>Hexo 可以监控文件修改并马上重新生成。</p>
 <figure class="highlight bash"><pre><div class="line">$ hexo generate --watch</div></pre></figure>
 
-<blockquote class="note info"><strong class="note-title">Restart Hexo after configuration changed</strong>
+<blockquote class="note info"><strong class="note-title">在更改配置文件后重启 Hexo</strong>
 
-<p>Hexo doesn’t watch for configuration file changes. You have to restart Hexo to make the new configurations take effects.</p>
+<p>Hexo 不能监控配置文件的更改。你必须重启 Hexo 来保证新的配置有效果。</p>
 </blockquote>
 
 
-<h3 id="Deploy_After_Generating">Deploy After Generating</h3>
-<p>To deploy after generating, you can run one of the following commands. Both of them are equaled.</p>
+<h3 id="生成后发布">生成后发布</h3>
+<p>想要在生成后发布，你可以运行下面命令中的任何一个，效果都是相同的。</p>
 <figure class="highlight bash"><pre><div class="line">$ hexo generate --deploy</div><div class="line">$ hexo deploy --generate</div></pre></figure>
 
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-12-22T09:12:17.000Z" itemprop="dateModified">Last updated: Dec 22 2014</time>
+        <time id="page-footer-updated" datetime="2014-12-25T07:54:04.000Z" itemprop="dateModified">Last updated: Dec 25 2014</time>
         <a href="drafts.html" id="page-footer-prev" title="草稿">Prev</a><a href="tag-plugins.html" id="page-footer-next" title="标签插件">Next</a>
       </footer>
       
 <section id="comments">
 <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="docs/generating.html" data-title="Generating" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/generating.html"></div>
+    <div class="ds-thread" data-thread-key="docs/generating.html" data-title="生成" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/generating.html"></div>
 <!-- 多说评论框 end -->
 </section>
 

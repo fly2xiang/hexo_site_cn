@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Deployment | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
+  <title>发布 | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://www.liuzhixiang.com/hexo_site_cn/docs/deployment.html">
   <link rel="apple-touch-icon" sizes="57x57" href="/hexo_site_cn/apple-touch-icon-57x57.png">
@@ -25,45 +25,66 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/hexo_site_cn/atom.xml" title="Hexo中文网" type="application/atom+xml">
-  <meta name="description" content="To deploy your site with Hexo, you only need one command.
+  <meta name="description" content="发布 Hexo 网站，你只需要一条命令。
 $ hexo deploy
 
-GitHub Pages
-Edit _config.yml.
+发布到 GitHub Pages
+编辑 _config.yml.
 deploy:  type: github  repo: &lt;repository url&gt;  branch: [branch]  message: [message]
 
 
 
 
-Op">
+配置项
+描述
+
+
+
+
+repo, repository
+GitHub 仓库">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Deployment">
+<meta property="og:title" content="发布">
 <meta property="og:url" content="http://www.liuzhixiang.com/hexo_site_cn/hexo_site_cn/docs/deployment.html">
 <meta property="og:site_name" content="Hexo中文网">
-<meta property="og:description" content="To deploy your site with Hexo, you only need one command.
+<meta property="og:description" content="发布 Hexo 网站，你只需要一条命令。
 $ hexo deploy
 
-GitHub Pages
-Edit _config.yml.
+发布到 GitHub Pages
+编辑 _config.yml.
 deploy:  type: github  repo: &lt;repository url&gt;  branch: [branch]  message: [message]
 
 
 
 
-Op">
+配置项
+描述
+
+
+
+
+repo, repository
+GitHub 仓库">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Deployment">
-<meta name="twitter:description" content="To deploy your site with Hexo, you only need one command.
+<meta name="twitter:title" content="发布">
+<meta name="twitter:description" content="发布 Hexo 网站，你只需要一条命令。
 $ hexo deploy
 
-GitHub Pages
-Edit _config.yml.
+发布到 GitHub Pages
+编辑 _config.yml.
 deploy:  type: github  repo: &lt;repository url&gt;  branch: [branch]  message: [message]
 
 
 
 
-Op">
+配置项
+描述
+
+
+
+
+repo, repository
+GitHub 仓库">
 <meta name="twitter:site" content="@fly2xiang">
 <meta property="fb:admins" content="100000247608790">
 
@@ -122,7 +143,7 @@ Op">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Deployment</h1>
+        <h1 id="page-title" itemprop="name">发布</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/deployment.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -132,135 +153,135 @@ Op">
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub_Pages"><span class="toc-number">1.</span> <span class="toc-text">GitHub Pages</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Remove"><span class="toc-number">1.1.</span> <span class="toc-text">Remove</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Custom_Domain"><span class="toc-number">1.2.</span> <span class="toc-text">Custom Domain</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Heroku"><span class="toc-number">2.</span> <span class="toc-text">Heroku</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Remove-1"><span class="toc-number">2.1.</span> <span class="toc-text">Remove</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Rsync"><span class="toc-number">3.</span> <span class="toc-text">Rsync</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OpenShift_DIY_Cartridge"><span class="toc-number">4.</span> <span class="toc-text">OpenShift DIY Cartridge</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-number">5.</span> <span class="toc-text">Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Batch_Deploy"><span class="toc-number">6.</span> <span class="toc-text">Batch Deploy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Commit_message"><span class="toc-number">7.</span> <span class="toc-text">Commit message</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Other_Methods"><span class="toc-number">8.</span> <span class="toc-text">Other Methods</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#发布到_GitHub_Pages"><span class="toc-number">1.</span> <span class="toc-text">发布到 GitHub Pages</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#移除"><span class="toc-number">1.1.</span> <span class="toc-text">移除</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义域名"><span class="toc-number">1.2.</span> <span class="toc-text">自定义域名</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#发布到_Heroku"><span class="toc-number">2.</span> <span class="toc-text">发布到 Heroku</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#移除-1"><span class="toc-number">2.1.</span> <span class="toc-text">移除</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#发布到_Rsync"><span class="toc-number">3.</span> <span class="toc-text">发布到 Rsync</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#发布到_OpenShift_DIY_Cartridge"><span class="toc-number">4.</span> <span class="toc-text">发布到 OpenShift DIY Cartridge</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#发布到_Git"><span class="toc-number">5.</span> <span class="toc-text">发布到 Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#批量部署"><span class="toc-number">6.</span> <span class="toc-text">批量部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#提交信息"><span class="toc-number">7.</span> <span class="toc-text">提交信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他方法"><span class="toc-number">8.</span> <span class="toc-text">其他方法</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <p>To deploy your site with Hexo, you only need one command.</p>
+        <p>发布 Hexo 网站，你只需要一条命令。</p>
 <figure class="highlight bash"><pre><div class="line">$ hexo deploy</div></pre></figure>
 
-<h2 id="GitHub_Pages">GitHub Pages</h2>
-<p>Edit <code>_config.yml</code>.</p>
+<h2 id="发布到_GitHub_Pages">发布到 GitHub Pages</h2>
+<p>编辑 <code>_config.yml</code>.</p>
 <figure class="highlight yaml"><pre><div class="line">deploy:</div><div class="line">  <span class="keyword">type</span>: github</div><div class="line">  repo: &lt;repository url&gt;</div><div class="line">  branch: [branch]</div><div class="line">  <span class="keyword">message</span>: [<span class="keyword">message</span>]</div></pre></figure>
 
 <table>
 <thead>
 <tr>
-<th>Option</th>
-<th>Description</th>
+<th>配置项</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>repo</code>, <code>repository</code></td>
-<td>GitHub repository URL (Better to use HTTPS)</td>
+<td>GitHub 仓库的地址 URL (最好使用 HTTPS)</td>
 </tr>
 <tr>
 <td><code>branch</code></td>
-<td>The deployer will detect the branch to use automatically. You can also customize it on your own.</td>
+<td>发布器会自动检测正确的分支，你也可以自定义分支。</td>
 </tr>
 <tr>
 <td><code>message</code></td>
-<td>Customize commit message (Default is <code>Site updated: {{ now(&#39;YYYY-MM-DD HH:mm:ss&#39;) }}</code>)</td>
+<td>自定义提交信息 (默认是 <code>Site updated: {{ now(&#39;YYYY-MM-DD HH:mm:ss&#39;) }}</code>)</td>
 </tr>
 </tbody>
 </table>
-<h3 id="Remove">Remove</h3>
-<p>Remove <code>.deploy</code> folder.</p>
+<h3 id="移除">移除</h3>
+<p>移除 <code>.deploy</code> 文件夹。</p>
 <figure class="highlight bash"><pre><div class="line">$ rm -rf .deploy</div></pre></figure>
 
-<h3 id="Custom_Domain">Custom Domain</h3>
-<p>Create a file named <code>CNAME</code> in <code>source</code> folder with the following content.</p>
+<h3 id="自定义域名">自定义域名</h3>
+<p>在 <code>source</code> 文件夹下创建一个 <code>CNAME</code> 文件，填入以下内容。</p>
 <figure class="highlight plain"><pre><div class="line">example.com</div></pre></figure>
 
 <ul>
-<li><strong>Top-level Domain:</strong> Add A records: <code>192.30.252.153</code>, <code>192.30.252.154</code>.</li>
-<li><strong>Subdomain</strong>: Add a CNAME record <code>blog.example.com</code>.</li>
+<li><strong>顶级域名:</strong> 添加一个 A 记录: <code>192.30.252.153</code>, <code>192.30.252.154</code>.</li>
+<li><strong>子域名</strong>: 添加一个 CNAME 记录： <code>blog.example.com</code>.</li>
 </ul>
-<p>Check <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages" target="_blank" rel="external">GitHub Pages</a> for more info.</p>
-<h2 id="Heroku">Heroku</h2>
-<p>Edit <code>_config.yml</code>.</p>
+<p>查看 <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages" target="_blank" rel="external">GitHub Pages</a> 获得更多信息。</p>
+<h2 id="发布到_Heroku">发布到 Heroku</h2>
+<p>编辑 <code>_config.yml</code>.</p>
 <figure class="highlight yaml"><pre><div class="line">deploy:</div><div class="line">  <span class="keyword">type</span>: heroku</div><div class="line">  repo: &lt;repository url&gt;</div><div class="line">  <span class="keyword">message</span>: [<span class="keyword">message</span>]</div></pre></figure>
 
 <table>
 <thead>
 <tr>
-<th>Option</th>
-<th>Description</th>
+<th>配置项</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>repo</code>, <code>repository</code></td>
-<td>Heroku repository URL</td>
+<td>Heroku 仓库 URL</td>
 </tr>
 <tr>
 <td><code>message</code></td>
-<td>Customize commit message (Default is <code>Site updated: {{ now(&#39;YYYY-MM-DD HH:mm:ss&#39;) }}</code>)</td>
+<td>自定义提交信息 (Default is <code>Site updated: {{ now(&#39;YYYY-MM-DD HH:mm:ss&#39;) }}</code>)</td>
 </tr>
 </tbody>
 </table>
-<h3 id="Remove-1">Remove</h3>
-<p>Remove <code>.git</code>, <code>app.js</code> &amp; <code>Procfile</code>.</p>
-<h2 id="Rsync">Rsync</h2>
-<p>Edit <code>_config.yml</code>.</p>
+<h3 id="移除-1">移除</h3>
+<p>移除 <code>.git</code>, <code>app.js</code> 和 <code>Procfile</code>.</p>
+<h2 id="发布到_Rsync">发布到 Rsync</h2>
+<p>编辑 <code>_config.yml</code>.</p>
 <figure class="highlight yaml"><pre><div class="line">deploy:</div><div class="line">  type: rsync</div><div class="line">  host: &lt;host&gt;</div><div class="line">  <span class="literal">user</span>: &lt;<span class="literal">user</span>&gt;</div><div class="line">  root: &lt;root&gt;</div><div class="line">  port: [port]</div><div class="line">  delete: [<span class="literal">true</span>|<span class="literal">false</span>]</div><div class="line">  verbose: [<span class="literal">true</span>|<span class="literal">false</span>]</div><div class="line">  ignore_errors: [<span class="literal">true</span>|<span class="literal">false</span>]</div></pre></figure>
 
 <table>
 <thead>
 <tr>
-<th>Option</th>
-<th>Description</th>
-<th>Default</th>
+<th>配置项</th>
+<th>描述</th>
+<th>默认值</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>host</code></td>
-<td>Address of remote host</td>
+<td>远端主机地址</td>
 <td></td>
 </tr>
 <tr>
 <td><code>user</code></td>
-<td>Username</td>
+<td>用户名</td>
 <td></td>
 </tr>
 <tr>
 <td><code>root</code></td>
-<td>Root directory of remote host</td>
+<td>远端主机的根目录</td>
 <td></td>
 </tr>
 <tr>
 <td><code>port</code></td>
-<td>Port</td>
+<td>端口</td>
 <td>22</td>
 </tr>
 <tr>
 <td><code>delete</code></td>
-<td>Delete old files on remote host</td>
+<td>删除远端主机的旧文件</td>
 <td>true</td>
 </tr>
 <tr>
 <td><code>verbose</code></td>
-<td>Display verbose messages</td>
+<td>显示详细信息</td>
 <td>true</td>
 </tr>
 <tr>
 <td><code>ignore_errors</code></td>
-<td>Ignore errors</td>
+<td>忽略错误</td>
 <td>false</td>
 </tr>
 </tbody>
 </table>
-<h2 id="OpenShift_DIY_Cartridge">OpenShift DIY Cartridge</h2>
-<p>Edit <code>_config.yml</code>.</p>
+<h2 id="发布到_OpenShift_DIY_Cartridge">发布到 OpenShift DIY Cartridge</h2>
+<p>编辑 <code>_config.yml</code>.</p>
 <figure class="highlight yaml"><pre><div class="line">deploy:</div><div class="line">  <span class="keyword">type</span>: openshift</div><div class="line">  remote: &lt;upstream git remote&gt;</div><div class="line">  branch: [upstream git branch] # <span class="keyword">Default</span> <span class="keyword">is</span> master</div></pre></figure>
 
 <table>
 <thead>
 <tr>
-<th>Option</th>
-<th>Description</th>
-<th>Default</th>
+<th>配置项</th>
+<th>描述</th>
+<th>默认值</th>
 </tr>
 </thead>
 <tbody>
@@ -276,55 +297,55 @@ Op">
 </tr>
 </tbody>
 </table>
-<h2 id="Git">Git</h2>
-<p>Edit <code>_config.yml</code>.</p>
+<h2 id="发布到_Git">发布到 Git</h2>
+<p>编辑 <code>_config.yml</code>.</p>
 <figure class="highlight yaml"><pre><div class="line"><span class="tag">deploy</span>:</div><div class="line">  <span class="tag">type</span>: <span class="tag">git</span></div><div class="line">  <span class="tag">message</span>: <span class="attr_selector">[message]</span></div><div class="line">  <span class="tag">repo</span>:</div><div class="line">    <span class="tag">github</span>: &lt;<span class="tag">repository</span> <span class="tag">url</span>&gt;,<span class="attr_selector">[branch]</span></div><div class="line">    <span class="tag">gitcafe</span>: &lt;<span class="tag">repository</span> <span class="tag">url</span>&gt;,<span class="attr_selector">[branch]</span></div></pre></figure>
 
 <table>
 <thead>
 <tr>
-<th>Option</th>
-<th>Description</th>
+<th>配置项</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>repo</code>, <code>repository</code></td>
-<td>Repository URL and branch. Separated with a comma (<code>,</code>). The branch is <code>master</code> by default.</td>
+<td>仓库 URL 和分支. 使用逗号分割 (<code>,</code>) 。 默认是 <code>master</code> 分支。</td>
 </tr>
 <tr>
 <td><code>message</code></td>
-<td>Customize commit message (Default is <code>Site updated:</code>)</td>
+<td>自定义提交信息 (默认是 <code>Site updated:</code>)</td>
 </tr>
 </tbody>
 </table>
-<h2 id="Batch_Deploy">Batch Deploy</h2>
-<p>You can deploy your site to multiple destinations.</p>
+<h2 id="批量部署">批量部署</h2>
+<p>你可以将你的网站部署到多个目标。</p>
 <figure class="highlight yaml"><pre><div class="line">deploy:</div><div class="line">- type: github</div><div class="line">  repo: <span class="keyword">...</span></div><div class="line">- type: heroku</div><div class="line">  repo: <span class="keyword">...</span></div></pre></figure>
 
-<h2 id="Commit_message">Commit message</h2>
-<p>You can customize commit message in <strong>github</strong>, <strong>heroku</strong>, <strong>git</strong> deployer.</p>
-<p>Swig is availble in commit message. You can use <code>now(format)</code> to display deployment time. For example, the default message is <code>Site updated: {{ now(&#39;YYYY-MM-DD HH:mm:ss&#39;) }}</code>:</p>
+<h2 id="提交信息">提交信息</h2>
+<p>你可以在 <strong>github</strong>, <strong>heroku</strong>, <strong>git</strong> 发布器中自定义提交信息.</p>
+<p>提交信息是支持 Swig 的。 你可以使用 <code>now(format)</code> 来显示部署时间。例如，默认的提交信息是 <code>Site updated: {{ now(&#39;YYYY-MM-DD HH:mm:ss&#39;) }}</code>:</p>
 <figure class="highlight js"><pre><div class="line">Site updated: {{ now(<span class="string">'YYYY-MM-DD HH:mm:ss'</span>) }}</div><div class="line"><span class="comment">// Site updated: 2014-05-12 00:02:25</span></div></pre></figure>
 
-<p>Commit message can be set either in shell</p>
+<p>提交信息也可以在终端中设置</p>
 <figure class="highlight bash"><pre><div class="line">$ hexo deploy -m <span class="string">"Commit message"</span></div></pre></figure>
 
-<p>or in <code>_config.yml</code>.</p>
+<p>或者在 <code>_config.yml</code> 中。</p>
 <figure class="highlight yaml"><pre><div class="line">deploy:</div><div class="line">  type: github</div><div class="line">  repo: <span class="keyword">...</span></div><div class="line">  message: <span class="string">"Commit message"</span></div></pre></figure>
 
-<h2 id="Other_Methods">Other Methods</h2>
-<p>All generated files are saved in <code>public</code> folder. You can copy it to wherever you like.</p>
+<h2 id="其他方法">其他方法</h2>
+<p>所有的生成的文件被保存在 <code>public</code> 文件夹中。你可以将它拷贝到任何你喜欢的地方。</p>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-12-22T09:12:17.000Z" itemprop="dateModified">Last updated: Dec 22 2014</time>
+        <time id="page-footer-updated" datetime="2014-12-25T08:53:55.000Z" itemprop="dateModified">Last updated: Dec 25 2014</time>
         <a href="server.html" id="page-footer-prev" title="服务器">Prev</a><a href="permalinks.html" id="page-footer-next" title="链接格式">Next</a>
       </footer>
       
 <section id="comments">
 <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="docs/deployment.html" data-title="Deployment" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/deployment.html"></div>
+    <div class="ds-thread" data-thread-key="docs/deployment.html" data-title="发布" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/deployment.html"></div>
 <!-- 多说评论框 end -->
 </section>
 

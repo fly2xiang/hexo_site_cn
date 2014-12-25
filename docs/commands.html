@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Commands | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
+  <title>命令 | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://www.liuzhixiang.com/hexo_site_cn/docs/commands.html">
   <link rel="apple-touch-icon" sizes="57x57" href="/hexo_site_cn/apple-touch-icon-57x57.png">
@@ -28,33 +28,39 @@
   <meta name="description" content="init
 $ hexo init [folder]
 
-Initializes a website. If folder isn’t defined, Hexo will set up the website in the current directory.
+初始化一个网站。如果不提供 folder 参数，Hexo 会在当前目录下初始化一个网站。
 new
 $ hexo new [layout] &lt;title&gt;
 
-Creates a new article. If layou">
+新建一篇文章，如果不提供 layout 参数，会使用 _config.yml 中配置的 default_layout 。如果标题中包含空格，需要使用双引号。
+别名: n
+gene">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Commands">
+<meta property="og:title" content="命令">
 <meta property="og:url" content="http://www.liuzhixiang.com/hexo_site_cn/hexo_site_cn/docs/commands.html">
 <meta property="og:site_name" content="Hexo中文网">
 <meta property="og:description" content="init
 $ hexo init [folder]
 
-Initializes a website. If folder isn’t defined, Hexo will set up the website in the current directory.
+初始化一个网站。如果不提供 folder 参数，Hexo 会在当前目录下初始化一个网站。
 new
 $ hexo new [layout] &lt;title&gt;
 
-Creates a new article. If layou">
+新建一篇文章，如果不提供 layout 参数，会使用 _config.yml 中配置的 default_layout 。如果标题中包含空格，需要使用双引号。
+别名: n
+gene">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Commands">
+<meta name="twitter:title" content="命令">
 <meta name="twitter:description" content="init
 $ hexo init [folder]
 
-Initializes a website. If folder isn’t defined, Hexo will set up the website in the current directory.
+初始化一个网站。如果不提供 folder 参数，Hexo 会在当前目录下初始化一个网站。
 new
 $ hexo new [layout] &lt;title&gt;
 
-Creates a new article. If layou">
+新建一篇文章，如果不提供 layout 参数，会使用 _config.yml 中配置的 default_layout 。如果标题中包含空格，需要使用双引号。
+别名: n
+gene">
 <meta name="twitter:site" content="@fly2xiang">
 <meta property="fb:admins" content="100000247608790">
 
@@ -113,7 +119,7 @@ Creates a new article. If layou">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Commands</h1>
+        <h1 id="page-title" itemprop="name">命令</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/commands.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -123,165 +129,165 @@ Creates a new article. If layou">
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#init"><span class="toc-number">1.</span> <span class="toc-text">init</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#new"><span class="toc-number">2.</span> <span class="toc-text">new</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#generate"><span class="toc-number">3.</span> <span class="toc-text">generate</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#publish"><span class="toc-number">4.</span> <span class="toc-text">publish</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#server"><span class="toc-number">5.</span> <span class="toc-text">server</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#deploy"><span class="toc-number">6.</span> <span class="toc-text">deploy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#render"><span class="toc-number">7.</span> <span class="toc-text">render</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#migrate"><span class="toc-number">8.</span> <span class="toc-text">migrate</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#clean"><span class="toc-number">9.</span> <span class="toc-text">clean</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#list"><span class="toc-number">10.</span> <span class="toc-text">list</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#version"><span class="toc-number">11.</span> <span class="toc-text">version</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Options"><span class="toc-number">12.</span> <span class="toc-text">Options</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Safe_mode"><span class="toc-number">12.1.</span> <span class="toc-text">Safe mode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Debug_mode"><span class="toc-number">12.2.</span> <span class="toc-text">Debug mode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Silent_mode"><span class="toc-number">12.3.</span> <span class="toc-text">Silent mode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Customize_config_file_path"><span class="toc-number">12.4.</span> <span class="toc-text">Customize config file path</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#init"><span class="toc-number">1.</span> <span class="toc-text">init</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#new"><span class="toc-number">2.</span> <span class="toc-text">new</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#generate"><span class="toc-number">3.</span> <span class="toc-text">generate</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#publish"><span class="toc-number">4.</span> <span class="toc-text">publish</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#server"><span class="toc-number">5.</span> <span class="toc-text">server</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#deploy"><span class="toc-number">6.</span> <span class="toc-text">deploy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#render"><span class="toc-number">7.</span> <span class="toc-text">render</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#migrate"><span class="toc-number">8.</span> <span class="toc-text">migrate</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#clean"><span class="toc-number">9.</span> <span class="toc-text">clean</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#list"><span class="toc-number">10.</span> <span class="toc-text">list</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#version"><span class="toc-number">11.</span> <span class="toc-text">version</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参数"><span class="toc-number">12.</span> <span class="toc-text">参数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安全模式"><span class="toc-number">12.1.</span> <span class="toc-text">安全模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#调试模式"><span class="toc-number">12.2.</span> <span class="toc-text">调试模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安静模式"><span class="toc-number">12.3.</span> <span class="toc-text">安静模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义配置文件路径"><span class="toc-number">12.4.</span> <span class="toc-text">自定义配置文件路径</span></a></li></ol></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
         <h2 id="init">init</h2>
 <figure class="highlight bash"><pre><div class="line">$ hexo init [folder]</div></pre></figure>
 
-<p>Initializes a website. If <code>folder</code> isn’t defined, Hexo will set up the website in the current directory.</p>
+<p>初始化一个网站。如果不提供 <code>folder</code> 参数，Hexo 会在当前目录下初始化一个网站。</p>
 <h2 id="new">new</h2>
 <figure class="highlight bash"><pre><div class="line">$ hexo new [layout] &lt;title&gt;</div></pre></figure>
 
-<p>Creates a new article. If <code>layout</code> isn’t defined, it’ll equal the <code>default_layout</code> setting in <a href="configuration.html">_config.yml</a>. If the title is more than one word, wrap it with quotation marks.</p>
-<p><strong>Alias:</strong> n</p>
+<p>新建一篇文章，如果不提供 <code>layout</code> 参数，会使用 <a href="configuration.html">_config.yml</a> 中配置的 <code>default_layout</code> 。如果标题中包含空格，需要使用双引号。</p>
+<p><strong>别名:</strong> n</p>
 <h2 id="generate">generate</h2>
 <figure class="highlight bash"><pre><div class="line">$ hexo generate</div></pre></figure>
 
-<p>Generates static files.</p>
-<p><strong>Alias</strong>: g</p>
+<p>生成静态文件。</p>
+<p><strong>别名</strong>: g</p>
 <table>
 <thead>
 <tr>
-<th>Option</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>-d</code>, <code>--deploy</code></td>
-<td>Deploy after generate done</td>
+<td>生成后部署</td>
 </tr>
 <tr>
 <td><code>-w</code>, <code>--watch</code></td>
-<td>Watch file changes</td>
+<td>监控文件修改</td>
 </tr>
 </tbody>
 </table>
 <h2 id="publish">publish</h2>
 <figure class="highlight bash"><pre><div class="line">$ hexo publish [layout] &lt;filename&gt;</div></pre></figure>
 
-<p>Publishes a draft.</p>
-<p><strong>Alias</strong>: p</p>
+<p>发布一个草稿。</p>
+<p><strong>别名</strong>: p</p>
 <h2 id="server">server</h2>
 <figure class="highlight bash"><pre><div class="line">$ hexo server</div></pre></figure>
 
-<p>Starts server.</p>
-<p><strong>Alias:</strong> s</p>
+<p>启动服务器。</p>
+<p><strong>别名:</strong> s</p>
 <table>
 <thead>
 <tr>
-<th>Option</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>-p</code>, <code>--port</code></td>
-<td>Override default port</td>
+<td>覆盖默认端口</td>
 </tr>
 <tr>
 <td><code>-s</code>, <code>--static</code></td>
-<td>Only serve static files</td>
+<td>只使用静态文件</td>
 </tr>
 <tr>
 <td><code>-l</code>, <code>--log</code></td>
-<td>Enable logger. Override logger format.</td>
+<td>开启日志，覆盖默认的日志格式</td>
 </tr>
 <tr>
 <td><code>-d</code>, <code>--drafts</code></td>
-<td>Serve drafts as normal posts.</td>
+<td>将草稿显示为文章</td>
 </tr>
 </tbody>
 </table>
 <h2 id="deploy">deploy</h2>
 <figure class="highlight bash"><pre><div class="line">$ hexo deploy</div></pre></figure>
 
-<p>Deploys your website.</p>
-<p><strong>Alias:</strong> d</p>
+<p>部署网站。</p>
+<p><strong>别名:</strong> d</p>
 <table>
 <thead>
 <tr>
-<th>Option</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>--setup</code></td>
-<td>Setup without deployment</td>
+<td>配置而不部署</td>
 </tr>
 <tr>
 <td><code>-g</code>, <code>--generate</code></td>
-<td>Generate before deployment</td>
+<td>部署前生成</td>
 </tr>
 <tr>
 <td><code>-m</code>, <code>--message</code></td>
-<td>Customize commit message</td>
+<td>自定义提交信息</td>
 </tr>
 </tbody>
 </table>
 <h2 id="render">render</h2>
 <figure class="highlight bash"><pre><div class="line">$ hexo render &lt;file1&gt; [file2] ...</div></pre></figure>
 
-<p>Renders files.</p>
+<p>渲染文件</p>
 <table>
 <thead>
 <tr>
-<th>Option</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>-o</code>, <code>--output</code></td>
-<td>Output destination</td>
+<td>输出目录</td>
 </tr>
 </tbody>
 </table>
 <h2 id="migrate">migrate</h2>
 <figure class="highlight bash"><pre><div class="line">$ hexo migrate &lt;<span class="built_in">type</span>&gt;</div></pre></figure>
 
-<p><a href="migration.html">Migrates</a> content from other blog systems.</p>
+<p>从其他博客系统 <a href="migration.html">合并</a> 内容。</p>
 <h2 id="clean">clean</h2>
 <figure class="highlight bash"><pre><div class="line">$ hexo clean</div></pre></figure>
 
-<p>Cleans the cache file (<code>db.json</code>) and generated files (<code>public</code>).</p>
+<p>清理缓存文件 (<code>db.json</code>) 和生成的文件 (<code>public</code>) 。</p>
 <h2 id="list">list</h2>
 <figure class="highlight bash"><pre><div class="line">$ hexo list &lt;<span class="built_in">type</span>&gt;</div></pre></figure>
 
-<p>Lists all routes.</p>
+<p>列出所有的路由</p>
 <h2 id="version">version</h2>
 <figure class="highlight bash"><pre><div class="line">$ hexo version</div></pre></figure>
 
-<p>Displays version information.</p>
-<h2 id="Options">Options</h2>
-<h3 id="Safe_mode">Safe mode</h3>
+<p>显示版本信息</p>
+<h2 id="参数">参数</h2>
+<h3 id="安全模式">安全模式</h3>
 <figure class="highlight bash"><pre><div class="line">$ hexo --safe</div></pre></figure>
 
-<p>Plugins and scripts won’t be loaded in safe mode. You can try this when you encounter some problems after installing a new plugin.</p>
-<h3 id="Debug_mode">Debug mode</h3>
+<p>在安全模式下插件和脚本不会被加载。当你在新安装了一个插件后出现问题时，你可以使用这个参数。</p>
+<h3 id="调试模式">调试模式</h3>
 <figure class="highlight bash"><pre><div class="line">$ hexo --debug</div></pre></figure>
 
-<p>Displays verbose messages in terminal and saves log in <code>debug.log</code>. When you get some problems, try to run Hexo again in debug mode and please <a href="https://github.com/hexojs/hexo/issues/new" target="_blank" rel="external">submit any errors to GitHub</a>.</p>
-<h3 id="Silent_mode">Silent mode</h3>
+<p>在终端中显示详细的信息并保存到 <code>debug.log</code> 文件。当你遇到问题时，你可以尝试在调试模式下运行 Hexo 并 <a href="https://github.com/hexojs/hexo/issues/new" target="_blank" rel="external">将问题提交到 Github </a>。</p>
+<h3 id="安静模式">安静模式</h3>
 <figure class="highlight bash"><pre><div class="line">$ hexo --silent</div></pre></figure>
 
-<p>Hides output to the console.</p>
-<h3 id="Customize_config_file_path">Customize config file path</h3>
+<p>在终端中隐藏输出。</p>
+<h3 id="自定义配置文件路径">自定义配置文件路径</h3>
 <figure class="highlight bash"><pre><div class="line">$ hexo --config custom.yml</div></pre></figure>
 
-<p>Customize config file path instead of <code>_config.yml</code>.</p>
+<p>使用自定义的配置文件路径替代 <code>_config.yml</code>。</p>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-12-22T09:12:17.000Z" itemprop="dateModified">Last updated: Dec 22 2014</time>
+        <time id="page-footer-updated" datetime="2014-12-25T06:42:53.000Z" itemprop="dateModified">Last updated: Dec 25 2014</time>
         <a href="configuration.html" id="page-footer-prev" title="配置">Prev</a><a href="migration.html" id="page-footer-next" title="迁移">Next</a>
       </footer>
       
 <section id="comments">
 <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="docs/commands.html" data-title="Commands" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/commands.html"></div>
+    <div class="ds-thread" data-thread-key="docs/commands.html" data-title="命令" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/commands.html"></div>
 <!-- 多说评论框 end -->
 </section>
 

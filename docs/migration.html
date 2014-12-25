@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Migration | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
+  <title>迁移 | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://www.liuzhixiang.com/hexo_site_cn/docs/migration.html">
   <link rel="apple-touch-icon" sizes="57x57" href="/hexo_site_cn/apple-touch-icon-57x57.png">
@@ -26,26 +26,38 @@
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/hexo_site_cn/atom.xml" title="Hexo中文网" type="application/atom+xml">
   <meta name="description" content="RSS
-First, install hexo-migrator-rss plugin.
+首先，安装 hexo-migrator-rss 插件。
 $ npm install hexo-migrator-rss --save
 
-Once the plugin is installed, run the following command to migrate all posts from RSS. source can be the file path">
+插件安装之后，运行下面的命令将所有的文章从 RSS 迁移。 source 参数是文件路径或者 URL 地址。
+$ hexo migrate rss &lt;source&gt;
+
+Jekyll
+将所有文件从 _posts 文件夹移动到 source/_po">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Migration">
+<meta property="og:title" content="迁移">
 <meta property="og:url" content="http://www.liuzhixiang.com/hexo_site_cn/hexo_site_cn/docs/migration.html">
 <meta property="og:site_name" content="Hexo中文网">
 <meta property="og:description" content="RSS
-First, install hexo-migrator-rss plugin.
+首先，安装 hexo-migrator-rss 插件。
 $ npm install hexo-migrator-rss --save
 
-Once the plugin is installed, run the following command to migrate all posts from RSS. source can be the file path">
+插件安装之后，运行下面的命令将所有的文章从 RSS 迁移。 source 参数是文件路径或者 URL 地址。
+$ hexo migrate rss &lt;source&gt;
+
+Jekyll
+将所有文件从 _posts 文件夹移动到 source/_po">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Migration">
+<meta name="twitter:title" content="迁移">
 <meta name="twitter:description" content="RSS
-First, install hexo-migrator-rss plugin.
+首先，安装 hexo-migrator-rss 插件。
 $ npm install hexo-migrator-rss --save
 
-Once the plugin is installed, run the following command to migrate all posts from RSS. source can be the file path">
+插件安装之后，运行下面的命令将所有的文章从 RSS 迁移。 source 参数是文件路径或者 URL 地址。
+$ hexo migrate rss &lt;source&gt;
+
+Jekyll
+将所有文件从 _posts 文件夹移动到 source/_po">
 <meta name="twitter:site" content="@fly2xiang">
 <meta property="fb:admins" content="100000247608790">
 
@@ -104,7 +116,7 @@ Once the plugin is installed, run the following command to migrate all posts fro
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Migration</h1>
+        <h1 id="page-title" itemprop="name">迁移</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/migration.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -118,37 +130,37 @@ Once the plugin is installed, run the following command to migrate all posts fro
       </div>
       <div class="page-entry" itemprop="articleBody">
         <h2 id="RSS">RSS</h2>
-<p>First, install <code>hexo-migrator-rss</code> plugin.</p>
+<p>首先，安装 <code>hexo-migrator-rss</code> 插件。</p>
 <figure class="highlight bash"><pre><div class="line">$ npm install hexo-migrator-rss --save</div></pre></figure>
 
-<p>Once the plugin is installed, run the following command to migrate all posts from RSS. <code>source</code> can be the file path or URL.</p>
+<p>插件安装之后，运行下面的命令将所有的文章从 RSS 迁移。 <code>source</code> 参数是文件路径或者 URL 地址。</p>
 <figure class="highlight bash"><pre><div class="line">$ hexo migrate rss &lt;<span class="built_in">source</span>&gt;</div></pre></figure>
 
 <h2 id="Jekyll">Jekyll</h2>
-<p>Move all files in <code>_posts</code> folder to <code>source/_posts</code> folder and modify <code>new_post_name</code> setting in <code>_config.yml</code>.</p>
+<p>将所有文件从 <code>_posts</code> 文件夹移动到 <code>source/_posts</code> 文件夹并修改 <code>_config.yml</code> 文件中的 <code>new_post_name</code> 配置。</p>
 <figure class="highlight yaml"><pre><div class="line"><span class="symbol">new_post_name:</span> <span class="symbol">:year-</span><span class="symbol">:month-</span><span class="symbol">:day-</span><span class="symbol">:title</span>.md</div></pre></figure>
 
 <h2 id="Octopress">Octopress</h2>
-<p>Move all files in <code>source/_posts</code> folder of Octopress to <code>source/_posts</code> of Hexo and modify <code>new_post_name</code> setting in <code>_config.yml</code>.</p>
+<p>将 Octopress  <code>source/_posts</code> 文件夹下的所有文件移动到 Hexo 的 <code>source/_posts</code> 文件夹并修改 <code>_config.yml</code> 文件中的 <code>new_post_name</code> 配置。</p>
 <figure class="highlight yaml"><pre><div class="line"><span class="symbol">new_post_name:</span> <span class="symbol">:year-</span><span class="symbol">:month-</span><span class="symbol">:day-</span><span class="symbol">:title</span>.md</div></pre></figure>
 
 <h2 id="WordPress">WordPress</h2>
-<p>First, install <code>hexo-migrator-wordpress</code> plugin.</p>
+<p>首先安装 <code>hexo-migrator-wordpress</code> 插件。</p>
 <figure class="highlight bash"><pre><div class="line">$ npm install hexo-migrator-wordpress --save</div></pre></figure>
 
-<p>Once the plugin is installed, run the following command to migrate all posts from RSS. <code>source</code> can be the file path or URL.</p>
+<p>插件安装之后，运行下面的命令将所有的文章从 RSS 迁移。 <code>source</code> 参数是文件路径或者 URL 地址。</p>
 <figure class="highlight bash"><pre><div class="line">$ hexo migrate wordpress &lt;<span class="built_in">source</span>&gt;</div></pre></figure>
 
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-12-22T09:12:17.000Z" itemprop="dateModified">Last updated: Dec 22 2014</time>
+        <time id="page-footer-updated" datetime="2014-12-25T06:49:00.000Z" itemprop="dateModified">Last updated: Dec 25 2014</time>
         <a href="commands.html" id="page-footer-prev" title="命令">Prev</a><a href="writing.html" id="page-footer-next" title="撰写">Next</a>
       </footer>
       
 <section id="comments">
 <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="docs/migration.html" data-title="Migration" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/migration.html"></div>
+    <div class="ds-thread" data-thread-key="docs/migration.html" data-title="迁移" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/migration.html"></div>
 <!-- 多说评论框 end -->
 </section>
 

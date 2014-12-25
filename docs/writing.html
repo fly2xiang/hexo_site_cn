@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Writing | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
+  <title>撰写 | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://www.liuzhixiang.com/hexo_site_cn/docs/writing.html">
   <link rel="apple-touch-icon" sizes="57x57" href="/hexo_site_cn/apple-touch-icon-57x57.png">
@@ -25,18 +25,42 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/hexo_site_cn/atom.xml" title="Hexo中文网" type="application/atom+xml">
-  <meta name="description" content="Create a New Post
-You can create a new post by yourself or run the following command. If layout isn’t defined, it’ll be the default_layout setting. If there’re spaces or other special characters in ti">
+  <meta name="description" content="创建一篇新文章
+你可以自己创建或者使用下面的命令一篇新文章。如果不提供 layout 参数，会使用 _config.yml 中配置的 default_layout 。如果标题中包含空格，需要使用双引号。
+$ hexo new [layout] &lt;title&gt;
+
+布局
+Hexo 有两种默认布局： post 和 page。其他布局默认会被保存在 source/_posts 。
+
+
+
+布局">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Writing">
+<meta property="og:title" content="撰写">
 <meta property="og:url" content="http://www.liuzhixiang.com/hexo_site_cn/hexo_site_cn/docs/writing.html">
 <meta property="og:site_name" content="Hexo中文网">
-<meta property="og:description" content="Create a New Post
-You can create a new post by yourself or run the following command. If layout isn’t defined, it’ll be the default_layout setting. If there’re spaces or other special characters in ti">
+<meta property="og:description" content="创建一篇新文章
+你可以自己创建或者使用下面的命令一篇新文章。如果不提供 layout 参数，会使用 _config.yml 中配置的 default_layout 。如果标题中包含空格，需要使用双引号。
+$ hexo new [layout] &lt;title&gt;
+
+布局
+Hexo 有两种默认布局： post 和 page。其他布局默认会被保存在 source/_posts 。
+
+
+
+布局">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Writing">
-<meta name="twitter:description" content="Create a New Post
-You can create a new post by yourself or run the following command. If layout isn’t defined, it’ll be the default_layout setting. If there’re spaces or other special characters in ti">
+<meta name="twitter:title" content="撰写">
+<meta name="twitter:description" content="创建一篇新文章
+你可以自己创建或者使用下面的命令一篇新文章。如果不提供 layout 参数，会使用 _config.yml 中配置的 default_layout 。如果标题中包含空格，需要使用双引号。
+$ hexo new [layout] &lt;title&gt;
+
+布局
+Hexo 有两种默认布局： post 和 page。其他布局默认会被保存在 source/_posts 。
+
+
+
+布局">
 <meta name="twitter:site" content="@fly2xiang">
 <meta property="fb:admins" content="100000247608790">
 
@@ -95,7 +119,7 @@ You can create a new post by yourself or run the following command. If layout is
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Writing</h1>
+        <h1 id="page-title" itemprop="name">撰写</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/writing.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -105,20 +129,20 @@ You can create a new post by yourself or run the following command. If layout is
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Create_a_New_Post"><span class="toc-number">1.</span> <span class="toc-text">Create a New Post</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Layout"><span class="toc-number">1.1.</span> <span class="toc-text">Layout</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Filename"><span class="toc-number">1.3.</span> <span class="toc-text">Filename</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Front-matter"><span class="toc-number">2.</span> <span class="toc-text">Front-matter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Categories_&_Tags"><span class="toc-number">3.</span> <span class="toc-text">Categories & Tags</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Excerpts"><span class="toc-number">4.</span> <span class="toc-text">Excerpts</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code_Highlighting"><span class="toc-number">5.</span> <span class="toc-text">Code Highlighting</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Backtick_Code_Block"><span class="toc-number">5.1.</span> <span class="toc-text">Backtick Code Block</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Swig_Code_Block"><span class="toc-number">5.2.</span> <span class="toc-text">Swig Code Block</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Scaffold"><span class="toc-number">6.</span> <span class="toc-text">Scaffold</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-1"><span class="toc-number">6.1.</span> <span class="toc-text">Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Variables"><span class="toc-number">6.2.</span> <span class="toc-text">Variables</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Asset_Folder"><span class="toc-number">7.</span> <span class="toc-text">Asset Folder</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建一篇新文章"><span class="toc-number">1.</span> <span class="toc-text">创建一篇新文章</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#布局"><span class="toc-number">1.1.</span> <span class="toc-text">布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#例子"><span class="toc-number">1.2.</span> <span class="toc-text">例子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文件名"><span class="toc-number">1.3.</span> <span class="toc-text">文件名</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Front-matter_前置数据"><span class="toc-number">2.</span> <span class="toc-text">Front-matter 前置数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分类和标签"><span class="toc-number">3.</span> <span class="toc-text">分类和标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#摘要"><span class="toc-number">4.</span> <span class="toc-text">摘要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码高亮"><span class="toc-number">5.</span> <span class="toc-text">代码高亮</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Backtick_Code_Block"><span class="toc-number">5.1.</span> <span class="toc-text">Backtick Code Block</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Swig_Code_Block"><span class="toc-number">5.2.</span> <span class="toc-text">Swig Code Block</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#模版"><span class="toc-number">6.</span> <span class="toc-text">模版</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#例子-1"><span class="toc-number">6.1.</span> <span class="toc-text">例子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变量"><span class="toc-number">6.2.</span> <span class="toc-text">变量</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#资源文件夹"><span class="toc-number">7.</span> <span class="toc-text">资源文件夹</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <h2 id="Create_a_New_Post">Create a New Post</h2>
-<p>You can create a new post by yourself or run the following command. If <code>layout</code> isn’t defined, it’ll be the <code>default_layout</code> setting. If there’re spaces or other special characters in <code>title</code>, wrap it with quotation marks.</p>
+        <h2 id="创建一篇新文章">创建一篇新文章</h2>
+<p>你可以自己创建或者使用下面的命令一篇新文章。如果不提供 <code>layout</code> 参数，会使用 <a href="configuration.html">_config.yml</a> 中配置的 <code>default_layout</code> 。如果标题中包含空格，需要使用双引号。</p>
 <figure class="highlight bash"><pre><div class="line">$ hexo new [layout] &lt;title&gt;</div></pre></figure>
 
-<h3 id="Layout">Layout</h3>
-<p>Hexo has 2 default layouts: <code>post</code> and <code>page</code>. Other layouts will be saved in <code>source/_posts</code> by default.</p>
+<h3 id="布局">布局</h3>
+<p>Hexo 有两种默认布局： <code>post</code> 和 <code>page</code>。其他布局默认会被保存在 <code>source/_posts</code> 。</p>
 <table>
 <thead>
 <tr>
-<th>Layout</th>
-<th>Destination</th>
+<th>布局</th>
+<th>目录</th>
 </tr>
 </thead>
 <tbody>
@@ -132,130 +156,130 @@ You can create a new post by yourself or run the following command. If layout is
 </tr>
 </tbody>
 </table>
-<blockquote class="note tip"><strong class="note-title">Don't process my posts!</strong>
+<blockquote class="note tip"><strong class="note-title">我不想文章被应用一个布局!</strong>
 
-<p>If you don’t want your posts processed, you can set <code>layout: false</code> in front-matter.</p>
+<p>如果你不想文章应用一个布局，你可以在文章前面设置 <code>layout: false</code> 。</p>
 </blockquote>
 
 
-<h3 id="Example">Example</h3>
-<figure class="highlight bash"><pre><div class="line">$ hexo new <span class="string">"New Post"</span></div><div class="line"><span class="comment"># =&gt; The file will be created at source/_posts/new-post.md</span></div><div class="line"></div><div class="line">$ hexo new page <span class="string">"New Page"</span></div><div class="line"><span class="comment"># =&gt; The file will be created at source/new-page/index.html</span></div></pre></figure>
+<h3 id="例子">例子</h3>
+<figure class="highlight bash"><pre><div class="line">$ hexo new <span class="string">"New Post"</span></div><div class="line"><span class="comment"># =&gt; 会在 source/_posts/new-post.md 创建一个新文件</span></div><div class="line"></div><div class="line">$ hexo new page <span class="string">"New Page"</span></div><div class="line"><span class="comment"># =&gt; 会在 source/new-page/index.html 创建一个新文件</span></div></pre></figure>
 
-<h3 id="Filename">Filename</h3>
-<p>You can modify the name of files created by Hexo in <code>new_post_name</code> setting.</p>
+<h3 id="文件名">文件名</h3>
+<p>你可以修改 <code>new_post_name</code> 设置来修改文件名。</p>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th>Description</th>
+<th>变量</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>:title</code></td>
-<td>Escaped title (lower case and replace spaces with dash)</td>
+<td>转义过的文章标题 (小写字母和中划线)</td>
 </tr>
 <tr>
 <td><code>:year</code></td>
-<td>Created year (4-digit)</td>
+<td>文章创建的年 (4位数字)</td>
 </tr>
 <tr>
 <td><code>:month</code></td>
-<td>Created month (2-digit)</td>
+<td>文章创建的月 (1位数字)</td>
 </tr>
 <tr>
 <td><code>:i_month</code></td>
-<td>Created month (Without leading zeros)</td>
+<td>文章创建的月 (没有前导零)</td>
 </tr>
 <tr>
 <td><code>:day</code></td>
-<td>Created day (2-digit)</td>
+<td>文章创建的日 (2位数字)</td>
 </tr>
 <tr>
 <td><code>:i_day</code></td>
-<td>Created day (Without leading zeros)</td>
+<td>文章创建的日 (没有前导零)</td>
 </tr>
 </tbody>
 </table>
-<blockquote class="note tip"><strong class="note-title">Organize your posts by date</strong>
+<blockquote class="note tip"><strong class="note-title">以日期组织你的文章</strong>
 
-<p>You can set <code>new_post_name</code> as <code>:year-:month-:day-:title.md</code> to make your posts ordered by date.</p>
+<p>你可以将 <code>new_post_name</code> 设置为 <code>:year-:month-:day-:title.md</code> 可以将你的文章设置为按日期排序。</p>
 </blockquote>
 
 
-<h2 id="Front-matter">Front-matter</h2>
-<p>Front-matter is a block wrapped with <code>---</code> in front of the file. For example:</p>
+<h2 id="Front-matter_前置数据">Front-matter 前置数据</h2>
+<p>Front-matter 是一个放在文件前面被 <code>---</code> 包裹的区块。例如:</p>
 <figure class="highlight yaml"><pre><div class="line">title: Hello World</div><div class="line"><span class="header">date: 2013/7/13 20:46:25</span></div><div class="line">---</div></pre></figure>
 
-<p>You can configure all post configuration in the front-matter. The following is predefined settings.</p>
+<p>你可以在 front-matter 中配置所有文章的配置项。下面是预定义的设置。</p>
 <table>
 <thead>
 <tr>
-<th>Setting</th>
-<th>Description</th>
-<th>Default</th>
+<th>设置</th>
+<th>描述</th>
+<th>默认值</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>layout</code></td>
-<td>Layout</td>
+<td>布局</td>
 <td>post/page</td>
 </tr>
 <tr>
 <td><code>title</code></td>
-<td>Title</td>
+<td>标题</td>
 <td></td>
 </tr>
 <tr>
 <td><code>date</code></td>
-<td>Published date</td>
-<td>File created date</td>
+<td>发布时间</td>
+<td>文件创建日期</td>
 </tr>
 <tr>
 <td><code>updated</code></td>
-<td>Last updated date</td>
-<td>File last updated date</td>
+<td>最后修改时间</td>
+<td>文件的最后时间</td>
 </tr>
 <tr>
 <td><code>comments</code></td>
-<td>Enables comment feature for the post</td>
+<td>对这篇文章开启评论</td>
 <td>true</td>
 </tr>
 <tr>
 <td><code>tags</code></td>
-<td>Tags (Not available for pages)</td>
+<td>标签 (对于独立页面不可用)</td>
 <td></td>
 </tr>
 <tr>
 <td><code>categories</code></td>
-<td>Categories (Not available for pages)</td>
+<td>分类 (对于独立页面不可用)</td>
 <td></td>
 </tr>
 <tr>
 <td><code>permalink</code></td>
-<td>Overrides the default permalink of the post</td>
-<td>Filename</td>
+<td>对于这篇文章覆盖默认的链接规则</td>
+<td>文件名</td>
 </tr>
 </tbody>
 </table>
 <blockquote class="note warn"><strong class="note-title">YAML front-matter</strong>
 
-<p>Write the front-matter in YAML format. Don’t use tabs in the front-matter, use spaces instead. Also, add a space after colons.</p>
+<p>编写 front-matter 使用 YAML 格式。在 front-matter 不能使用制表符而要使用空格进行缩进，在冒号后面有一个空格。</p>
 </blockquote>
 
 
-<h2 id="Categories_&amp;_Tags">Categories &amp; Tags</h2>
-<p>Hexo supports categories and tags. Categories and tags are only supported in posts and have to be set in the front-matter. For example:</p>
+<h2 id="分类和标签">分类和标签</h2>
+<p>Hexo 支持分类和标签。分类和标签只在文章中支持并且必须在 front-matter 中设置。例如:</p>
 <figure class="highlight yaml"><pre><div class="line">categories:</div><div class="line">-<span class="ruby"> <span class="constant">Diary</span></span></div><div class="line">tags:</div><div class="line">-<span class="ruby"> <span class="constant">PS3</span></span></div><div class="line">-<span class="ruby"> <span class="constant">Games</span></span></div></pre></figure>
 
-<p>Categories and tags may sound familiar in other systems, but they’re totally different in Hexo. Categories are hierarchical and ordered, which means <code>Foo, Bar</code> doesn’t equal to <code>Bar, Foo</code>. Tags are unordered and flat.</p>
-<h2 id="Excerpts">Excerpts</h2>
-<p>You can hide parts of your post by adding <code>&lt;!-- more --&gt;</code> in the content. Index page will only show the post from the first to the second occurrence of <code>&lt;!-- more --&gt;</code>.</p>
+<p>分类和标签在其他系统中听起来是很相似的，但是他们在 Hexo 中是完全不同的。分类是分层的、有序的，这意味着 <code>Foo, Bar</code> 和 <code>Bar, Foo</code> 是不同的。 而标签是无序的、扁平的。</p>
+<h2 id="摘要">摘要</h2>
+<p>你可以在你文章中添加 <code>&lt;!-- more --&gt;</code> 来隐藏部分内容。列表页面只会显示第一个 <code>&lt;!-- more --&gt;</code> 和第二个  <code>&lt;!-- more --&gt;</code>  之间的内容。</p>
 <figure class="highlight markdown"><pre><div class="line">...</div><div class="line"></div><div class="line"><span class="xml"><span class="comment">&lt;!-- more --&gt;</span></span></div><div class="line"></div><div class="line">...</div></pre></figure>
 
-<h2 id="Code_Highlighting">Code Highlighting</h2>
-<p>There’re 2 ways for you to highlight your code snippets in your posts: <strong>Backtick code block</strong> and <strong>Swig code block</strong>. Both are ported from Octopress.</p>
+<h2 id="代码高亮">代码高亮</h2>
+<p>有两种方式高亮你的文章中的代码片段： <strong>Backtick code block</strong> 与 <strong>Swig code block</strong>。它们都是从 Octopress 移植过来的。</p>
 <h3 id="Backtick_Code_Block">Backtick Code Block</h3>
 <figure class="highlight"><pre><div class="line">``` <span class="attr_selector">[language]</span> <span class="attr_selector">[title]</span> <span class="attr_selector">[url]</span> <span class="attr_selector">[link text]</span></div><div class="line"><span class="tag">code</span> <span class="tag">snippet</span></div><div class="line">```</div></pre></figure>
 
@@ -263,53 +287,53 @@ You can create a new post by yourself or run the following command. If layout is
 <figure class="highlight"><pre>{% code [title] [lang:language] [url] [link text] %}<br>code snippet<br>{% endcode %}<br></pre></figure>
 
 
-<h2 id="Scaffold">Scaffold</h2>
-<p>Hexo will create a new post based on the correspond scaffold. For example:</p>
-<figure class="highlight bash"><pre><div class="line">$ hexo new photo <span class="string">"My Gallery"</span></div><div class="line"><span class="comment"># =&gt; The file will be created at source/_posts/my-gallery.md</span></div></pre></figure>
+<h2 id="模版">模版</h2>
+<p>Hexo 会基于对应的模版创建新的文章。例如：</p>
+<figure class="highlight bash"><pre><div class="line">$ hexo new photo <span class="string">"My Gallery"</span></div><div class="line"><span class="comment"># =&gt; 文件将会被创建到 source/_posts/my-gallery.md</span></div></pre></figure>
 
-<p>Hexo will find the scaffold file named <code>photo</code> in the <code>scaffolds</code> folder. If the scaffold not exists, use the post scaffold instead.</p>
-<h3 id="Example-1">Example</h3>
-<p>Variables are wrapped by double curly brackets. For example:</p>
+<p>Hexo 会使用 <code>scaffolds</code> 文件夹下以 <code>photo</code> 命名的模版文件，如果模版不存在，会使用文章的模版。</p>
+<h3 id="例子-1">例子</h3>
+<p>变量会被两个大括号包裹。例如：</p>
 <figure class="highlight plain"><pre><div class="line">layout: {{ layout }}</div><div class="line">title: {{ title }}</div><div class="line">date: {{ date }}</div><div class="line">---</div></pre></figure>
 
-<h3 id="Variables">Variables</h3>
+<h3 id="变量">变量</h3>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th>Description</th>
+<th>变量</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>layout</code></td>
-<td>Layout name</td>
+<td>布局名称</td>
 </tr>
 <tr>
 <td><code>title</code></td>
-<td>Post title</td>
+<td>文章标题</td>
 </tr>
 <tr>
 <td><code>date</code></td>
-<td>File created date</td>
+<td>文件创建时间</td>
 </tr>
 </tbody>
 </table>
-<h2 id="Asset_Folder">Asset Folder</h2>
-<p>If you put all images and other assets in <code>source</code> folder. You can try to enable <code>post_asset_folder</code> setting.</p>
+<h2 id="资源文件夹">资源文件夹</h2>
+<p>如果你将所有图片和其他资源放在 <code>source</code> 文件夹。你可以开启 <code>post_asset_folder</code> 设置。</p>
 <figure class="highlight yaml"><pre><div class="line"><span class="attribute">post_asset_folder</span>: <span class="string">true</span></div></pre></figure>
 
-<p>After enabling this setting, a folder will be created when you create a new post. This folder is for you to put all asset files used in the post in. It would be much easier to use a image in a post.</p>
+<p>开启此设置后，当你在新建一篇文章时会创建一个文件夹。你可以将所有这篇文章需要的资源文件放在这个文件夹里。这让在文章中使用图片变得非常简单。</p>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-12-22T09:12:17.000Z" itemprop="dateModified">Last updated: Dec 22 2014</time>
+        <time id="page-footer-updated" datetime="2014-12-25T07:43:29.000Z" itemprop="dateModified">Last updated: Dec 25 2014</time>
         <a href="migration.html" id="page-footer-prev" title="迁移">Prev</a><a href="drafts.html" id="page-footer-next" title="草稿">Next</a>
       </footer>
       
 <section id="comments">
 <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="docs/writing.html" data-title="Writing" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/writing.html"></div>
+    <div class="ds-thread" data-thread-key="docs/writing.html" data-title="撰写" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/writing.html"></div>
 <!-- 多说评论框 end -->
 </section>
 

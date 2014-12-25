@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Server | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
+  <title>服务器 | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://www.liuzhixiang.com/hexo_site_cn/docs/server.html">
   <link rel="apple-touch-icon" sizes="57x57" href="/hexo_site_cn/apple-touch-icon-57x57.png">
@@ -25,27 +25,36 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/hexo_site_cn/atom.xml" title="Hexo中文网" type="application/atom+xml">
-  <meta name="description" content="Built-in Server
-Hexo uses Connect as the built-in server. To start server, run the following command:
+  <meta name="description" content="内建服务器
+Hexo 使用 Connect 作为内建服务器。想要开启服务器，运行下面的命令：
 $ hexo server
 
-Your website will running at http://localhost:4000. You can edit the server port in">
+你的网站会运行在 http://localhost:4000。你可以在 _config.yml 中修改使用的端口或者使用命令行参数覆盖默认的设置。例如：
+$ hexo server -p 5000
+
+服务器会监控文件的修改并自动更新他们。但是，服务器不会更新 public 文">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Server">
+<meta property="og:title" content="服务器">
 <meta property="og:url" content="http://www.liuzhixiang.com/hexo_site_cn/hexo_site_cn/docs/server.html">
 <meta property="og:site_name" content="Hexo中文网">
-<meta property="og:description" content="Built-in Server
-Hexo uses Connect as the built-in server. To start server, run the following command:
+<meta property="og:description" content="内建服务器
+Hexo 使用 Connect 作为内建服务器。想要开启服务器，运行下面的命令：
 $ hexo server
 
-Your website will running at http://localhost:4000. You can edit the server port in">
+你的网站会运行在 http://localhost:4000。你可以在 _config.yml 中修改使用的端口或者使用命令行参数覆盖默认的设置。例如：
+$ hexo server -p 5000
+
+服务器会监控文件的修改并自动更新他们。但是，服务器不会更新 public 文">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Server">
-<meta name="twitter:description" content="Built-in Server
-Hexo uses Connect as the built-in server. To start server, run the following command:
+<meta name="twitter:title" content="服务器">
+<meta name="twitter:description" content="内建服务器
+Hexo 使用 Connect 作为内建服务器。想要开启服务器，运行下面的命令：
 $ hexo server
 
-Your website will running at http://localhost:4000. You can edit the server port in">
+你的网站会运行在 http://localhost:4000。你可以在 _config.yml 中修改使用的端口或者使用命令行参数覆盖默认的设置。例如：
+$ hexo server -p 5000
+
+服务器会监控文件的修改并自动更新他们。但是，服务器不会更新 public 文">
 <meta name="twitter:site" content="@fly2xiang">
 <meta property="fb:admins" content="100000247608790">
 
@@ -104,7 +113,7 @@ Your website will running at http://localhost:4000. You can edit the server port
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Server</h1>
+        <h1 id="page-title" itemprop="name">服务器</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/server.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -114,48 +123,48 @@ Your website will running at http://localhost:4000. You can edit the server port
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Built-in_Server"><span class="toc-number">1.</span> <span class="toc-text">Built-in Server</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Static_Mode"><span class="toc-number">1.1.</span> <span class="toc-text">Static Mode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Custom_IP"><span class="toc-number">1.2.</span> <span class="toc-text">Custom IP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Drafts"><span class="toc-number">1.3.</span> <span class="toc-text">Drafts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Logger"><span class="toc-number">1.4.</span> <span class="toc-text">Logger</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pow"><span class="toc-number">2.</span> <span class="toc-text">Pow</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Install"><span class="toc-number">2.1.</span> <span class="toc-text">Install</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Setup"><span class="toc-number">2.2.</span> <span class="toc-text">Setup</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Forever_/_PM2"><span class="toc-number">3.</span> <span class="toc-text">Forever / PM2</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#内建服务器"><span class="toc-number">1.</span> <span class="toc-text">内建服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#静态文件模式"><span class="toc-number">1.1.</span> <span class="toc-text">静态文件模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义_IP"><span class="toc-number">1.2.</span> <span class="toc-text">自定义 IP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#草稿"><span class="toc-number">1.3.</span> <span class="toc-text">草稿</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#日志"><span class="toc-number">1.4.</span> <span class="toc-text">日志</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pow"><span class="toc-number">2.</span> <span class="toc-text">Pow</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置"><span class="toc-number">2.2.</span> <span class="toc-text">配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Forever_/_PM2"><span class="toc-number">3.</span> <span class="toc-text">Forever / PM2</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <h2 id="Built-in_Server">Built-in Server</h2>
-<p>Hexo uses <a href="https://github.com/senchalabs/connect" target="_blank" rel="external">Connect</a> as the built-in server. To start server, run the following command:</p>
+        <h2 id="内建服务器">内建服务器</h2>
+<p>Hexo 使用 <a href="https://github.com/senchalabs/connect" target="_blank" rel="external">Connect</a> 作为内建服务器。想要开启服务器，运行下面的命令：</p>
 <figure class="highlight bash"><pre><div class="line">$ hexo server</div></pre></figure>
 
-<p>Your website will running at <code>http://localhost:4000</code>. You can edit the server port in <code>_config.yml</code> or use flags to override the default port. For example:</p>
+<p>你的网站会运行在 <code>http://localhost:4000</code>。你可以在 <code>_config.yml</code> 中修改使用的端口或者使用命令行参数覆盖默认的设置。例如：</p>
 <figure class="highlight bash"><pre><div class="line">$ hexo server -p <span class="number">5000</span></div></pre></figure>
 
-<p>Server will watch for file changes and update automatically. However, server won’t update files in <code>public</code> folder. You should run <code>hexo generate</code> instead.</p>
-<blockquote class="note info"><strong class="note-title">Restart Hexo after configuration changed</strong>
+<p>服务器会监控文件的修改并自动更新他们。但是，服务器不会更新 <code>public</code> 文件夹中的文件。你可以运行 <code>hexo generate</code> 来替代他们。</p>
+<blockquote class="note info"><strong class="note-title">在更改配置文件后重启 Hexo</strong>
 
-<p>Hexo doesn’t watch for configuration file changes. You have to restart Hexo to make the new configurations take effects.</p>
+<p>Hexo 不能监控配置文件的更改。你必须重启 Hexo 来保证新的配置有效果。</p>
 </blockquote>
 
 
-<h3 id="Static_Mode">Static Mode</h3>
-<p>In static mode, only files in <code>public</code> folder will be served and file watching is disabled. You have to run <code>hexo generate</code> before starting the server. Usually used in production.</p>
+<h3 id="静态文件模式">静态文件模式</h3>
+<p>在静态文件模式中，只有 <code>public</code> 文件夹中的文件会被查看到，并且文件尽快被禁用，你必须在启动服务器之前运行 <code>hexo generate</code> 。在生产环境中这是非常有用的。</p>
 <figure class="highlight bash"><pre><div class="line">$ hexo server <span class="operator">-s</span></div></pre></figure>
 
-<h3 id="Custom_IP">Custom IP</h3>
-<p>Hexo runs the server at <code>0.0.0.0</code> by default. You can override the default IP setting. For example:</p>
+<h3 id="自定义_IP">自定义 IP</h3>
+<p>Hexo 默认在 <code>0.0.0.0</code> 运行。你可以覆盖默认的 IP 设置，例如：</p>
 <figure class="highlight bash"><pre><div class="line">$ hexo server -i <span class="number">192.168</span>.<span class="number">1.1</span></div></pre></figure>
 
-<h3 id="Drafts">Drafts</h3>
-<p>In draft mode, drafts will be served as normal posts. You can preview your drafts on the server. All changes you made on drafts will be updated at once.</p>
+<h3 id="草稿">草稿</h3>
+<p>在草稿模式中，草稿会被保存为普通文章。你可以在服务器上预览你的草稿。你对草稿的修改会马上被更新。</p>
 <figure class="highlight bash"><pre><div class="line">$ hexo server <span class="operator">-d</span></div></pre></figure>
 
-<h3 id="Logger">Logger</h3>
-<p>To log requests of server, you can enable logger in <code>_config.yml</code>. Logger is always enabled in debug mode. You can check <a href="https://github.com/expressjs/morgan" target="_blank" rel="external">morgan</a> for more info.</p>
+<h3 id="日志">日志</h3>
+<p>想要记录服务器请求，你可以在 <code>_config.yml</code> 开启日志。日志在调试模式下是默认开启的。你可以查看 <a href="https://github.com/expressjs/morgan" target="_blank" rel="external">morgan</a> 了解更多信息。</p>
 <figure class="highlight yaml"><pre><div class="line"><span class="attribute">logger</span>: <span class="string">true</span></div><div class="line"><span class="attribute">logger_format</span>: <span class="string">default</span></div></pre></figure>
 
-<p>Or use flags to override default settings. For example:</p>
+<p>或者使用命令行参数覆盖默认设置。例如：</p>
 <figure class="highlight bash"><pre><div class="line">$ hexo server <span class="operator">-l</span> default</div></pre></figure>
 
-<p><strong>Pre-defined formats:</strong></p>
+<p><strong>预定义的格式:</strong></p>
 <table>
 <thead>
 <tr>
-<th>Format</th>
-<th>Description</th>
+<th>格式</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
@@ -177,95 +186,95 @@ Your website will running at http://localhost:4000. You can edit the server port
 </tr>
 </tbody>
 </table>
-<p><strong>Tokens:</strong></p>
+<p><strong>令牌:</strong></p>
 <table>
 <thead>
 <tr>
-<th>Token</th>
-<th>Description</th>
+<th>令牌</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>:req[header]</code></td>
-<td>Request header (e.g. <code>:req[Accept]</code>)</td>
+<td>请求头 (例如： <code>:req[Accept]</code>)</td>
 </tr>
 <tr>
 <td><code>:res[header]</code></td>
-<td>Response header (e.g. <code>:res[Content-Length]</code>)</td>
+<td>响应头 (例如： <code>:res[Content-Length]</code>)</td>
 </tr>
 <tr>
 <td><code>:http-version</code></td>
-<td>HTTP version</td>
+<td>HTTP 版本</td>
 </tr>
 <tr>
 <td><code>:response-time</code></td>
-<td>Response time</td>
+<td>响应时间</td>
 </tr>
 <tr>
 <td><code>:remote-addr</code></td>
-<td>Remote IP address</td>
+<td>客户端 IP</td>
 </tr>
 <tr>
 <td><code>:date</code></td>
-<td>Request date</td>
+<td>请求时间</td>
 </tr>
 <tr>
 <td><code>:method</code></td>
-<td>Method</td>
+<td>请求方法</td>
 </tr>
 <tr>
 <td><code>:url</code></td>
-<td>Request URL</td>
+<td>请求 URL</td>
 </tr>
 <tr>
 <td><code>:referrer</code></td>
-<td>Referrer</td>
+<td>引用页</td>
 </tr>
 <tr>
 <td><code>:user-agent</code></td>
-<td>User agent</td>
+<td>用户代理</td>
 </tr>
 <tr>
 <td><code>:status</code></td>
-<td>Status</td>
+<td>状态</td>
 </tr>
 </tbody>
 </table>
 <h2 id="Pow">Pow</h2>
-<p><a href="http://pow.cx/" target="_blank" rel="external">Pow</a> is a zero-config Rack server for Mac powered by Node.js.</p>
-<h3 id="Install">Install</h3>
-<p>Run the following command:</p>
+<p><a href="http://pow.cx/" target="_blank" rel="external">Pow</a> 是一个 Mac 平台基于 Node.js 的零配置服务器。</p>
+<h3 id="安装">安装</h3>
+<p>运行下面的命令:</p>
 <figure class="highlight bash"><pre><div class="line">$ curl get.pow.cx | sh</div></pre></figure>
 
-<h3 id="Setup">Setup</h3>
-<p>Symlink the folder into <code>~/.pow</code></p>
+<h3 id="配置">配置</h3>
+<p>在 <code>~/.pow</code> 创建符号链接</p>
 <figure class="highlight bash"><pre><div class="line">$ <span class="built_in">cd</span> ~/.pow</div><div class="line">$ ln <span class="operator">-s</span> /path/to/myapp</div></pre></figure>
 
-<p>Your website will be up and running at <code>http://myapp.dev</code>. The URL is based on the name of symlink.</p>
+<p>你的网站会运行在 <code>http://myapp.dev</code>。URL 是基于你符号链接的名称。</p>
 <h2 id="Forever_/_PM2">Forever / PM2</h2>
-<p>To keep the Hexo server alive, you can use <a href="https://github.com/nodejitsu/forever" target="_blank" rel="external">Forever</a> or <a href="https://github.com/Unitech/pm2" target="_blank" rel="external">PM2</a>.</p>
-<p>Hexo can be run programmatically since 2.5. So you can call Hexo in JavaScript instead of CLI.</p>
-<p><strong>1. Install Hexo in the folder of your site.</strong></p>
+<p>想保持 Hexo 服务器运行，你可以使用 <a href="https://github.com/nodejitsu/forever" target="_blank" rel="external">Forever</a> 或 <a href="https://github.com/Unitech/pm2" target="_blank" rel="external">PM2</a>。</p>
+<p>Hexo 从 2.5 版本可以编程运行。所以你可以在 Javascript 中启动 Hexo 来替代命令行。</p>
+<p><strong>1. 在你的网站目录中安装 Hexo 。</strong></p>
 <figure class="highlight bash"><pre><div class="line">$ npm install hexo --save</div></pre></figure>
 
-<p><strong>2. Add a JavaScript file with the following content.</strong></p>
+<p><strong>2. 添加一个 Javascript 文件并加入以下内容。</strong></p>
 <figure class="highlight js"><figcaption><span>app.js</span></figcaption><pre><div class="line"><span class="built_in">require</span>(<span class="string">'hexo'</span>).init({command: <span class="string">'server'</span>});</div></pre></figure>
 
-<p><strong>3. Run the JavaScript file you just created with <a href="https://github.com/nodejitsu/forever" target="_blank" rel="external">Forever</a> or <a href="https://github.com/Unitech/pm2" target="_blank" rel="external">PM2</a>.</strong></p>
-<p>PM2 has a <a href="https://github.com/Unitech/pm2#known-bugs-and-workarounds" target="_blank" rel="external">known issue</a> that the port isn’t released when the script is stopped unless PM2 is killed. You have to run the script in fork mode.</p>
+<p><strong>3. 使用 <a href="https://github.com/nodejitsu/forever" target="_blank" rel="external">Forever</a> 或 <a href="https://github.com/Unitech/pm2" target="_blank" rel="external">PM2</a> 运行你刚才创建的 Javascript 文件。</strong></p>
+<p>PM2 有一个 <a href="https://github.com/Unitech/pm2#known-bugs-and-workarounds" target="_blank" rel="external">已知的问题</a> 就是当脚本停止时端口不会被释放，除非 PM2 被杀死。你必须在 fork 模式下运行这个脚本。</p>
 <figure class="highlight bash"><pre><div class="line">$ forever start app.js</div><div class="line">$ pm2 start app.js -x</div></pre></figure>
 
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-12-22T09:12:17.000Z" itemprop="dateModified">Last updated: Dec 22 2014</time>
+        <time id="page-footer-updated" datetime="2014-12-25T08:36:03.000Z" itemprop="dateModified">Last updated: Dec 25 2014</time>
         <a href="tag-plugins.html" id="page-footer-prev" title="标签插件">Prev</a><a href="deployment.html" id="page-footer-next" title="发布">Next</a>
       </footer>
       
 <section id="comments">
 <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="docs/server.html" data-title="Server" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/server.html"></div>
+    <div class="ds-thread" data-thread-key="docs/server.html" data-title="服务器" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/server.html"></div>
 <!-- 多说评论框 end -->
 </section>
 
