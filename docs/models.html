@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Models | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
+  <title>模型 | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://www.liuzhixiang.com/hexo_site_cn/docs/models.html">
   <link rel="apple-touch-icon" sizes="57x57" href="/hexo_site_cn/apple-touch-icon-57x57.png">
@@ -25,75 +25,120 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/hexo_site_cn/atom.xml" title="Hexo中文网" type="application/atom+xml">
-  <meta name="description" content="Hexo uses Warehouse to store everything. You can check the API and see the contents of data model below.
-Post
+  <meta name="description" content="Hexo 使用 Warehouse 来保存所有数据。你可以查看 API 和查看下面的数据模型内容。
+博文
 
 
 
-Name
-Description
+名称
+描述
 
 
 
 
 id
-Post ID (Set by user)
+博文ID (用户设置)
 
 
 title
-Post title
+博文标题
 
 
 date
-Post date (Mome">
+博文日期 (Moment.js 对象)
+
+
+updated
+博文最后更新日期 (Moment.js 对象)
+
+
+categories
+博文的所有分类
+
+
+tags
+博文的所有标签
+
+
+comment">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Models">
+<meta property="og:title" content="模型">
 <meta property="og:url" content="http://www.liuzhixiang.com/hexo_site_cn/hexo_site_cn/docs/models.html">
 <meta property="og:site_name" content="Hexo中文网">
-<meta property="og:description" content="Hexo uses Warehouse to store everything. You can check the API and see the contents of data model below.
-Post
+<meta property="og:description" content="Hexo 使用 Warehouse 来保存所有数据。你可以查看 API 和查看下面的数据模型内容。
+博文
 
 
 
-Name
-Description
+名称
+描述
 
 
 
 
 id
-Post ID (Set by user)
+博文ID (用户设置)
 
 
 title
-Post title
+博文标题
 
 
 date
-Post date (Mome">
+博文日期 (Moment.js 对象)
+
+
+updated
+博文最后更新日期 (Moment.js 对象)
+
+
+categories
+博文的所有分类
+
+
+tags
+博文的所有标签
+
+
+comment">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Models">
-<meta name="twitter:description" content="Hexo uses Warehouse to store everything. You can check the API and see the contents of data model below.
-Post
+<meta name="twitter:title" content="模型">
+<meta name="twitter:description" content="Hexo 使用 Warehouse 来保存所有数据。你可以查看 API 和查看下面的数据模型内容。
+博文
 
 
 
-Name
-Description
+名称
+描述
 
 
 
 
 id
-Post ID (Set by user)
+博文ID (用户设置)
 
 
 title
-Post title
+博文标题
 
 
 date
-Post date (Mome">
+博文日期 (Moment.js 对象)
+
+
+updated
+博文最后更新日期 (Moment.js 对象)
+
+
+categories
+博文的所有分类
+
+
+tags
+博文的所有标签
+
+
+comment">
 <meta name="twitter:site" content="@fly2xiang">
 <meta property="fb:admins" content="100000247608790">
 
@@ -152,7 +197,7 @@ Post date (Mome">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Models</h1>
+        <h1 id="page-title" itemprop="name">模型</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/models.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -162,160 +207,160 @@ Post date (Mome">
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Post"><span class="toc-number">1.</span> <span class="toc-text">Post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Page"><span class="toc-number">2.</span> <span class="toc-text">Page</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Category"><span class="toc-number">3.</span> <span class="toc-text">Category</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Tag"><span class="toc-number">4.</span> <span class="toc-text">Tag</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#博文"><span class="toc-number">1.</span> <span class="toc-text">博文</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#单页"><span class="toc-number">2.</span> <span class="toc-text">单页</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分类"><span class="toc-number">3.</span> <span class="toc-text">分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#标签"><span class="toc-number">4.</span> <span class="toc-text">标签</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <p>Hexo uses <a href="https://github.com/tommy351/warehouse" target="_blank" rel="external">Warehouse</a> to store everything. You can check the <a href="/api/warehouse/classes/Database.html">API</a> and see the contents of data model below.</p>
-<h3 id="Post">Post</h3>
+        <p>Hexo 使用 <a href="https://github.com/tommy351/warehouse" target="_blank" rel="external">Warehouse</a> 来保存所有数据。你可以查看 <a href="/api/warehouse/classes/Database.html">API</a> 和查看下面的数据模型内容。</p>
+<h3 id="博文">博文</h3>
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>Description</th>
+<th>名称</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>id</code></td>
-<td>Post ID (Set by user)</td>
+<td>博文ID (用户设置)</td>
 </tr>
 <tr>
 <td><code>title</code></td>
-<td>Post title</td>
+<td>博文标题</td>
 </tr>
 <tr>
 <td><code>date</code></td>
-<td>Post date (<a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> object)</td>
+<td>博文日期 (<a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> 对象)</td>
 </tr>
 <tr>
 <td><code>updated</code></td>
-<td>Post last updated date (<a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> object)</td>
+<td>博文最后更新日期 (<a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> 对象)</td>
 </tr>
 <tr>
 <td><code>categories</code></td>
-<td>All categories of the post</td>
+<td>博文的所有分类</td>
 </tr>
 <tr>
 <td><code>tags</code></td>
-<td>All tags of the post</td>
+<td>博文的所有标签</td>
 </tr>
 <tr>
 <td><code>comments</code></td>
-<td>Comment enabled or not</td>
+<td>博文的所有评论</td>
 </tr>
 <tr>
 <td><code>layout</code></td>
-<td>Layout name</td>
+<td>布局名称</td>
 </tr>
 <tr>
 <td><code>content</code></td>
-<td>The full processed content of the post</td>
+<td>完整的处理过的内容</td>
 </tr>
 <tr>
 <td><code>excerpt</code></td>
-<td>The processed excerpt of the post</td>
+<td>摘要</td>
 </tr>
 <tr>
 <td><code>source</code></td>
-<td>The path of the source file</td>
+<td>源文件路径</td>
 </tr>
 <tr>
 <td><code>full_source</code></td>
-<td>Full path of the source file</td>
+<td>完整源文件路径</td>
 </tr>
 <tr>
 <td><code>path</code></td>
-<td>The URL of the post without root URL</td>
+<td>不包含根目录的URL</td>
 </tr>
 <tr>
 <td><code>permalink</code></td>
-<td>Full URL of the post</td>
+<td>完整URL</td>
 </tr>
 <tr>
 <td><code>raw</code></td>
-<td>The raw data of the post</td>
+<td>原始内容</td>
 </tr>
 <tr>
 <td><code>photos</code></td>
-<td>The photos of the article (Used in gallery posts)</td>
+<td>文章图片 (Used in gallery posts)</td>
 </tr>
 <tr>
 <td><code>link</code></td>
-<td>The external link of the article (Used in link posts)</td>
+<td>文正外部链接 (Used in link posts)</td>
 </tr>
 </tbody>
 </table>
-<h3 id="Page">Page</h3>
+<h3 id="单页">单页</h3>
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>Description</th>
+<th>标题</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>title</code></td>
-<td>Page title</td>
+<td>文章标题</td>
 </tr>
 <tr>
 <td><code>date</code></td>
-<td>Page date (<a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> object)</td>
+<td>文章日期 (<a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> 对象)</td>
 </tr>
 <tr>
 <td><code>updated</code></td>
-<td>Page last updated date (<a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> object)</td>
+<td>文章最后更新时间 (<a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> 对象)</td>
 </tr>
 <tr>
 <td><code>comments</code></td>
-<td>Comment enabled or not</td>
+<td>评论是否打开</td>
 </tr>
 <tr>
 <td><code>layout</code></td>
-<td>Layout name</td>
+<td>布局名称</td>
 </tr>
 <tr>
 <td><code>content</code></td>
-<td>The full processed content of the page</td>
+<td>完整的处理过的内容</td>
 </tr>
 <tr>
 <td><code>excerpt</code></td>
-<td>The processed excerpt of the page</td>
+<td>摘要</td>
 </tr>
 <tr>
 <td><code>source</code></td>
-<td>The path of the source file</td>
+<td>源文件路径</td>
 </tr>
 <tr>
 <td><code>full_path</code></td>
-<td>Full path of the source file</td>
+<td>完整源文件路径</td>
 </tr>
 <tr>
 <td><code>path</code></td>
-<td>The URL of the page without root URL</td>
+<td>不包含根目录的URL</td>
 </tr>
 <tr>
 <td><code>permalink</code></td>
-<td>Full URL of the page</td>
+<td>完整URL</td>
 </tr>
 <tr>
 <td><code>raw</code></td>
-<td>The raw data of the page</td>
+<td>原始内容</td>
 </tr>
 </tbody>
 </table>
-<h3 id="Category">Category</h3>
+<h3 id="分类">分类</h3>
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>Description</th>
+<th>名称</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>name</code></td>
-<td>Category name</td>
+<td>分类名称</td>
 </tr>
 <tr>
 <td><code>slug</code></td>
@@ -323,38 +368,38 @@ Post date (Mome">
 </tr>
 <tr>
 <td><code>posts</code></td>
-<td>All posts in the category</td>
+<td>分类中的所有文章</td>
 </tr>
 <tr>
 <td><code>path</code></td>
-<td>The URL of the category without root URL</td>
+<td>不包含根目录的URL</td>
 </tr>
 <tr>
 <td><code>permalink</code></td>
-<td>Full URL of the category</td>
+<td>完整URL</td>
 </tr>
 <tr>
 <td><code>length</code></td>
-<td>Total number of posts in the category</td>
+<td>分类中的文章数</td>
 </tr>
 <tr>
 <td><code>parent</code></td>
-<td>Parent category</td>
+<td>父级分类</td>
 </tr>
 </tbody>
 </table>
-<h3 id="Tag">Tag</h3>
+<h3 id="标签">标签</h3>
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>Description</th>
+<th>名称</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>name</code></td>
-<td>Tag name</td>
+<td>标签名称</td>
 </tr>
 <tr>
 <td><code>slug</code></td>
@@ -362,32 +407,32 @@ Post date (Mome">
 </tr>
 <tr>
 <td><code>posts</code></td>
-<td>All posts in the tag</td>
+<td>标签中的所有文章</td>
 </tr>
 <tr>
 <td><code>path</code></td>
-<td>The URL of the tag without root URL</td>
+<td>不包含根目录的URL</td>
 </tr>
 <tr>
 <td><code>permalink</code></td>
-<td>Full URL of the tag</td>
+<td>完整URL</td>
 </tr>
 <tr>
 <td><code>length</code></td>
-<td>Total number of posts in the tag</td>
+<td>标签中的文章数</td>
 </tr>
 </tbody>
 </table>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-12-22T09:12:17.000Z" itemprop="dateModified">Last updated: Dec 22 2014</time>
+        <time id="page-footer-updated" datetime="2015-02-27T09:27:51.000Z" itemprop="dateModified">Last updated: Feb 27 2015</time>
         <a href="plugins.html" id="page-footer-prev" title="插件">Prev</a><a href="events.html" id="page-footer-next" title="事件">Next</a>
       </footer>
       
 <section id="comments">
 <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="docs/models.html" data-title="Models" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/models.html"></div>
+    <div class="ds-thread" data-thread-key="docs/models.html" data-title="模型" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/models.html"></div>
 <!-- 多说评论框 end -->
 </section>
 
@@ -458,7 +503,7 @@ Post date (Mome">
   <div class="outer">
     <div class="inner">
       <div id="footer-copyright">
-        &copy; 2014 <a href="http://www.liuzhixiang.com/hexo_site_cn/"> Hexo 中文网</a> <a href="http://www.liuzhixiang.com/">刘志祥的个人网站</a>
+        &copy; 2015 <a href="http://www.liuzhixiang.com/hexo_site_cn/"> Hexo 中文网</a> <a href="http://www.liuzhixiang.com/">刘志祥的个人网站</a>
       </div>
       <div id="footer-links">
         <a href="https://twitter.com/fly2xiang" id="footer-link-twitter" class="footer-link" target="_blank"><span>Twitter</span></a>

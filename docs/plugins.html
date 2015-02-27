@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Plugins | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
+  <title>插件 | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://www.liuzhixiang.com/hexo_site_cn/docs/plugins.html">
   <link rel="apple-touch-icon" sizes="57x57" href="/hexo_site_cn/apple-touch-icon-57x57.png">
@@ -25,24 +25,30 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/hexo_site_cn/atom.xml" title="Hexo中文网" type="application/atom+xml">
-  <meta name="description" content="Overview
-Hexo has a powerful plugin system. Most of built-in plugins are extensions of Hexo. This makes you easy to hook up your code.
-Script
-If your code is simple, it’s recommended to use a script.">
+  <meta name="description" content="概述
+Hexo 有一个强大的插件系统。很多内置插件是 Hexo 的扩展。它是你简单的编写你的代码。
+脚本
+如果你的代码是简单的，推荐你使用脚本。你需要做的就是将 Javascript 文件放到 scripts 文件夹中，它们会在 Hexo 初始化的时候被加载。
+插件
+如果你的代码很复杂或者你想要将它发布到 NPM ，推荐你使用插件。首先，在 node_modules 文件夹下创建一个文件夹。文件夹">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Plugins">
+<meta property="og:title" content="插件">
 <meta property="og:url" content="http://www.liuzhixiang.com/hexo_site_cn/hexo_site_cn/docs/plugins.html">
 <meta property="og:site_name" content="Hexo中文网">
-<meta property="og:description" content="Overview
-Hexo has a powerful plugin system. Most of built-in plugins are extensions of Hexo. This makes you easy to hook up your code.
-Script
-If your code is simple, it’s recommended to use a script.">
+<meta property="og:description" content="概述
+Hexo 有一个强大的插件系统。很多内置插件是 Hexo 的扩展。它是你简单的编写你的代码。
+脚本
+如果你的代码是简单的，推荐你使用脚本。你需要做的就是将 Javascript 文件放到 scripts 文件夹中，它们会在 Hexo 初始化的时候被加载。
+插件
+如果你的代码很复杂或者你想要将它发布到 NPM ，推荐你使用插件。首先，在 node_modules 文件夹下创建一个文件夹。文件夹">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Plugins">
-<meta name="twitter:description" content="Overview
-Hexo has a powerful plugin system. Most of built-in plugins are extensions of Hexo. This makes you easy to hook up your code.
-Script
-If your code is simple, it’s recommended to use a script.">
+<meta name="twitter:title" content="插件">
+<meta name="twitter:description" content="概述
+Hexo 有一个强大的插件系统。很多内置插件是 Hexo 的扩展。它是你简单的编写你的代码。
+脚本
+如果你的代码是简单的，推荐你使用脚本。你需要做的就是将 Javascript 文件放到 scripts 文件夹中，它们会在 Hexo 初始化的时候被加载。
+插件
+如果你的代码很复杂或者你想要将它发布到 NPM ，推荐你使用插件。首先，在 node_modules 文件夹下创建一个文件夹。文件夹">
 <meta name="twitter:site" content="@fly2xiang">
 <meta property="fb:admins" content="100000247608790">
 
@@ -101,7 +107,7 @@ If your code is simple, it’s recommended to use a script.">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Plugins</h1>
+        <h1 id="page-title" itemprop="name">插件</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/plugins.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -111,32 +117,32 @@ If your code is simple, it’s recommended to use a script.">
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Overview"><span class="toc-number">1.</span> <span class="toc-text">Overview</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Script"><span class="toc-number">1.1.</span> <span class="toc-text">Script</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Plugin"><span class="toc-number">1.2.</span> <span class="toc-text">Plugin</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Publishing"><span class="toc-number">1.3.</span> <span class="toc-text">Publishing</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Generator"><span class="toc-number">2.</span> <span class="toc-text">Generator</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax"><span class="toc-number">2.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Render_Function"><span class="toc-number">2.2.</span> <span class="toc-text">Render Function</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">2.3.</span> <span class="toc-text">Example</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Renderer"><span class="toc-number">3.</span> <span class="toc-text">Renderer</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-1"><span class="toc-number">3.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-1"><span class="toc-number">3.2.</span> <span class="toc-text">Example</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Helper"><span class="toc-number">4.</span> <span class="toc-text">Helper</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-2"><span class="toc-number">4.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-2"><span class="toc-number">4.2.</span> <span class="toc-text">Example</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Deployer"><span class="toc-number">5.</span> <span class="toc-text">Deployer</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-3"><span class="toc-number">5.1.</span> <span class="toc-text">Syntax</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Processor"><span class="toc-number">6.</span> <span class="toc-text">Processor</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-4"><span class="toc-number">6.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#File_data"><span class="toc-number">6.2.</span> <span class="toc-text">File data</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tag"><span class="toc-number">7.</span> <span class="toc-text">Tag</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-5"><span class="toc-number">7.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Options"><span class="toc-number">7.2.</span> <span class="toc-text">Options</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-3"><span class="toc-number">7.3.</span> <span class="toc-text">Example</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Console"><span class="toc-number">8.</span> <span class="toc-text">Console</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-6"><span class="toc-number">8.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Options-1"><span class="toc-number">8.2.</span> <span class="toc-text">Options</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-4"><span class="toc-number">8.3.</span> <span class="toc-text">Example</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Migrator"><span class="toc-number">9.</span> <span class="toc-text">Migrator</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-7"><span class="toc-number">9.1.</span> <span class="toc-text">Syntax</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Filter"><span class="toc-number">10.</span> <span class="toc-text">Filter</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-8"><span class="toc-number">10.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Post_Filter"><span class="toc-number">10.2.</span> <span class="toc-text">Post Filter</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#概述"><span class="toc-number">1.</span> <span class="toc-text">概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#脚本"><span class="toc-number">1.1.</span> <span class="toc-text">脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#插件"><span class="toc-number">1.2.</span> <span class="toc-text">插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#发布"><span class="toc-number">1.3.</span> <span class="toc-text">发布</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生成器"><span class="toc-number">2.</span> <span class="toc-text">生成器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#语法"><span class="toc-number">2.1.</span> <span class="toc-text">语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Render_Function"><span class="toc-number">2.2.</span> <span class="toc-text">Render Function</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">2.3.</span> <span class="toc-text">Example</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Renderer"><span class="toc-number">3.</span> <span class="toc-text">Renderer</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax"><span class="toc-number">3.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-1"><span class="toc-number">3.2.</span> <span class="toc-text">Example</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Helper"><span class="toc-number">4.</span> <span class="toc-text">Helper</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-1"><span class="toc-number">4.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-2"><span class="toc-number">4.2.</span> <span class="toc-text">Example</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Deployer"><span class="toc-number">5.</span> <span class="toc-text">Deployer</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-2"><span class="toc-number">5.1.</span> <span class="toc-text">Syntax</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Processor"><span class="toc-number">6.</span> <span class="toc-text">Processor</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-3"><span class="toc-number">6.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#File_data"><span class="toc-number">6.2.</span> <span class="toc-text">File data</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tag"><span class="toc-number">7.</span> <span class="toc-text">Tag</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-4"><span class="toc-number">7.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Options"><span class="toc-number">7.2.</span> <span class="toc-text">Options</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-3"><span class="toc-number">7.3.</span> <span class="toc-text">Example</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Console"><span class="toc-number">8.</span> <span class="toc-text">Console</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-5"><span class="toc-number">8.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Options-1"><span class="toc-number">8.2.</span> <span class="toc-text">Options</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-4"><span class="toc-number">8.3.</span> <span class="toc-text">Example</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Migrator"><span class="toc-number">9.</span> <span class="toc-text">Migrator</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-6"><span class="toc-number">9.1.</span> <span class="toc-text">Syntax</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Filter"><span class="toc-number">10.</span> <span class="toc-text">Filter</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-7"><span class="toc-number">10.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Post_Filter"><span class="toc-number">10.2.</span> <span class="toc-text">Post Filter</span></a></li></ol></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <h2 id="Overview">Overview</h2>
-<p>Hexo has a powerful plugin system. Most of built-in plugins are extensions of Hexo. This makes you easy to hook up your code.</p>
-<h3 id="Script">Script</h3>
-<p>If your code is simple, it’s recommended to use a script. All you need to do is putting JavaScript files in <code>scripts</code> folder and they’ll be loaded once Hexo is initialized.</p>
-<h3 id="Plugin">Plugin</h3>
-<p>If your code is complicated or you want to publish it to NPM registry, it’s recommended to use a plugin. First, create a folder in <code>node_modules</code> folder. The name of the folder must be started with <code>hexo-</code> so it could be loaded by Hexo. The folder must be contained at least 2 files: One is the main program and the other is <code>package.json</code> describing the purpose and the dependencies of the plugin.</p>
+        <h2 id="概述">概述</h2>
+<p>Hexo 有一个强大的插件系统。很多内置插件是 Hexo 的扩展。它是你简单的编写你的代码。</p>
+<h3 id="脚本">脚本</h3>
+<p>如果你的代码是简单的，推荐你使用脚本。你需要做的就是将 Javascript 文件放到 <code>scripts</code> 文件夹中，它们会在 Hexo 初始化的时候被加载。</p>
+<h3 id="插件">插件</h3>
+<p>如果你的代码很复杂或者你想要将它发布到 NPM ，推荐你使用插件。首先，在 <code>node_modules</code> 文件夹下创建一个文件夹。文件夹名称必须以 <code>hexo-</code> 开头才能被 Hexo 加载。文件夹中至少要包含两个文件：一个是主程序文件，另一个是 <code>package.json</code> 用来描述插件的目的和依赖。</p>
 <figure class="highlight plain"><pre><div class="line">.</div><div class="line">├── index.js</div><div class="line">└── package.json</div></pre></figure>
 
-<p>You should at least describe <code>name</code>, <code>version</code>, <code>main</code> in <code>package.json</code>. For example:</p>
+<p>你应当在 <code>package.json</code> 中写入 <code>name</code>, <code>version</code>, <code>main</code> 描述信息。例如：</p>
 <figure class="highlight json"><figcaption><span>package.json</span></figcaption><pre><div class="line">{</div><div class="line">  "<span class="attribute">name</span>": <span class="value"><span class="string">"hexo-my-plugin"</span></span>,</div><div class="line">  "<span class="attribute">version</span>": <span class="value"><span class="string">"0.0.1"</span></span>,</div><div class="line">  "<span class="attribute">main</span>": <span class="value"><span class="string">"index"</span></span></div><div class="line">}</div></pre></figure>
 
-<h3 id="Publishing">Publishing</h3>
-<p>You can publish your plugin to the <a href="https://github.com/hexojs/hexo/wiki/Plugins" target="_blank" rel="external">plugin list</a> on wiki.</p>
-<h2 id="Generator">Generator</h2>
-<p>Generators are used to generate static files based on processed source files.</p>
-<h3 id="Syntax">Syntax</h3>
+<h3 id="发布">发布</h3>
+<p>你可以将插件发布到wiki上的 <a href="https://github.com/hexojs/hexo/wiki/Plugins" target="_blank" rel="external">插件列表</a>。</p>
+<h2 id="生成器">生成器</h2>
+<p>生成器被用来处理源文件生成静态文件。</p>
+<h3 id="语法">语法</h3>
 <figure class="highlight js"><pre><div class="line">hexo.extend.generator.register(name, <span class="function"><span class="keyword">function</span><span class="params">(locals, render, callback)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
 
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
@@ -207,7 +213,7 @@ If your code is simple, it’s recommended to use a script.">
 
 <h2 id="Renderer">Renderer</h2>
 <p>Renderers are used to render contents. You can find available renderers in <a href="https://github.com/hexojs/hexo/wiki/Plugins#renderer" target="_blank" rel="external">plugin list</a>.</p>
-<h3 id="Syntax-1">Syntax</h3>
+<h3 id="Syntax">Syntax</h3>
 <figure class="highlight js"><pre><div class="line">hexo.extend.renderer.register(name, output, <span class="function"><span class="keyword">function</span><span class="params">(data, options, callback)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">}, sync);</div></pre></figure>
 
 <table>
@@ -268,7 +274,7 @@ If your code is simple, it’s recommended to use a script.">
 
 <h2 id="Helper">Helper</h2>
 <p>Helpers are used in templates to help you insert snippets quickly. It’s recommended to put complicated or often used code in helpers instead of templates. (Don’t repeat yourself, right?)</p>
-<h3 id="Syntax-2">Syntax</h3>
+<h3 id="Syntax-1">Syntax</h3>
 <p>You can get all local variables from <code>this</code>.</p>
 <figure class="highlight js"><pre><div class="line">hexo.extend.helper.register(name, <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
 
@@ -299,7 +305,7 @@ If your code is simple, it’s recommended to use a script.">
 
 <h2 id="Deployer">Deployer</h2>
 <p>Deployer plugin helps you deploy your site on web without complicated commands.</p>
-<h3 id="Syntax-3">Syntax</h3>
+<h3 id="Syntax-2">Syntax</h3>
 <figure class="highlight js"><pre><div class="line">hexo.extend.deployer.register(name, <span class="function"><span class="keyword">function</span><span class="params">(args, callback)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
 
 <table>
@@ -347,7 +353,7 @@ If your code is simple, it’s recommended to use a script.">
 </blockquote>
 
 
-<h3 id="Syntax-4">Syntax</h3>
+<h3 id="Syntax-3">Syntax</h3>
 <figure class="highlight js"><pre><div class="line">hexo.extend.processor.register(rule, <span class="function"><span class="keyword">function</span><span class="params">(file, callback)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
 
 <table>
@@ -467,7 +473,7 @@ If your code is simple, it’s recommended to use a script.">
 
 <h2 id="Tag">Tag</h2>
 <p>Tags are used in posts to help your insert snippets quickly.</p>
-<h3 id="Syntax-5">Syntax</h3>
+<h3 id="Syntax-4">Syntax</h3>
 <figure class="highlight js"><pre><div class="line">hexo.extend.tag.register(name, <span class="function"><span class="keyword">function</span><span class="params">(args, content, options)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">}, options);</div></pre></figure>
 
 <table>
@@ -546,7 +552,7 @@ If your code is simple, it’s recommended to use a script.">
 
 <h2 id="Console">Console</h2>
 <p>Consoles are the interface between Hexo and you.</p>
-<h3 id="Syntax-6">Syntax</h3>
+<h3 id="Syntax-5">Syntax</h3>
 <figure class="highlight js"><pre><div class="line">hexo.extend.console.register(name, desc, options, <span class="function"><span class="keyword">function</span><span class="params">(args, callback)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
 
 <table>
@@ -622,7 +628,7 @@ If your code is simple, it’s recommended to use a script.">
 
 <h2 id="Migrator">Migrator</h2>
 <p>Migrators are used to migrate from other system to Hexo.</p>
-<h3 id="Syntax-7">Syntax</h3>
+<h3 id="Syntax-6">Syntax</h3>
 <figure class="highlight js"><pre><div class="line">hexo.extend.migrator.register(name, <span class="function"><span class="keyword">function</span><span class="params">(args, callback)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
 
 <table>
@@ -664,7 +670,7 @@ If your code is simple, it’s recommended to use a script.">
 </table>
 <h2 id="Filter">Filter</h2>
 <p>Filters are used to modify certain data. Hexo passes data through filters and you can modify everything as long as it’s provided. This concept is stolen from <a href="http://codex.wordpress.org/Plugin_API#Filters" target="_blank" rel="external">WordPress</a>. Filter API is rewritten in 2.6 and more filter types are added.</p>
-<h3 id="Syntax-8">Syntax</h3>
+<h3 id="Syntax-7">Syntax</h3>
 <figure class="highlight js"><pre><div class="line">hexo.extend.filter.register(type, <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">}, priority);</div></pre></figure>
 
 <table>
@@ -713,13 +719,13 @@ If your code is simple, it’s recommended to use a script.">
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-12-22T09:12:17.000Z" itemprop="dateModified">Last updated: Dec 22 2014</time>
+        <time id="page-footer-updated" datetime="2015-02-27T09:17:11.000Z" itemprop="dateModified">Last updated: Feb 27 2015</time>
         <a href="helpers.html" id="page-footer-prev" title="帮助">Prev</a><a href="models.html" id="page-footer-next" title="模型">Next</a>
       </footer>
       
 <section id="comments">
 <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="docs/plugins.html" data-title="Plugins" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/plugins.html"></div>
+    <div class="ds-thread" data-thread-key="docs/plugins.html" data-title="插件" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/plugins.html"></div>
 <!-- 多说评论框 end -->
 </section>
 
@@ -790,7 +796,7 @@ If your code is simple, it’s recommended to use a script.">
   <div class="outer">
     <div class="inner">
       <div id="footer-copyright">
-        &copy; 2014 <a href="http://www.liuzhixiang.com/hexo_site_cn/"> Hexo 中文网</a> <a href="http://www.liuzhixiang.com/">刘志祥的个人网站</a>
+        &copy; 2015 <a href="http://www.liuzhixiang.com/hexo_site_cn/"> Hexo 中文网</a> <a href="http://www.liuzhixiang.com/">刘志祥的个人网站</a>
       </div>
       <div id="footer-links">
         <a href="https://twitter.com/fly2xiang" id="footer-link-twitter" class="footer-link" target="_blank"><span>Twitter</span></a>

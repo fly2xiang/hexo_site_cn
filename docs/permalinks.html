@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Permalinks | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
+  <title>链接格式 | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://www.liuzhixiang.com/hexo_site_cn/docs/permalinks.html">
   <link rel="apple-touch-icon" sizes="57x57" href="/hexo_site_cn/apple-touch-icon-57x57.png">
@@ -25,21 +25,54 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/hexo_site_cn/atom.xml" title="Hexo中文网" type="application/atom+xml">
-  <meta name="description" content="You can specify the permalinks for your site in _config.yml or in the front-matter for each post.
-Variables
-Besides the following variables, you can use any attributes in the permalink since Hexo 2.5.">
+  <meta name="description" content="你可以在 _config.yml 或在每篇文章的前置数据中指定链接格式。 
+变量
+Besides the following variables, you can use any attributes in the permalink since Hexo 2.5.在Hexo 2.5以上版本中，你可以在链接格式中使用以下变量。
+
+
+
+变量
+描述
+
+
+
+
+:year
+文章的发表年份 (4位数字)">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Permalinks">
+<meta property="og:title" content="链接格式">
 <meta property="og:url" content="http://www.liuzhixiang.com/hexo_site_cn/hexo_site_cn/docs/permalinks.html">
 <meta property="og:site_name" content="Hexo中文网">
-<meta property="og:description" content="You can specify the permalinks for your site in _config.yml or in the front-matter for each post.
-Variables
-Besides the following variables, you can use any attributes in the permalink since Hexo 2.5.">
+<meta property="og:description" content="你可以在 _config.yml 或在每篇文章的前置数据中指定链接格式。 
+变量
+Besides the following variables, you can use any attributes in the permalink since Hexo 2.5.在Hexo 2.5以上版本中，你可以在链接格式中使用以下变量。
+
+
+
+变量
+描述
+
+
+
+
+:year
+文章的发表年份 (4位数字)">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Permalinks">
-<meta name="twitter:description" content="You can specify the permalinks for your site in _config.yml or in the front-matter for each post.
-Variables
-Besides the following variables, you can use any attributes in the permalink since Hexo 2.5.">
+<meta name="twitter:title" content="链接格式">
+<meta name="twitter:description" content="你可以在 _config.yml 或在每篇文章的前置数据中指定链接格式。 
+变量
+Besides the following variables, you can use any attributes in the permalink since Hexo 2.5.在Hexo 2.5以上版本中，你可以在链接格式中使用以下变量。
+
+
+
+变量
+描述
+
+
+
+
+:year
+文章的发表年份 (4位数字)">
 <meta name="twitter:site" content="@fly2xiang">
 <meta property="fb:admins" content="100000247608790">
 
@@ -98,7 +131,7 @@ Besides the following variables, you can use any attributes in the permalink sin
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Permalinks</h1>
+        <h1 id="page-title" itemprop="name">链接格式</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/permalinks.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -108,66 +141,66 @@ Besides the following variables, you can use any attributes in the permalink sin
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Variables"><span class="toc-number">1.</span> <span class="toc-text">Variables</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Examples"><span class="toc-number">2.</span> <span class="toc-text">Examples</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Multi-language_Support"><span class="toc-number">3.</span> <span class="toc-text">Multi-language Support</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#变量"><span class="toc-number">1.</span> <span class="toc-text">变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#示例"><span class="toc-number">2.</span> <span class="toc-text">示例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#多语言支持"><span class="toc-number">3.</span> <span class="toc-text">多语言支持</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <p>You can specify the permalinks for your site in <code>_config.yml</code> or in the front-matter for each post.</p>
-<h3 id="Variables">Variables</h3>
-<p>Besides the following variables, you can use any attributes in the permalink since Hexo 2.5.</p>
+        <p>你可以在 <code>_config.yml</code> 或在每篇文章的前置数据中指定链接格式。 </p>
+<h3 id="变量">变量</h3>
+<p>Besides the following variables, you can use any attributes in the permalink since Hexo 2.5.<br>在Hexo 2.5以上版本中，你可以在链接格式中使用以下变量。</p>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th>Description</th>
+<th>变量</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>:year</code></td>
-<td>Published year of posts (4-digit)</td>
+<td>文章的发表年份 (4位数字)</td>
 </tr>
 <tr>
 <td><code>:month</code></td>
-<td>Published month of posts (2-digit)</td>
+<td>文章的发表月份 (2位数字)</td>
 </tr>
 <tr>
 <td><code>:i_month</code></td>
-<td>Published month of posts (Without leading zeros)</td>
+<td>文章的发表月份 (不含前导零)</td>
 </tr>
 <tr>
 <td><code>:day</code></td>
-<td>Published day of posts (2-digit)</td>
+<td>文章的发表日 (2位数字)</td>
 </tr>
 <tr>
 <td><code>:i_day</code></td>
-<td>Published day of posts (Without leading zeros)</td>
+<td>文章的发表日 (不含前导零)</td>
 </tr>
 <tr>
 <td><code>:title</code></td>
-<td>Filename</td>
+<td>文件名</td>
 </tr>
 <tr>
 <td><code>:id</code></td>
-<td>Post ID</td>
+<td>文章ID</td>
 </tr>
 <tr>
 <td><code>:category</code></td>
-<td>Categories. If the post is uncategorized, it’ll be <code>category_dir</code> setting.</td>
+<td>文章分类。 如果文章没有分类，它将会是 <code>category_dir</code> 设置项。</td>
 </tr>
 </tbody>
 </table>
-<p>You can define the default value of each variable in the permalink in <code>permalink_defaults</code> setting:</p>
+<p>你可以在 <code>permalink_defaults</code> 设置项中定义每个变量的默认值：</p>
 <figure class="highlight yaml"><pre><div class="line">permalink_default<span class="variable">s:</span></div><div class="line">  <span class="keyword">lan</span><span class="variable">g:</span> <span class="keyword">en</span></div></pre></figure>
 
-<h3 id="Examples">Examples</h3>
-<p>Given a post named <code>hello-world.md</code> in <code>source/_posts</code> folder with the following content.</p>
+<h3 id="示例">示例</h3>
+<p>Given a post named <code>hello-world.md</code> in <code>source/_posts</code> folder with the following content.<br>给定一篇在 <code>source/_posts</code> 目录下，文件名为 <code>hello-world.md</code> 的文章，内容如下：</p>
 <figure class="highlight yaml"><pre><div class="line">title: Hello World</div><div class="line">date: 2013-07-14 17:01:34</div><div class="line">categories:</div><div class="line">-<span class="ruby"> foo</span></div><div class="line">-<span class="ruby"> bar</span></div></pre></figure>
 
 <table>
 <thead>
 <tr>
-<th>Setting</th>
-<th>Result</th>
+<th>设置</th>
+<th>结果</th>
 </tr>
 </thead>
 <tbody>
@@ -185,26 +218,26 @@ Besides the following variables, you can use any attributes in the permalink sin
 </tr>
 </tbody>
 </table>
-<h3 id="Multi-language_Support">Multi-language Support</h3>
-<p>To create a multi-language site, you can modify <code>new_post_name</code> and <code>permalink</code> setting like this:</p>
+<h3 id="多语言支持">多语言支持</h3>
+<p>想创建一个多语言的站点，你可以修改 <code>new_post_name</code> 和 <code>permalink</code> 设置如下：</p>
 <figure class="highlight yaml"><pre><div class="line"><span class="symbol">new_post_name:</span> <span class="symbol">:lang/</span><span class="symbol">:title</span>.md</div><div class="line"><span class="symbol">permalink:</span> <span class="symbol">:lang/</span><span class="symbol">:title/</span></div></pre></figure>
 
-<p>When you create a new post, the post will be saved to:</p>
+<p>当你新建一篇文章时，会被保存到：</p>
 <figure class="highlight bash"><pre><div class="line">$ hexo new <span class="string">"Hello World"</span> --lang tw</div><div class="line"><span class="comment"># =&gt; source/_posts/tw/Hello-World.md</span></div></pre></figure>
 
-<p>and the URL will be:</p>
+<p>文章地址将会是：</p>
 <figure class="highlight plain"><pre><div class="line">http://localhost:4000/tw/hello-world/</div></pre></figure>
 
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-12-22T09:12:17.000Z" itemprop="dateModified">Last updated: Dec 22 2014</time>
+        <time id="page-footer-updated" datetime="2015-02-27T06:59:25.000Z" itemprop="dateModified">Last updated: Feb 27 2015</time>
         <a href="deployment.html" id="page-footer-prev" title="发布">Prev</a><a href="themes.html" id="page-footer-next" title="主题">Next</a>
       </footer>
       
 <section id="comments">
 <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="docs/permalinks.html" data-title="Permalinks" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/permalinks.html"></div>
+    <div class="ds-thread" data-thread-key="docs/permalinks.html" data-title="链接格式" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/permalinks.html"></div>
 <!-- 多说评论框 end -->
 </section>
 
@@ -275,7 +308,7 @@ Besides the following variables, you can use any attributes in the permalink sin
   <div class="outer">
     <div class="inner">
       <div id="footer-copyright">
-        &copy; 2014 <a href="http://www.liuzhixiang.com/hexo_site_cn/"> Hexo 中文网</a> <a href="http://www.liuzhixiang.com/">刘志祥的个人网站</a>
+        &copy; 2015 <a href="http://www.liuzhixiang.com/hexo_site_cn/"> Hexo 中文网</a> <a href="http://www.liuzhixiang.com/">刘志祥的个人网站</a>
       </div>
       <div id="footer-links">
         <a href="https://twitter.com/fly2xiang" id="footer-link-twitter" class="footer-link" target="_blank"><span>Twitter</span></a>

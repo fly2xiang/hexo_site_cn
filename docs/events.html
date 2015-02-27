@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Events | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
+  <title>事件 | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://www.liuzhixiang.com/hexo_site_cn/docs/events.html">
   <link rel="apple-touch-icon" sizes="57x57" href="/hexo_site_cn/apple-touch-icon-57x57.png">
@@ -25,33 +25,48 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/hexo_site_cn/atom.xml" title="Hexo中文网" type="application/atom+xml">
-  <meta name="description" content="Overview
-Hexo inherits EventEmitter of Node.js. You can subscribe or publish specified events. For example:
+  <meta name="description" content="概述
+Hexo 继承了 Node.js 的 EventEmitter。你可以订阅或者发布指定事件。例如：
 hexo.on('ready', function(){  console.log('Hexo is ready to go!');});
 
-Events
+事件
 ready
-Called o">
+Hexo 初始化完成后被调用一次。
+generateBefore
+生成之前被调用。
+generateAfter
+生成之后被调用。
+pr">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Events">
+<meta property="og:title" content="事件">
 <meta property="og:url" content="http://www.liuzhixiang.com/hexo_site_cn/hexo_site_cn/docs/events.html">
 <meta property="og:site_name" content="Hexo中文网">
-<meta property="og:description" content="Overview
-Hexo inherits EventEmitter of Node.js. You can subscribe or publish specified events. For example:
+<meta property="og:description" content="概述
+Hexo 继承了 Node.js 的 EventEmitter。你可以订阅或者发布指定事件。例如：
 hexo.on('ready', function(){  console.log('Hexo is ready to go!');});
 
-Events
+事件
 ready
-Called o">
+Hexo 初始化完成后被调用一次。
+generateBefore
+生成之前被调用。
+generateAfter
+生成之后被调用。
+pr">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Events">
-<meta name="twitter:description" content="Overview
-Hexo inherits EventEmitter of Node.js. You can subscribe or publish specified events. For example:
+<meta name="twitter:title" content="事件">
+<meta name="twitter:description" content="概述
+Hexo 继承了 Node.js 的 EventEmitter。你可以订阅或者发布指定事件。例如：
 hexo.on('ready', function(){  console.log('Hexo is ready to go!');});
 
-Events
+事件
 ready
-Called o">
+Hexo 初始化完成后被调用一次。
+generateBefore
+生成之前被调用。
+generateAfter
+生成之后被调用。
+pr">
 <meta name="twitter:site" content="@fly2xiang">
 <meta property="fb:admins" content="100000247608790">
 
@@ -110,7 +125,7 @@ Called o">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Events</h1>
+        <h1 id="page-title" itemprop="name">事件</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/events.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -120,27 +135,27 @@ Called o">
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Overview"><span class="toc-number">1.</span> <span class="toc-text">Overview</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Events"><span class="toc-number">2.</span> <span class="toc-text">Events</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ready"><span class="toc-number">2.1.</span> <span class="toc-text">ready</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#generateBefore"><span class="toc-number">2.2.</span> <span class="toc-text">generateBefore</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#generateAfter"><span class="toc-number">2.3.</span> <span class="toc-text">generateAfter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#processBefore"><span class="toc-number">2.4.</span> <span class="toc-text">processBefore</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#processAfter"><span class="toc-number">2.5.</span> <span class="toc-text">processAfter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#new"><span class="toc-number">2.6.</span> <span class="toc-text">new</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#server"><span class="toc-number">2.7.</span> <span class="toc-text">server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#exit"><span class="toc-number">2.8.</span> <span class="toc-text">exit</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#deployBefore"><span class="toc-number">2.9.</span> <span class="toc-text">deployBefore</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#deployAfter"><span class="toc-number">2.10.</span> <span class="toc-text">deployAfter</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#概述"><span class="toc-number">1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#事件"><span class="toc-number">2.</span> <span class="toc-text">事件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ready"><span class="toc-number">2.1.</span> <span class="toc-text">ready</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#generateBefore"><span class="toc-number">2.2.</span> <span class="toc-text">generateBefore</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#generateAfter"><span class="toc-number">2.3.</span> <span class="toc-text">generateAfter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#processBefore"><span class="toc-number">2.4.</span> <span class="toc-text">processBefore</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#processAfter"><span class="toc-number">2.5.</span> <span class="toc-text">processAfter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#new"><span class="toc-number">2.6.</span> <span class="toc-text">new</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#server"><span class="toc-number">2.7.</span> <span class="toc-text">server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#exit"><span class="toc-number">2.8.</span> <span class="toc-text">exit</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#deployBefore"><span class="toc-number">2.9.</span> <span class="toc-text">deployBefore</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#deployAfter"><span class="toc-number">2.10.</span> <span class="toc-text">deployAfter</span></a></li></ol></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <h2 id="Overview">Overview</h2>
-<p>Hexo inherits EventEmitter of Node.js. You can subscribe or publish specified events. For example:</p>
+        <h2 id="概述">概述</h2>
+<p>Hexo 继承了 Node.js 的 EventEmitter。你可以订阅或者发布指定事件。例如：</p>
 <figure class="highlight js"><pre><div class="line">hexo.on(<span class="string">'ready'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'Hexo is ready to go!'</span>);</div><div class="line">});</div></pre></figure>
 
-<h2 id="Events">Events</h2>
+<h2 id="事件">事件</h2>
 <h3 id="ready">ready</h3>
-<p>Called once Hexo is initialized.</p>
+<p>Hexo 初始化完成后被调用一次。</p>
 <h3 id="generateBefore">generateBefore</h3>
-<p>Called before generating.</p>
+<p>生成之前被调用。</p>
 <h3 id="generateAfter">generateAfter</h3>
-<p>Called after generating.</p>
+<p>生成之后被调用。</p>
 <h3 id="processBefore">processBefore</h3>
-<p>Called before processing.</p>
+<p>处理之前被调用。</p>
 <table>
 <thead>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
@@ -151,12 +166,12 @@ Called o">
 </tbody>
 </table>
 <h3 id="processAfter">processAfter</h3>
-<p>Called after processing.</p>
+<p>处理之后被调用。</p>
 <table>
 <thead>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
@@ -167,43 +182,43 @@ Called o">
 </tbody>
 </table>
 <h3 id="new">new</h3>
-<p>Called after a new post file is created.</p>
+<p>新的博文文件被创建后被调用。</p>
 <table>
 <thead>
 <tr>
-<th>Argument</th>
-<th>Description</th>
+<th>参数</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>path</code></td>
-<td>Absolute path of the post file</td>
+<td>绝对路径</td>
 </tr>
 <tr>
 <td><code>content</code></td>
-<td>Content of the post file</td>
+<td>文件内容</td>
 </tr>
 </tbody>
 </table>
 <h3 id="server">server</h3>
-<p>Called after server is on.</p>
+<p>服务器开启之后被调用。</p>
 <h3 id="exit">exit</h3>
-<p>Called when Hexo exits.</p>
+<p>Hexo 退出之后被调用。</p>
 <h3 id="deployBefore">deployBefore</h3>
-<p>Called before deployment.</p>
+<p>发布之前被调用。</p>
 <h3 id="deployAfter">deployAfter</h3>
-<p>Called after deployment.</p>
+<p>发布之后被调用。</p>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-12-22T09:12:17.000Z" itemprop="dateModified">Last updated: Dec 22 2014</time>
+        <time id="page-footer-updated" datetime="2015-02-27T09:32:36.000Z" itemprop="dateModified">Last updated: Feb 27 2015</time>
         <a href="models.html" id="page-footer-prev" title="模型">Prev</a><a href="troubleshooting.html" id="page-footer-next" title="常见问题">Next</a>
       </footer>
       
 <section id="comments">
 <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="docs/events.html" data-title="Events" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/events.html"></div>
+    <div class="ds-thread" data-thread-key="docs/events.html" data-title="事件" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/events.html"></div>
 <!-- 多说评论框 end -->
 </section>
 
@@ -274,7 +289,7 @@ Called o">
   <div class="outer">
     <div class="inner">
       <div id="footer-copyright">
-        &copy; 2014 <a href="http://www.liuzhixiang.com/hexo_site_cn/"> Hexo 中文网</a> <a href="http://www.liuzhixiang.com/">刘志祥的个人网站</a>
+        &copy; 2015 <a href="http://www.liuzhixiang.com/hexo_site_cn/"> Hexo 中文网</a> <a href="http://www.liuzhixiang.com/">刘志祥的个人网站</a>
       </div>
       <div id="footer-links">
         <a href="https://twitter.com/fly2xiang" id="footer-link-twitter" class="footer-link" target="_blank"><span>Twitter</span></a>

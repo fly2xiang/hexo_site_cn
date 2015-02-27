@@ -2,6 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.liuzhixiang.com/hexo_site_cn/docs/events.html</loc>
+    <lastmod>2015-02-27T09:32:36.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.liuzhixiang.com/hexo_site_cn/docs/models.html</loc>
+    <lastmod>2015-02-27T09:27:51.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.liuzhixiang.com/hexo_site_cn/docs/plugins.html</loc>
+    <lastmod>2015-02-27T09:17:11.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.liuzhixiang.com/hexo_site_cn/docs/helpers.html</loc>
+    <lastmod>2015-02-27T09:04:42.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.liuzhixiang.com/hexo_site_cn/docs/pagination.html</loc>
+    <lastmod>2015-02-27T08:16:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.liuzhixiang.com/hexo_site_cn/docs/variables.html</loc>
+    <lastmod>2015-02-27T08:05:32.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.liuzhixiang.com/hexo_site_cn/docs/themes.html</loc>
+    <lastmod>2015-02-27T07:44:16.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.liuzhixiang.com/hexo_site_cn/docs/permalinks.html</loc>
+    <lastmod>2015-02-27T06:59:25.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.liuzhixiang.com/hexo_site_cn/docs/deployment.html</loc>
     <lastmod>2014-12-25T08:53:55.000Z</lastmod>
   </url>
@@ -97,37 +137,7 @@
   </url>
   
   <url>
-    <loc>http://www.liuzhixiang.com/hexo_site_cn/news/2014/06/14/hexo-2-7-released/</loc>
-    <lastmod>2014-12-22T09:12:17.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.liuzhixiang.com/hexo_site_cn/docs/troubleshooting.html</loc>
-    <lastmod>2014-12-22T09:12:17.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.liuzhixiang.com/hexo_site_cn/docs/variables.html</loc>
-    <lastmod>2014-12-22T09:12:17.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.liuzhixiang.com/hexo_site_cn/docs/models.html</loc>
-    <lastmod>2014-12-22T09:12:17.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.liuzhixiang.com/hexo_site_cn/docs/events.html</loc>
-    <lastmod>2014-12-22T09:12:17.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.liuzhixiang.com/hexo_site_cn/docs/pagination.html</loc>
-    <lastmod>2014-12-22T09:12:17.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.liuzhixiang.com/hexo_site_cn/docs/permalinks.html</loc>
     <lastmod>2014-12-22T09:12:17.000Z</lastmod>
   </url>
   
@@ -142,17 +152,7 @@
   </url>
   
   <url>
-    <loc>http://www.liuzhixiang.com/hexo_site_cn/docs/helpers.html</loc>
-    <lastmod>2014-12-22T09:12:17.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.liuzhixiang.com/hexo_site_cn/docs/themes.html</loc>
-    <lastmod>2014-12-22T09:12:17.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.liuzhixiang.com/hexo_site_cn/docs/plugins.html</loc>
+    <loc>http://www.liuzhixiang.com/hexo_site_cn/news/2014/06/14/hexo-2-7-released/</loc>
     <lastmod>2014-12-22T09:12:17.000Z</lastmod>
   </url>
   

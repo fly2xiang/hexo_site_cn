@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Variables | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
+  <title>变量 | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://www.liuzhixiang.com/hexo_site_cn/docs/variables.html">
   <link rel="apple-touch-icon" sizes="57x57" href="/hexo_site_cn/apple-touch-icon-57x57.png">
@@ -25,84 +25,150 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/hexo_site_cn/atom.xml" title="Hexo中文网" type="application/atom+xml">
-  <meta name="description" content="Global Variables
+  <meta name="description" content="全局变量
 
 
 
-Variable
-Description
+变量
+描述
 
 
 
 
 site
-Sitewide information.
+站内信息
 
 
 page
-Page specific information and custom variables set in front-matter.
+页面的具体信息和前置数据里的变量
 
 
 config
-Site configuration
+站点设置
 
 
 theme
-Theme configurati">
+主题设置，继承站点设置
+
+
+_ (单个下划线)
+Lodash 库
+
+
+__ (双下划线)
+国际化 (i18n) 工具. 参阅下面的详细信息。
+
+
+path
+当前页面的路径
+
+
+url
+当前页面的完整URL
+
+
+
+自定义变量
+
+你也可以在布局中使用前置数">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Variables">
+<meta property="og:title" content="变量">
 <meta property="og:url" content="http://www.liuzhixiang.com/hexo_site_cn/hexo_site_cn/docs/variables.html">
 <meta property="og:site_name" content="Hexo中文网">
-<meta property="og:description" content="Global Variables
+<meta property="og:description" content="全局变量
 
 
 
-Variable
-Description
+变量
+描述
 
 
 
 
 site
-Sitewide information.
+站内信息
 
 
 page
-Page specific information and custom variables set in front-matter.
+页面的具体信息和前置数据里的变量
 
 
 config
-Site configuration
+站点设置
 
 
 theme
-Theme configurati">
+主题设置，继承站点设置
+
+
+_ (单个下划线)
+Lodash 库
+
+
+__ (双下划线)
+国际化 (i18n) 工具. 参阅下面的详细信息。
+
+
+path
+当前页面的路径
+
+
+url
+当前页面的完整URL
+
+
+
+自定义变量
+
+你也可以在布局中使用前置数">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Variables">
-<meta name="twitter:description" content="Global Variables
+<meta name="twitter:title" content="变量">
+<meta name="twitter:description" content="全局变量
 
 
 
-Variable
-Description
+变量
+描述
 
 
 
 
 site
-Sitewide information.
+站内信息
 
 
 page
-Page specific information and custom variables set in front-matter.
+页面的具体信息和前置数据里的变量
 
 
 config
-Site configuration
+站点设置
 
 
 theme
-Theme configurati">
+主题设置，继承站点设置
+
+
+_ (单个下划线)
+Lodash 库
+
+
+__ (双下划线)
+国际化 (i18n) 工具. 参阅下面的详细信息。
+
+
+path
+当前页面的路径
+
+
+url
+当前页面的完整URL
+
+
+
+自定义变量
+
+你也可以在布局中使用前置数">
 <meta name="twitter:site" content="@fly2xiang">
 <meta property="fb:admins" content="100000247608790">
 
@@ -161,7 +227,7 @@ Theme configurati">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Variables</h1>
+        <h1 id="page-title" itemprop="name">变量</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/variables.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -171,290 +237,290 @@ Theme configurati">
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Global_Variables"><span class="toc-number">1.</span> <span class="toc-text">Global Variables</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Site_Variables"><span class="toc-number">2.</span> <span class="toc-text">Site Variables</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Page_Variables"><span class="toc-number">3.</span> <span class="toc-text">Page Variables</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#全局变量"><span class="toc-number">1.</span> <span class="toc-text">全局变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#站点变量"><span class="toc-number">2.</span> <span class="toc-text">站点变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#页面变量"><span class="toc-number">3.</span> <span class="toc-text">页面变量</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <h3 id="Global_Variables">Global Variables</h3>
+        <h3 id="全局变量">全局变量</h3>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th>Description</th>
+<th>变量</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>site</code></td>
-<td>Sitewide information.</td>
+<td>站内信息</td>
 </tr>
 <tr>
 <td><code>page</code></td>
-<td>Page specific information and custom variables set in front-matter.</td>
+<td>页面的具体信息和前置数据里的变量</td>
 </tr>
 <tr>
 <td><code>config</code></td>
-<td>Site configuration</td>
+<td>站点设置</td>
 </tr>
 <tr>
 <td><code>theme</code></td>
-<td>Theme configuration. Inherits from site configuration.</td>
+<td>主题设置，继承站点设置</td>
 </tr>
 <tr>
-<td><code>_</code> (single underscore)</td>
-<td><a href="http://lodash.com/" target="_blank" rel="external">Lodash</a> library</td>
+<td><code>_</code> (单个下划线)</td>
+<td><a href="http://lodash.com/" target="_blank" rel="external">Lodash</a> 库</td>
 </tr>
 <tr>
-<td><code>__</code> (double underscores)</td>
-<td>Internationalization (i18n) utility. See below for detail.</td>
+<td><code>__</code> (双下划线)</td>
+<td>国际化 (i18n) 工具. 参阅下面的详细信息。</td>
 </tr>
 <tr>
 <td><code>path</code></td>
-<td>Path of current page</td>
+<td>当前页面的路径</td>
 </tr>
 <tr>
 <td><code>url</code></td>
-<td>Full URL of current page</td>
+<td>当前页面的完整URL</td>
 </tr>
 </tbody>
 </table>
-<blockquote class="note tip"><strong class="note-title">Custom Variables</strong>
+<blockquote class="note tip"><strong class="note-title">自定义变量</strong>
 
-<p>You can also use front-matter in layouts just like writing posts!</p>
+<p>你也可以在布局中使用前置数据就像在写文章时一样！</p>
 </blockquote>
 
 
-<h3 id="Site_Variables">Site Variables</h3>
-<p>All of the following variables are [Data Model].</p>
+<h3 id="站点变量">站点变量</h3>
+<p>下面所有的变量都是数据模型</p>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th>Description</th>
+<th>变量</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>site.posts</code></td>
-<td>All posts</td>
+<td>所有文章</td>
 </tr>
 <tr>
 <td><code>site.pages</code></td>
-<td>All pages</td>
+<td>所有单页</td>
 </tr>
 <tr>
 <td><code>site.categories</code></td>
-<td>All categories</td>
+<td>所有分类</td>
 </tr>
 <tr>
 <td><code>site.tags</code></td>
-<td>All tags</td>
+<td>所有标签</td>
 </tr>
 </tbody>
 </table>
-<h3 id="Page_Variables">Page Variables</h3>
-<p><strong>Article (post, page, …)</strong></p>
+<h3 id="页面变量">页面变量</h3>
+<p><strong>文章 (这里的文章包括博文和单页等)</strong></p>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th>Description</th>
+<th>变量</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>page.title</code></td>
-<td>Article title</td>
+<td>文章标题</td>
 </tr>
 <tr>
 <td><code>page.date</code></td>
-<td>Article created date (<a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> object)</td>
+<td>文章创建时间 (<a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> object)</td>
 </tr>
 <tr>
 <td><code>page.updated</code></td>
-<td>Article last updated date (<a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> object)</td>
+<td>文章最后更新时间 (<a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> object)</td>
 </tr>
 <tr>
 <td><code>page.categories</code></td>
-<td>All categories of the article</td>
+<td>文章的所有分类</td>
 </tr>
 <tr>
 <td><code>page.tags</code></td>
-<td>All tags of the article</td>
+<td>文章的所有标签</td>
 </tr>
 <tr>
 <td><code>page.comments</code></td>
-<td>Comment enabled or not</td>
+<td>文章评论是否开启</td>
 </tr>
 <tr>
 <td><code>page.layout</code></td>
-<td>Layout name.</td>
+<td>布局名称</td>
 </tr>
 <tr>
 <td><code>page.content</code></td>
-<td>The full processed content of the article</td>
+<td>文章全部处理的内容</td>
 </tr>
 <tr>
 <td><code>page.excerpt</code></td>
-<td>The processed excerpt of the article</td>
+<td>文章的摘要内容</td>
 </tr>
 <tr>
 <td><code>page.source</code></td>
-<td>The path of the source file</td>
+<td>源文件路径</td>
 </tr>
 <tr>
 <td><code>page.full_source</code></td>
-<td>Full path of the source file</td>
+<td>源文件的完整路径</td>
 </tr>
 <tr>
 <td><code>page.path</code></td>
-<td>The URL of the article without root URL. We usually use <code>url_for(page.path)</code> in theme.</td>
+<td>文章的URL. 在主题中使用 <code>url_for(page.path)</code> 得到.</td>
 </tr>
 <tr>
 <td><code>page.permalink</code></td>
-<td>Full URL of the article</td>
+<td>文章的完整URL</td>
 </tr>
 <tr>
 <td><code>page.prev</code></td>
-<td>The previous post. <code>null</code> if the post is the first post.</td>
+<td>上一篇文章。如果这是第一篇文章那么它是 <code>null</code>。</td>
 </tr>
 <tr>
 <td><code>page.next</code></td>
-<td>The next post. <code>null</code> if the post is the last post.</td>
+<td>下一篇文章。如果这是最后一篇文章那么它是 <code>null</code>。</td>
 </tr>
 <tr>
 <td><code>page.raw</code></td>
-<td>The raw data of the article</td>
+<td>文章的原始数据</td>
 </tr>
 <tr>
 <td><code>page.photos</code></td>
-<td>The photos of the article (Used in gallery posts)</td>
+<td>文章的图片 (Used in gallery posts)</td>
 </tr>
 <tr>
 <td><code>page.link</code></td>
-<td>The external link of the article (Used in link posts)</td>
+<td>文章的外部链接 (Used in link posts)</td>
 </tr>
 </tbody>
 </table>
-<blockquote class="note info"><strong class="note-title">Custom front-matter</strong>
+<blockquote class="note info"><strong class="note-title">自定义前置数据</strong>
 
-<p>The front-matter in posts will be available in <code>page</code>.</p>
+<p>前置数据可以在 <code>page</code> 中使用.</p>
 </blockquote>
 
 
-<p><strong>Home (index)</strong></p>
+<p><strong>首页 (index)</strong></p>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th>Description</th>
+<th>变量</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>page.per_page</code></td>
-<td>Posts displayed per page</td>
+<td>每页显示的文章数</td>
 </tr>
 <tr>
 <td><code>page.total</code></td>
-<td>Total number of posts</td>
+<td>文章总数</td>
 </tr>
 <tr>
 <td><code>page.current</code></td>
-<td>Current page number</td>
+<td>当前页码</td>
 </tr>
 <tr>
 <td><code>page.current_url</code></td>
-<td>The URL of current page</td>
+<td>当前页的URL</td>
 </tr>
 <tr>
 <td><code>page.posts</code></td>
-<td>Posts in this page ([Data Model])</td>
+<td>当前页的文章 ([数据模型])</td>
 </tr>
 <tr>
 <td><code>page.prev</code></td>
-<td>Previous page number. <code>0</code> if the current page is the first.</td>
+<td>上一页的页码。 如果是第一页为 <code>0</code>。</td>
 </tr>
 <tr>
 <td><code>page.prev_link</code></td>
-<td>The URL of previous page. <code>&#39;&#39;</code> if the current page is the first.</td>
+<td>上一页的URL。如果是第一页为 <code>&#39;&#39;</code> 。</td>
 </tr>
 <tr>
 <td><code>page.next</code></td>
-<td>Next page number. <code>0</code> if the current page is the last.</td>
+<td>下一页的页码。 如果最后一页为 <code>0</code>。</td>
 </tr>
 <tr>
 <td><code>page.next_link</code></td>
-<td>The URL of next page. <code>&#39;&#39;</code> if the current page is the first.</td>
+<td>下一页的URL。如果是最后一页为 <code>&#39;&#39;</code> 。</td>
 </tr>
 <tr>
 <td><code>page.path</code></td>
-<td>The URL of current page without root URL. We usually use <code>url_for(page.path)</code> in theme.</td>
+<td>当前页面的URL（不包含根URL）。在主题中通过 <code>url_for(page.path)</code> 得到。</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Archive (archive):</strong> Same as <code>index</code> layout but add the following variables.</p>
+<p><strong>归档 (archive):</strong> 与 <code>index</code> 布局类似但是添加了以下变量。</p>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th>Description</th>
+<th>变量</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>archive</code></td>
-<td>Equals <code>true</code></td>
+<td>固定为 <code>true</code></td>
 </tr>
 <tr>
 <td><code>year</code></td>
-<td>Archive year (4-digit)</td>
+<td>归档年份 (4位数字)</td>
 </tr>
 <tr>
 <td><code>month</code></td>
-<td>Archive month (2-digit without leading zeros)</td>
+<td>归档月份 (2位数字，不含前导零)</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Category (category):</strong> Same as <code>index</code> layout but add the following variables.</p>
+<p><strong>分类 (category):</strong> 与 <code>index</code> 布局类似但是添加了以下变量。</p>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th>Description</th>
+<th>变量</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>category</code></td>
-<td>Category name</td>
+<td>分类名称</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Tag (tag):</strong> Same as <code>index</code> layout but add the following variables.</p>
+<p><strong>标签 (tag):</strong> 与 <code>index</code> 布局类似但是添加了以下变量。</p>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th>Description</th>
+<th>变量</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>tag</code></td>
-<td>Tag name</td>
+<td>标签名称</td>
 </tr>
 </tbody>
 </table>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-12-22T09:12:17.000Z" itemprop="dateModified">Last updated: Dec 22 2014</time>
+        <time id="page-footer-updated" datetime="2015-02-27T08:05:32.000Z" itemprop="dateModified">Last updated: Feb 27 2015</time>
         <a href="themes.html" id="page-footer-prev" title="主题">Prev</a><a href="pagination.html" id="page-footer-next" title="分页">Next</a>
       </footer>
       
 <section id="comments">
 <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="docs/variables.html" data-title="Variables" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/variables.html"></div>
+    <div class="ds-thread" data-thread-key="docs/variables.html" data-title="变量" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/variables.html"></div>
 <!-- 多说评论框 end -->
 </section>
 
@@ -525,7 +591,7 @@ Theme configurati">
   <div class="outer">
     <div class="inner">
       <div id="footer-copyright">
-        &copy; 2014 <a href="http://www.liuzhixiang.com/hexo_site_cn/"> Hexo 中文网</a> <a href="http://www.liuzhixiang.com/">刘志祥的个人网站</a>
+        &copy; 2015 <a href="http://www.liuzhixiang.com/hexo_site_cn/"> Hexo 中文网</a> <a href="http://www.liuzhixiang.com/">刘志祥的个人网站</a>
       </div>
       <div id="footer-links">
         <a href="https://twitter.com/fly2xiang" id="footer-link-twitter" class="footer-link" target="_blank"><span>Twitter</span></a>

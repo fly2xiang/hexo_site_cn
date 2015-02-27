@@ -2,7 +2,7 @@
 <html>
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Pagination | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
+  <title>分页 | Hexo 中文网 · 一个基于Node.js的快速，简单，强大的博客框架。</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://www.liuzhixiang.com/hexo_site_cn/docs/pagination.html">
   <link rel="apple-touch-icon" sizes="57x57" href="/hexo_site_cn/apple-touch-icon-57x57.png">
@@ -25,18 +25,18 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/hexo_site_cn/atom.xml" title="Hexo中文网" type="application/atom+xml">
-  <meta name="description" content="When there’re many posts in your blog, it’s useful to separate into several pages. Hexo supports pagination. The following is how you can use pagination in Hexo.
-Before we start, you have to enable pa">
+  <meta name="description" content="在你博客中的文章增多之后，分页是非常有用的。Hexo 支持分页，下面介绍在Hexo中如何使用分页。
+Before we start, you have to enable pagination. Edit per_page setting to change how many posts displayed in a single page. To disable pagination, just">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Pagination">
+<meta property="og:title" content="分页">
 <meta property="og:url" content="http://www.liuzhixiang.com/hexo_site_cn/hexo_site_cn/docs/pagination.html">
 <meta property="og:site_name" content="Hexo中文网">
-<meta property="og:description" content="When there’re many posts in your blog, it’s useful to separate into several pages. Hexo supports pagination. The following is how you can use pagination in Hexo.
-Before we start, you have to enable pa">
+<meta property="og:description" content="在你博客中的文章增多之后，分页是非常有用的。Hexo 支持分页，下面介绍在Hexo中如何使用分页。
+Before we start, you have to enable pagination. Edit per_page setting to change how many posts displayed in a single page. To disable pagination, just">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Pagination">
-<meta name="twitter:description" content="When there’re many posts in your blog, it’s useful to separate into several pages. Hexo supports pagination. The following is how you can use pagination in Hexo.
-Before we start, you have to enable pa">
+<meta name="twitter:title" content="分页">
+<meta name="twitter:description" content="在你博客中的文章增多之后，分页是非常有用的。Hexo 支持分页，下面介绍在Hexo中如何使用分页。
+Before we start, you have to enable pagination. Edit per_page setting to change how many posts displayed in a single page. To disable pagination, just">
 <meta name="twitter:site" content="@fly2xiang">
 <meta property="fb:admins" content="100000247608790">
 
@@ -95,7 +95,7 @@ Before we start, you have to enable pa">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title" itemprop="name">Pagination</h1>
+        <h1 id="page-title" itemprop="name">分页</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/pagination.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -105,40 +105,40 @@ Before we start, you have to enable pa">
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Basic"><span class="toc-number">1.</span> <span class="toc-text">Basic</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Paginator_helper"><span class="toc-number">2.</span> <span class="toc-text">Paginator helper</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#基础"><span class="toc-number">1.</span> <span class="toc-text">基础</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分页助手"><span class="toc-number">2.</span> <span class="toc-text">分页助手</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <p>When there’re many posts in your blog, it’s useful to separate into several pages. Hexo supports pagination. The following is how you can use pagination in Hexo.</p>
-<p>Before we start, you have to enable pagination. Edit <code>per_page</code> setting to change how many posts displayed in a single page. To disable pagination, just set it to <code>0</code>.</p>
+        <p>在你博客中的文章增多之后，分页是非常有用的。Hexo 支持分页，下面介绍在Hexo中如何使用分页。</p>
+<p>Before we start, you have to enable pagination. Edit <code>per_page</code> setting to change how many posts displayed in a single page. To disable pagination, just set it to <code>0</code>.<br>开始之前，你必须开启分页。编辑 <code>per_page</code> 设置来更改一个页面中显示的文章的个数。想要禁用分页，把它设置为 <code>0</code> 即可。</p>
 <figure class="highlight yaml"><pre><div class="line"><span class="attribute">per_page</span>: <span class="string">10</span></div></pre></figure>
 
-<p>You can edit the following setting to enable or disable pagination for specific pages.</p>
+<p>你可以编辑下面的设置来启用或禁用分页。</p>
 <ul>
-<li>2: Enable pagination</li>
-<li>1: Disable pagination</li>
-<li>0: Fully disable</li>
+<li>2: 开启分页</li>
+<li>1: 禁用分页</li>
+<li>0: 全面禁用</li>
 </ul>
 <figure class="highlight yaml"><pre><div class="line"><span class="attribute">archive</span>: <span class="string">2</span></div><div class="line"><span class="attribute">category</span>: <span class="string">2</span></div><div class="line"><span class="attribute">tag</span>: <span class="string">2</span></div></pre></figure>
 
-<h2 id="Basic">Basic</h2>
-<p>The most basic pagination is just two links: “Previous page” &amp; “Next page”. For example:</p>
-<figure class="highlight"><pre><div class="line"><span class="vbscript">&lt;% <span class="keyword">if</span> (page.prev){ %&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"&lt;%- url_for(page.prev_link) %&gt;"</span>&gt;</span>Prev<span class="tag">&lt;/<span class="title">a</span>&gt;</span></div><div class="line"><span class="vbscript">&lt;% } %&gt;</span></div><div class="line"><span class="vbscript">&lt;% <span class="keyword">if</span> (page.<span class="keyword">next</span>){ %&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"&lt;%- url_for(page.next_link) %&gt;"</span>&gt;</span>Next<span class="tag">&lt;/<span class="title">a</span>&gt;</span></div><div class="line"><span class="vbscript">&lt;% } %&gt;</span></div></pre></figure>
+<h2 id="基础">基础</h2>
+<p>The most basic pagination is just two links: “Previous page” &amp; “Next page”. For example:<br>最基本的分页就是两个链接：”上一页” &amp; “下一页”。例如：</p>
+<figure class="highlight"><pre><div class="line"><span class="vbscript">&lt;% <span class="keyword">if</span> (page.prev){ %&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"&lt;%- url_for(page.prev_link) %&gt;"</span>&gt;</span>上一页<span class="tag">&lt;/<span class="title">a</span>&gt;</span></div><div class="line"><span class="vbscript">&lt;% } %&gt;</span></div><div class="line"><span class="vbscript">&lt;% <span class="keyword">if</span> (page.<span class="keyword">next</span>){ %&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"&lt;%- url_for(page.next_link) %&gt;"</span>&gt;</span>下一页<span class="tag">&lt;/<span class="title">a</span>&gt;</span></div><div class="line"><span class="vbscript">&lt;% } %&gt;</span></div></pre></figure>
 
-<h2 id="Paginator_helper">Paginator helper</h2>
-<p>To display pagination in number. You can use paginator helper. It helps you insert pagination fast.</p>
+<h2 id="分页助手">分页助手</h2>
+<p>想要在分页中显示数字，你可以使用分页助手（paginator helper）。它帮助你快速插入分页。</p>
 <figure class="highlight"><pre><div class="line">&lt;<span class="variable">%-</span> paginator() <span class="variable">%&gt;</span></div></pre></figure>
 
-<p>For more info, see <a href="/docs/helpers.html#paginator">Helpers</a>.</p>
+<p>更多信息请查看：<a href="/docs/helpers.html#paginator">Helpers</a>.</p>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-12-22T09:12:17.000Z" itemprop="dateModified">Last updated: Dec 22 2014</time>
+        <time id="page-footer-updated" datetime="2015-02-27T08:16:20.000Z" itemprop="dateModified">Last updated: Feb 27 2015</time>
         <a href="variables.html" id="page-footer-prev" title="变量">Prev</a><a href="helpers.html" id="page-footer-next" title="帮助">Next</a>
       </footer>
       
 <section id="comments">
 <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="docs/pagination.html" data-title="Pagination" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/pagination.html"></div>
+    <div class="ds-thread" data-thread-key="docs/pagination.html" data-title="分页" data-url="http://www.liuzhixiang.com/hexo_site_cn/docs/pagination.html"></div>
 <!-- 多说评论框 end -->
 </section>
 
@@ -209,7 +209,7 @@ Before we start, you have to enable pa">
   <div class="outer">
     <div class="inner">
       <div id="footer-copyright">
-        &copy; 2014 <a href="http://www.liuzhixiang.com/hexo_site_cn/"> Hexo 中文网</a> <a href="http://www.liuzhixiang.com/">刘志祥的个人网站</a>
+        &copy; 2015 <a href="http://www.liuzhixiang.com/hexo_site_cn/"> Hexo 中文网</a> <a href="http://www.liuzhixiang.com/">刘志祥的个人网站</a>
       </div>
       <div id="footer-links">
         <a href="https://twitter.com/fly2xiang" id="footer-link-twitter" class="footer-link" target="_blank"><span>Twitter</span></a>
