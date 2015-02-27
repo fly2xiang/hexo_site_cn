@@ -1,32 +1,34 @@
-title: Permalinks
+title: 链接格式
 ---
-You can specify the permalinks for your site in `_config.yml` or in the front-matter for each post.
+你可以在 `_config.yml` 或在每篇文章的前置数据中指定链接格式。 
 
-### Variables
+### 变量
 
 Besides the following variables, you can use any attributes in the permalink since Hexo 2.5.
+在Hexo 2.5以上版本中，你可以在链接格式中使用以下变量。
 
-Variable | Description
+变量 | 描述
 --- | ---
-`:year` | Published year of posts (4-digit)
-`:month` | Published month of posts (2-digit)
-`:i_month` | Published month of posts (Without leading zeros)
-`:day` | Published day of posts (2-digit)
-`:i_day` | Published day of posts (Without leading zeros)
-`:title` | Filename
-`:id` | Post ID
-`:category` | Categories. If the post is uncategorized, it'll be `category_dir` setting.
+`:year` | 文章的发表年份 (4位数字)
+`:month` | 文章的发表月份 (2位数字)
+`:i_month` | 文章的发表月份 (不含前导零)
+`:day` | 文章的发表日 (2位数字)
+`:i_day` | 文章的发表日 (不含前导零)
+`:title` | 文件名
+`:id` | 文章ID
+`:category` | 文章分类。 如果文章没有分类，它将会是 `category_dir` 设置项。
 
-You can define the default value of each variable in the permalink in `permalink_defaults` setting:
+你可以在 `permalink_defaults` 设置项中定义每个变量的默认值：
 
 ``` yaml
 permalink_defaults:
   lang: en
 ```
 
-### Examples
+### 示例
 
 Given a post named `hello-world.md` in `source/_posts` folder with the following content.
+给定一篇在 `source/_posts` 目录下，文件名为 `hello-world.md` 的文章，内容如下：
 
 ``` yaml
 title: Hello World
@@ -36,29 +38,28 @@ categories:
 - bar
 ```
 
-Setting | Result
+设置 | 结果
 --- | ---
 `:year/:month/:day/:title/` | 2013/07/14/hello-world
 `:year-:month-:day-:title.html` | 2013-07-14-hello-world.html
 `:category/:title` | foo/bar/hello-world
 
-### Multi-language Support
+### 多语言支持
 
-To create a multi-language site, you can modify `new_post_name` and `permalink` setting like this:
+想创建一个多语言的站点，你可以修改 `new_post_name` 和 `permalink` 设置如下：
 
 ``` yaml
 new_post_name: :lang/:title.md
 permalink: :lang/:title/
 ```
 
-When you create a new post, the post will be saved to:
+当你新建一篇文章时，会被保存到：
 
 ``` bash
 $ hexo new "Hello World" --lang tw
 # => source/_posts/tw/Hello-World.md
 ```
-
-and the URL will be:
+文章地址将会是：
 
 ``` plain
 http://localhost:4000/tw/hello-world/

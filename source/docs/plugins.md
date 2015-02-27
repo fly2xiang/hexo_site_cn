@@ -1,16 +1,16 @@
-title: Plugins
+title: 插件
 ---
-## Overview
+## 概述
 
-Hexo has a powerful plugin system. Most of built-in plugins are extensions of Hexo. This makes you easy to hook up your code.
+Hexo 有一个强大的插件系统。很多内置插件是 Hexo 的扩展。它是你简单的编写你的代码。
 
-### Script
+### 脚本
 
-If your code is simple, it's recommended to use a script. All you need to do is putting JavaScript files in `scripts` folder and they'll be loaded once Hexo is initialized.
+如果你的代码是简单的，推荐你使用脚本。你需要做的就是将 Javascript 文件放到 `scripts` 文件夹中，它们会在 Hexo 初始化的时候被加载。
 
-### Plugin
+### 插件
 
-If your code is complicated or you want to publish it to NPM registry, it's recommended to use a plugin. First, create a folder in `node_modules` folder. The name of the folder must be started with `hexo-` so it could be loaded by Hexo. The folder must be contained at least 2 files: One is the main program and the other is `package.json` describing the purpose and the dependencies of the plugin.
+如果你的代码很复杂或者你想要将它发布到 NPM ，推荐你使用插件。首先，在 `node_modules` 文件夹下创建一个文件夹。文件夹名称必须以 `hexo-` 开头才能被 Hexo 加载。文件夹中至少要包含两个文件：一个是主程序文件，另一个是 `package.json` 用来描述插件的目的和依赖。
 
 ``` plain
 .
@@ -18,7 +18,7 @@ If your code is complicated or you want to publish it to NPM registry, it's reco
 └── package.json
 ```
 
-You should at least describe `name`, `version`, `main` in `package.json`. For example:
+你应当在 `package.json` 中写入 `name`, `version`, `main` 描述信息。例如：
 
 ``` json package.json
 {
@@ -28,15 +28,15 @@ You should at least describe `name`, `version`, `main` in `package.json`. For ex
 }
 ```
 
-### Publishing
+### 发布
 
-You can publish your plugin to the [plugin list](https://github.com/hexojs/hexo/wiki/Plugins) on wiki.
+你可以将插件发布到wiki上的 [插件列表](https://github.com/hexojs/hexo/wiki/Plugins)。
 
-## Generator
+## 生成器
 
-Generators are used to generate static files based on processed source files.
+生成器被用来处理源文件生成静态文件。
 
-### Syntax
+### 语法
 
 ``` js
 hexo.extend.generator.register(name, function(locals, render, callback){
@@ -44,7 +44,7 @@ hexo.extend.generator.register(name, function(locals, render, callback){
 });
 ```
 
-Parameter | Description
+参数 | 描述
 --- | ---
 `name` | Generator name
 `fn` | Generator function

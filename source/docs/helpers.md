@@ -1,10 +1,11 @@
-title: Helpers
+title: 帮助
 ---
-Helpers are used in templates to help you insert snippets quickly. You can see [Plugins](plugins.html#Helper) to learn how to build a helper plugin.
+帮助工具帮助你在模版中快速插入片段。你可以查看 [插件](plugins.html#Helper) 来学习如何创建一个帮助插件。
 
 ### url_for
 
 Returns a url with the root path prefixed. You should use this helper instead of `config.root + path` since Hexo 2.7.
+返回一个包含根路径的URL，从 Hexo 2.7 开始你可以使用这个助手代替 `config.root + path`。
 
 ``` js
 <%- url_for(path) %>
@@ -12,7 +13,7 @@ Returns a url with the root path prefixed. You should use this helper instead of
 
 ### relative_url
 
-Solves the relative URL from `from` to `to`.
+返回从 `from` 到 `to` 的相对路径
 
 ``` js
 <%- relative_url(from, to) %>
@@ -20,13 +21,13 @@ Solves the relative URL from `from` to `to`.
 
 ### css
 
-Loads CSS files. `path` can be an array or a string. If `path` isn't prefixed with `/` or any protocol, it'll be prefixed with root URL. If you didn't add extension name `.css` after `path`, it'll be added.
+加载CSS文件。`path` 可以是数组或者字符串。如果 `path` 没有 `/` 前缀或者其他协议将会被添加根路径。如果你没有在 `path` 之后添加扩展名 `.css` ，将会被添加。
 
 ``` js
 <%- css(path, ...) %>
 ```
 
-**Examples:**
+**例子:**
 
 ``` js
 <%- css('style.css') %>
@@ -39,13 +40,13 @@ Loads CSS files. `path` can be an array or a string. If `path` isn't prefixed wi
 
 ### js
 
-Loads JavaScript files. `path` can be an array or a string. If `path` isn't prefixed with `/` or any protocol, it'll be prefixed with root URL. If you didn't add extension name `.js` after `path`, it'll be added.
+加载 Javascript 文件。`path` 可以是数组或者字符串。如果 `path` 没有 `/` 前缀或者其他协议将会被添加根路径。如果你没有在 `path` 之后添加扩展名 `.css` ，将会被添加。
 
 ``` js
 <%- js(path, ...) %>
 ```
 
-**Examples:**
+**例子:**
 
 ``` js
 <%- js('script.js') %>
@@ -56,30 +57,30 @@ Loads JavaScript files. `path` can be an array or a string. If `path` isn't pref
 // <script type="text/javascript" src="/gallery.js"></script>
 ```
 
-### Conditional Tags
+### 条件标签
 
-Conditional tags help you check the status of current page.
+条件标签帮助你检查当前页面的状态。
 
-Helper | Description
+助手 | 描述
 --- | ---
-`is_current(path, [strict])` | Checks if `path` matches the URL of current page.
-`is_home()` | Checks if the home page is being displayed
-`is_post()` | Checks if posts are being displayed
-`is_archive()` | Checks if archive pages are being displayed
-`is_year()` | Checks if yearly archive pages are being displayed
-`is_month()` | Checks if monthly archive pages are being displayed
-`is_category()` | Checks if category pages are being displayed
-`is_tag()` | Checks if tag pages are being displayed
+`is_current(path, [strict])` | 检查 `path` 是否匹配当前页面
+`is_home()` | 检查是否作为首页显示
+`is_post()` | 检查是否作为文章页显示
+`is_archive()` | 检查是否作为归档页显示
+`is_year()` | 检查是否作为年归档页显示
+`is_month()` | 检查是否作为月归档页显示
+`is_category()` | 检查是否作为分类页显示
+`is_tag()` | 检查是否作为标签页显示
 
 ### gravatar
 
-Inserts a Gravatar image.
+插入一个头像
 
 ``` js
 <%- gravatar(email, [size]);
 ```
 
-**Examples:**
+**例子:**
 
 ``` js
 <%- gravatar('a@abc.com') %>
@@ -91,7 +92,7 @@ Inserts a Gravatar image.
 
 ### trim
 
-Clears all spaces in a string.
+清除字符串中的所有空白
 
 ``` js
 <%- trim(string) %>
@@ -99,13 +100,13 @@ Clears all spaces in a string.
 
 ### strip_html
 
-Sanitizes all HTML tags in a string.
+清楚字符串中的HTML标签
 
 ``` js
 <%- strip_html(string) %>
 ```
 
-**Examples:**
+**例子:**
 
 ``` js
 <%- strip_html('It's not <b>important</b> anymore!') %>
@@ -114,13 +115,13 @@ Sanitizes all HTML tags in a string.
 
 ### titlecase
 
-Transforms a string into proper title caps.
+转换字符串的大小写到合适
 
 ``` js
 <%- titlecase(string) %>
 ```
 
-**Examples:**
+**例子:**
 
 ``` js
 <%- titlecase('this is an apple') %>
@@ -129,26 +130,26 @@ Transforms a string into proper title caps.
 
 ### partial
 
-Loads other template files. You can define local variables in `locals`.
+记载其他模版文件。你可以在 `locals` 下里定义局部变量。
 
 ``` js
 <%- partial(layout, [locals], [options]) %>
 ```
 
-Option | Description | Default
+选项 | 描述 | 默认值
 --- | --- | ---
-`cache` | Cache contents | `false`
-`only` | Strict local variables | `false`
+`cache` | 缓存内容 | `false`
+`only` | 严格的局部变量 | `false`
 
 ### fragment_cache
 
-Caches the contents in a fragment. It saves the contents within a fragment and serves the cache when the next request comes in.
+在片段中缓存内容。保存内容片段，在下次请求到来时使用缓存的内容。
 
 ``` js
 <%- fragment_cache(id, fn);
 ```
 
-**Examples:**
+**例如:**
 
 ``` js
 <%- fragment_cache('header', function(){
@@ -158,55 +159,55 @@ Caches the contents in a fragment. It saves the contents within a fragment and s
 
 ### tagcloud
 
-Inserts a tag cloud.
+插入标签云
 
 ``` js
 <%- tagcloud([tags], [options]) %>
 ```
 
-Option | Description | Default
+选项 | 描述 | 默认值
 --- | --- | ---
-`min_font` | Minimal font size | 10
-`max_font` | Maximum font size | 20
-`unit` | Unit of font size | px
-`amount` | Total amount of tags | 40
-`orderby` | Order of tags | name
-`order` | Sort order. `1`, `sac` as ascending; `-1`, `desc` as descending | 1
-`color` | Colorizes the tag cloud | false
-`start_color` | Start color. You can use hex (`#b700ff`), rgba (`rgba(183, 0, 255, 1)`), hsla (`hsla(283, 100%, 50%, 1)`) or [color keywords]. This option only works when `color` is true. |
-`end_color` | End color. You can use hex (`#b700ff`), rgba (`rgba(183, 0, 255, 1)`), hsla (`hsla(283, 100%, 50%, 1)`) or [color keywords]. This option only works when `color` is true. |
+`min_font` | 最小字体大小 | 10
+`max_font` | 最大字体大小 | 20
+`unit` | 字体大小单位 | px
+`amount` | 标签总数 | 40
+`orderby` | 标签排序依据 | name
+`order` | 排序方式. `1`或者`sac`升序; `-1`或者`desc`降序 | 1
+`color` | 为标签云上色 | false
+`start_color` | 起始颜色. 你可以使用16进制 (`#b700ff`), rgba (`rgba(183, 0, 255, 1)`), hsla (`hsla(283, 100%, 50%, 1)`) 或者 [color keywords]. 这个选项在 `color` 选项为 `true` 时才工作。 |
+`end_color` | 结束颜色. 你可以使用16进制 (`#b700ff`), rgba (`rgba(183, 0, 255, 1)`), hsla (`hsla(283, 100%, 50%, 1)`) 或者 [color keywords]. 这个选项在 `color` 选项为 `true` 时才工作。 |
 
 ### paginator
 
-Inserts a paginator.
+插入一个分页
 
 ``` js
 <%- paginator(options) %>
 ```
 
-Option | Description | Default
+选项 | 描述 | 默认值
 --- | --- | ---
-`base` | Base URL | /
-`format` | URL format | page/%d/
-`total` | Total amount of pages | 1
-`current` | Current page number | 0
-`prev_text` | The link text of previous page. Works only if `prev_next` is set to true. | Prev
-`next_text` | The link text of next page. Works only if `prev_next` is set to true. | Next
-`space` | The space text | &hellp;
-`prev_next` | Display previous and next links | true
-`end_size` | The number of pages displayed on the start and the end side | 1
-`mid_size` | The number of pages displayed between current page, but not including current page | 2
-`show_all` | Display all pages. If this is set true, `end_size` and `mid_size` will not works. | false
+`base` | 基础URL | /
+`format` | URL格式 | page/%d/
+`total` | 每页的文章数 | 1
+`current` | 当前页码 | 0
+`prev_text` | 上一页的链接文字. 仅当 `prev_next` 被设置为 true 时才工作。 | Prev
+`next_text` | 上一页的链接文字. 仅当 `prev_next` 被设置为 true 时才工作。 | Next
+`space` | 空白文字 | &hellp;
+`prev_next` | 显示上一页、下一页链接 | true
+`end_size` | 在开始和结束部分显示的页码数 | 1
+`mid_size` | 在中间显示的页码数（不包含当前页） | 2
+`show_all` | 显示所有页码。 如果被设置为 true, `end_size` 和 `mid_size` 将不会工作。 | false
 
 ### date
 
-Inserts formatted date. `date` can be unix time, ISO string, date object, or moment.js object. `format` is `date_format` setting by default.
+插入格式化的日期。 `date` 可以是 UNIX 时间戳，ISO时间，date 对象，或者  moment.js 对象。`format` 默认是 `date_format` 设置。
 
 ``` js
 <%- date(date, [format]) %>
 ```
 
-**Examples:**
+**例子:**
 
 ``` js
 <%- date(Date.now()) %>
@@ -218,13 +219,13 @@ Inserts formatted date. `date` can be unix time, ISO string, date object, or mom
 
 ### date_xml
 
-Inserts date in XML format. `date` can be unix time, ISO string, date object, or moment.js object. `format` is `date_format` setting by default.
+插入XML格式的日期。`date` 可以是 UNIX 时间戳，ISO时间，date 对象，或者  moment.js 对象。`format` 默认是 `date_format` 设置。
 
 ``` js
 <%- date_xml(date) %>
 ```
 
-**Examples:**
+**例子:**
 
 ``` js
 <%- date_xml(Date.now()) %>
@@ -233,13 +234,13 @@ Inserts date in XML format. `date` can be unix time, ISO string, date object, or
 
 ### time
 
-Inserts formatted time. `date` can be unix time, ISO string, date object, or moment.js object. `format` is `time_format` setting by default.
+插入格式化的时间。`date` 可以是 UNIX 时间戳，ISO时间，date 对象，或者  moment.js 对象。`format` 默认是 `date_format` 设置。
 
 ``` js
 <%- time(date, [format]) %>
 ```
 
-**Examples:**
+**例子:**
 
 ``` js
 <%- time(Date.now()) %>
@@ -251,13 +252,13 @@ Inserts formatted time. `date` can be unix time, ISO string, date object, or mom
 
 ### full_date
 
-Inserts formatted date and time. `date` can be unix time, ISO string, date object, or moment.js object. `format` is `date_format + time_format` setting by default.
+插入格式化的日期和时间。`date` 可以是 UNIX 时间戳，ISO时间，date 对象，或者  moment.js 对象。`format` 默认是 `date_format + time_format` 设置。
 
 ``` js
 <%- full_date(date, [format]) %>
 ```
 
-**Examples:**
+**例子:**
 
 ``` js
 <%- full_date(new Date()) %>
@@ -273,27 +274,27 @@ Inserts formatted date and time. `date` can be unix time, ISO string, date objec
 
 ### search_form
 
-Inserts a Google search form.
+插入一个 Google 搜索表单。
 
 ``` js
 <%- search_form(options) %>
 ```
 
-Option | Description | Default
+选项 | 描述 | 默认值
 --- | --- | ---
-`class` | The class name of form | search-form
-`text` | Search hint word | Search
-`button` | Display search button. The value can be a boolean or a string. When the value is a string, it'll be the text of the button. | false
+`class` | 表单的class值 | search-form
+`text` | 搜索框的占位符 | Search
+`button` | 显示搜索按钮，可以是字符串或者是布尔值，是字符串时显示为按钮文字 | false
 
 ### markdown
 
-Renders a string with Markdown.
+渲染一个 Markdown 字符串。
 
 ``` js
 <%- markdown(str) %>
 ```
 
-**Examples:**
+**例子:**
 
 ``` js
 <%- markdown('make me **strong**') %>
@@ -302,13 +303,13 @@ Renders a string with Markdown.
 
 ### word_wrap
 
-Wraps text into lines no longer than `length`. `length` is 80 by default.
+自动换行文字，每行不超过 `length` 。`length` 默认是 80。
 
 ``` js
 <%- word_wrap(str, [length]) %>
 ```
 
-**Examples:**
+**例子:**
 
 ``` js
 <%- word_wrap('Once upon a time', 8) %>
@@ -317,13 +318,13 @@ Wraps text into lines no longer than `length`. `length` is 80 by default.
 
 ### truncate
 
-Truncates text after `length`.
+截断 `length` 后的字符串。
 
 ``` js
 <%- truncate(text, length) %>
 ```
 
-**Examples:**
+**例子:**
 
 ``` js
 <%- truncate('Once upon a time in a world far far away', 16) %>
@@ -332,13 +333,13 @@ Truncates text after `length`.
 
 ### truncate_words
 
-Truncates words after `length`.
+截断 `length` 后的单词。
 
 ``` js
 <%- truncate_words(text, length) %>
 ```
 
-**Examples:**
+**例子:**
 
 ``` js
 <%- truncate_words('Once upon a time in a world far far away', 4) %>
@@ -347,19 +348,19 @@ Truncates words after `length`.
 
 ### link_to
 
-Inserts a link.
+插入一个链接。
 
 ``` js
 <%- link_to(path, [text], [options]) %>
 ```
 
-Option | Description | Default
+选项 | 描述 | 默认值
 --- | --- | ---
-external | Opens the link in a new tab | false
-class | Class name |
+external | 新标签页中打开 | false
+class | class名称 |
 id | ID |
 
-**Examples:**
+**例子:**
 
 ``` js
 <%- link_to('http://www.google.com') %>
@@ -374,22 +375,22 @@ id | ID |
 
 ### mail_to
 
-Inserts a mail link.
+插入一个邮件链接。
 
 ``` js
 <%- mail_to(path, [text], [options]) %>
 ```
 
-Option | Description
+选项 | 描述
 --- | ---
-class | Class name
+class | class名称
 id | ID
-subject | Mail subject
+subject | 邮件主题
 cc | CC
 bcc | BCC
-body | Mail contents
+body | 邮件内容
 
-**Examples:**
+**例子:**
 
 ``` js
 <%- mail_to('a@abc.com') %>
@@ -401,23 +402,23 @@ body | Mail contents
 
 ### image_tag
 
-Inserts a image.
+插入图片
 
 ``` js
 <%- image_tag(path, [options]) %>
 ```
 
-Option | Description
+选项 | 描述
 --- | ---
-alt | Alternative text of the image
-class | Class name
+alt | 替代文字
+class | class名称
 id | ID
-width | Image width
-height | Image height
+width | 图片宽度
+height | 图片高度
 
 ### favicon_tag
 
-Inserts a favicon.
+插入一个favicon。
 
 ``` js
 <%- favicon_tag(path) %>
@@ -425,74 +426,74 @@ Inserts a favicon.
 
 ### feed_tag
 
-Inserts a feed link.
+插入一个 feed link。
 
 ``` js
 <%- feed_tag(path, [options]) %>
 ```
 
-Option | Description | Default
+选项 | 描述 | 默认值
 --- | --- | ---
-title | Feed title |
-type | Feed type | atom
+title | Feed标题 |
+type | Feed类型 | atom
 
 ### list_categories
 
-Inserts a list of all categories.
+插入所有分类列表。
 
 ``` js
 <%- list_categories([options]) %>
 ```
 
-Option | Description | Default
+选项 | 描述 | 默认值
 --- | --- | ---
-`orderby` | Order of categories | name
-`order` | Sort of order. `1`, `asc` as ascending; `-1`, `desc` as descending | 1
-`show_count` | Display the total amount of posts for each category | true
-`style` | Style to display the categories list. `list` displays categories in an unordered list.  | list
-`separator` | Separator between categories. (Only works if `style` is `none`) | ,
-`depth` | Levels of categories to be displayed. `0` displays all categories and child categories; `-1` is same as `0` but displayed in flat; `1` displays only top level categories. | 0
-`class` | Class name of categories list. | category
+`orderby` | 排序依据 | name
+`order` | 排序方式， `1`或者`asc`升序; `-1`或者`desc`降序 | 1
+`show_count` | 显示每个分类的文章数 | true
+`style` | 分类列表的显示样式 `list` 显示为无序列表  | list
+`separator` | 分类间的分隔符 (当 `style` 为 `none` 时工作) | ,
+`depth` | 分类的显示层级 `0` 显示所有分类和子分类; `-1` 与 `0` 相同但是没有树状结构; `1` 只显示一级分类 | 0
+`class` | 分类列表的class | category
 
 ### list_tags
 
-Inserts a list of all tags.
+插入所有标签列表。
 
 ``` js
 <%- list_tags([options]) %>
 ```
 
-Option | Description | Default
+选项 | 描述 | 默认值
 --- | --- | ---
-`orderby` | Order of categories | name
-`order` | Sort of order. `1`, `asc` as ascending; `-1`, `desc` as descending | 1
-`show_count` | Display the total amount of posts for each tag | true
-`style` | Style to display the tags list. `list` displays tags in an unordered list.  | list
-`separator` | Separator between tags. (Only works if `style` is `none`) | ,
-`class` | Class name of tags list. | tag
-`amount` | The number of tags to display (0 = unlimited) | 0
+`orderby` | 排序依据 | name
+`order` | 排序方式， `1`或者`asc`升序; `-1`或者`desc`降序 | 1
+`show_count` | 显示每个标签的文章数 | true
+`style` | 标签列表的显示样式 `list` 显示为无序列表 | list
+`separator` | 标签间的分隔符 (当 `style` 为 `none` 时工作) | ,
+`class` | 标签列表的class | tag
+`amount` | 显示的标签数目 (0 = 不限制) | 0
 
 ### list_archives
 
-Inserts a list of archives.
+插入一个归档列表。
 
 ``` js
 <%- list_archives([options]) %>
 ```
 
-Option | Description | Default
+选项 | 描述 | 默认值
 --- | --- | ---
-`type` | Type. This value can be `yearly` or `monthly`. | monthly
-`order` | Sort of order. `1`, `asc` as ascending; `-1`, `desc` as descending | 1
-`show_count` | Display the total amount of posts for each archive | true
-`format` | Date format | MMMM YYYY
-`style` | Style to display the archives list. `list` displays archives in an unordered list.  | list
-`separator` | Separator between archives. (Only works if `style` is `none`) | ,
-`class` | Class name of archives list. | category
+`type` | 类型。 `yearly` 或者 `monthly`. | monthly
+`order` | 排序方式， `1`或者`asc`升序; `-1`或者`desc`降序 | 1
+`show_count` | 显示每一个归档的文章数 | true
+`format` | 日期格式 | MMMM YYYY
+`style` | 归档列表的显示样式 `list` 显示为无序列表 | list
+`separator` | 归档间的分隔符 (当 `style` 为 `none` 时工作) | ,
+`class` | 归档列表的class | category
 
 ### list_posts
 
-Inserts a list of posts.
+插入一个文章列表
 
 ``` js
 <%- list_posts([options]) %>
@@ -500,42 +501,42 @@ Inserts a list of posts.
 
 Option | Description | Default
 --- | --- | ---
-`ulClass` | Class name of the container |
-`liClass` | Class name of each item |
-`style` | Style to display the post list. `list` displays posts in an unordered list. | list
-`separator` | Separator between archives. (Only works if `style` is `none`) | ,
-`class` | Class name of post list. | post
+`ulClass` | 列表的class |
+`liClass` | 每一个列表项的class |
+`style` | 文章列表的显示样式 `list` 显示为无序列表 | list
+`separator` | 文章间的分隔符 (当 `style` 为 `none` 时工作) | ,
+`class` | 文章列表的class | post
 
 ### get_posts
 
-Gets post data.
+获得多个文章内容
 
 ``` js
 <% get_posts([options]) %>
 ```
 
-Option | Description | Default
+选项 | 描述 | 默认值
 --- | --- | ---
-`count` | The number of posts | 6
-`orderby` | Order of posts | date
-`order` | Sort of order. `1`, `asc` as ascending; `-1`, `desc` as descending | -1
-`query` | Query conditions |
+`count` | 文章个数 | 6
+`orderby` | 排序依据 | date
+`order` | 排序方式， `1`或者`asc`升序; `-1`或者`desc`降序 | -1
+`query` | 查询条件 |
 
 ### number_format
 
-Formats a number.
+格式化数字
 
 ``` js
 <%- number_format(number, [options]) %>
 ```
 
-Option | Description | Default
+选项 | 描述 | 默认值
 --- | --- | ---
-`precision` | The precision of number. The value can be `false` or a nonnegative integer. | false
-`delimiter` | The thousands delimiter | ,
-`separator` | The separator between the fractional and integer digits. | .
+`precision` | 数的精度。 `false` 或者是一个非负整数 | false
+`delimiter` | 千分符 | ,
+`separator` | 小数点 | .
 
-**Examples:**
+**例子:**
 
 ``` js
 <%- number_format(12345.67, {precision: 1}) %>

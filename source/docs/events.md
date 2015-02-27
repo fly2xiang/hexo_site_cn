@@ -1,8 +1,8 @@
-title: Events
+title: 事件
 ---
-## Overview
+## 概述
 
-Hexo inherits EventEmitter of Node.js. You can subscribe or publish specified events. For example:
+Hexo 继承了 Node.js 的 EventEmitter。你可以订阅或者发布指定事件。例如：
 
 ``` js
 hexo.on('ready', function(){
@@ -10,57 +10,57 @@ hexo.on('ready', function(){
 });
 ```
 
-## Events
+## 事件
 
 ### ready
 
-Called once Hexo is initialized.
+Hexo 初始化完成后被调用一次。
 
 ### generateBefore
 
-Called before generating.
+生成之前被调用。
 
 ### generateAfter
 
-Called after generating.
+生成之后被调用。
 
 ### processBefore
 
-Called before processing.
+处理之前被调用。
 
-Argument | Description
+参数 | 描述
 --- | ---
 `path` | Base path of the processor
 
 ### processAfter
 
-Called after processing.
+处理之后被调用。
 
-Argument | Description
+参数 | 描述
 --- | ---
 `path` | Base path of the processor
 
 ### new
 
-Called after a new post file is created.
+新的博文文件被创建后被调用。
 
-Argument | Description
+参数 | 描述
 --- | ---
-`path` | Absolute path of the post file
-`content` | Content of the post file
+`path` | 绝对路径
+`content` | 文件内容
 
 ### server
 
-Called after server is on.
+服务器开启之后被调用。
 
 ### exit
 
-Called when Hexo exits.
+Hexo 退出之后被调用。
 
 ### deployBefore
 
-Called before deployment.
+发布之前被调用。
 
 ### deployAfter
 
-Called after deployment.
+发布之后被调用。
